@@ -1,0 +1,928 @@
+{
+    "imagemlaboratorio": [
+        {
+            "nome": "Diagnóstico Hospital Maceió",
+            "endereco": "Avenida Presidente Getúlio Vargas, 300 - Serraria",
+            "cidade": "Maceió",
+            "estado": "AL"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Maceió",
+            "endereco": "Rua Oldemburgo da Silva Paranhos, 55 - Farol",
+            "cidade": "Maceió",
+            "estado": "AL"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Adrianópolis",
+            "endereco": "Rua Teresina, 296 - Adrianópolis",
+            "cidade": "Manaus",
+            "estado": "AM"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Aparecida",
+            "endereco": "Rua Alexandre Amorin, 470 - Aparecida",
+            "cidade": "Manaus",
+            "estado": "AM"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Centro",
+            "endereco": "Rua dos Tapajós, 561 - Centro",
+            "cidade": "Manaus",
+            "estado": "AM"
+        },
+        {
+            "nome": "Hapvida Diagnósticos Zona Leste",
+            "endereco": "Av.Altaz Mirim, 7602 - Tancredo Neves",
+            "cidade": "Manaus",
+            "estado": "AM"
+        },
+        {
+            "nome": "Laboratório Rio Negro",
+            "endereco": "Rua dos Tapajós, 561 - Centro",
+            "cidade": "Manaus",
+            "estado": "AM"
+        },
+        {
+            "nome": "Diagnóstico Alagoinhas",
+            "endereco": "2ª Travessa Dantas Bião, S/N - Alagoinhas Velha",
+            "cidade": "Alagoinhas",
+            "estado": "BA"
+        },
+        {
+            "nome": "Diagnóstico Dois de Maio",
+            "endereco": "Rua Dois de Maio, 7 - Centro",
+            "cidade": "Camaçari",
+            "estado": "BA"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Hospital Semed",
+            "endereco": "Rua Francisco Drumond, 238 - Centro",
+            "cidade": "Camaçari",
+            "estado": "BA"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Centro de Santana",
+            "endereco": "Rua Agripo Ramos, 86 - Centro",
+            "cidade": "Catu",
+            "estado": "BA"
+        },
+        {
+            "nome": "Diagnóstico Centro",
+            "endereco": "Avenida Mata Pereira - Térreo, 413 - Centro",
+            "cidade": "Cruz das Almas",
+            "estado": "BA"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Dias D'Ávila",
+            "endereco": "Rua da Mangueira, 64 - Centro",
+            "cidade": "Dias D'Ávila",
+            "estado": "BA"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Hospital Francisca de Sande",
+            "endereco": "Rua professora Edelvira de Oliveira, 140 - Centro",
+            "cidade": "Feira de Santana",
+            "estado": "BA"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Hospital Lauro de Freitas",
+            "endereco": "BA 099, 2077 - Centro",
+            "cidade": "Lauro de Freitas",
+            "estado": "BA"
+        },
+        {
+            "nome": "Laboratório Lauro de Freitas",
+            "endereco": "BA 099, 2077 - Centro",
+            "cidade": "Lauro de Freitas",
+            "estado": "BA"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Cajazeiras",
+            "endereco": "Shopping Cajazeiras , Piso G2, Entrada Coqueiro Grande , 1361 - Cazajeiras",
+            "cidade": "Salvador",
+            "estado": "BA"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Hospital Teresa de Lisieux",
+            "endereco": "Avenida Antônio Carlos Magalhães, 2408 - Itaigara",
+            "cidade": "Salvador",
+            "estado": "BA"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Lucaia",
+            "endereco": "Avenida Juracy Magalhães, 1122 - Rio Vermelho",
+            "cidade": "Salvador",
+            "estado": "BA"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Uruguai",
+            "endereco": "Rua do Uruguay, 852 - Uruguai",
+            "cidade": "Salvador",
+            "estado": "BA"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Vasco da Gama",
+            "endereco": "Av.Vasco da Gama, 309 - Vasco da Gama",
+            "cidade": "Salvador",
+            "estado": "BA"
+        },
+        {
+            "nome": "Laboratório Dique do Tororó",
+            "endereco": "Av. Vasco da Gama, 206 - Federação",
+            "cidade": "Salvador",
+            "estado": "BA"
+        },
+        {
+            "nome": "Diagnóstico Quinta do Inglês",
+            "endereco": "Rua A-2, Ed. Master Térreo - Lot. Quinta do Inglês",
+            "cidade": "Santo Antônio de Jesus",
+            "estado": "BA"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Centro",
+            "endereco": "Avenida Heráclito Graça, 100 - Centro",
+            "cidade": "Fortaleza",
+            "estado": "CE"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Centro",
+            "endereco": "Avenida Heráclito Graça, 500 - Centro",
+            "cidade": "Fortaleza",
+            "estado": "CE"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Conjunto Ceará",
+            "endereco": "Av. Ministro Albuquerque Lima, 228 - Conjunto Ceará",
+            "cidade": "Fortaleza",
+            "estado": "CE"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Joaquim Távora",
+            "endereco": "Av.Antônio Sales, 60 - Joaquim Távora",
+            "cidade": "Fortaleza",
+            "estado": "CE"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Mário Barreto",
+            "endereco": "Rua São Raimundo, 178 - Cambeba",
+            "cidade": "Fortaleza",
+            "estado": "CE"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Parangaba",
+            "endereco": "Av. Dr. Silas Munguba, 136 - Parangaba",
+            "cidade": "Fortaleza",
+            "estado": "CE"
+        },
+        {
+            "nome": "Hapvida Diagnósticos Aldeota",
+            "endereco": "Rua Padre Valdevino, 2640 - Aldeota",
+            "cidade": "Fortaleza",
+            "estado": "CE"
+        },
+        {
+            "nome": "Hapvida Diagnósticos Heráclito Graça",
+            "endereco": "Avenida Heráclito Graça, 1357 - Centro",
+            "cidade": "Fortaleza",
+            "estado": "CE"
+        },
+        {
+            "nome": "Laboratório Barão de Studart",
+            "endereco": "Av.Barão de Studart, 2260 - Dionísio Torres",
+            "cidade": "Fortaleza",
+            "estado": "CE"
+        },
+        {
+            "nome": "Laboratório Conjunto Ceará",
+            "endereco": "Av.Min.Albuquerque Lima, 228 - I etapa Conjunto Ceara",
+            "cidade": "Fortaleza",
+            "estado": "CE"
+        },
+        {
+            "nome": "Laboratório José Walter",
+            "endereco": "Avenida João Araújo de Lima, 591",
+            "cidade": "Fortaleza",
+            "estado": "CE"
+        },
+        {
+            "nome": "Laboratório Lobo Filho",
+            "endereco": "Rua João Lobo Filho , 117 - Fatima",
+            "cidade": "Fortaleza",
+            "estado": "CE"
+        },
+        {
+            "nome": "Laboratório Messejana",
+            "endereco": "Rua Tenente Jurandir Alencar, 234 - Centro",
+            "cidade": "Fortaleza",
+            "estado": "CE"
+        },
+        {
+            "nome": "Laboratório Pecém",
+            "endereco": "Avenida Antonio Brasileiro, S/N",
+            "cidade": "Fortaleza",
+            "estado": "CE"
+        },
+        {
+            "nome": "Laboratório São Gerardo",
+            "endereco": "Av. Bezerra de Menezes, 981 - São Gerardo",
+            "cidade": "Fortaleza",
+            "estado": "CE"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Hospital Ana Lima",
+            "endereco": "Av.do Contorno, S/N - 1º Distrito Industrial",
+            "cidade": "Maracanaú",
+            "estado": "CE"
+        },
+        {
+            "nome": "Laboratório Ana Lima",
+            "endereco": "Av.Parque Comercial , S/N - Distrito Industrial",
+            "cidade": "Maracanaú",
+            "estado": "CE"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Gama",
+            "endereco": "Edifício Life Gama – 4º Andar, Quadra EQ 47- 49 Projeção 4 - Setor Central - Gama",
+            "cidade": "Brasília",
+            "estado": "DF"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Hospital Brasiliense",
+            "endereco": "SEPS 713 / 913 - Asa Sul",
+            "cidade": "Brasília",
+            "estado": "DF"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Taguatinga Norte",
+            "endereco": "SHN Área Especial 4 – Loja 12 - Taguatinga Norte",
+            "cidade": "Brasília",
+            "estado": "DF"
+        },
+        {
+            "nome": "Laboratório Anápolis",
+            "endereco": "Avenida Coronel Batista, 83B - Setor Central",
+            "cidade": "Anápolis",
+            "estado": "GO"
+        },
+        {
+            "nome": "Clínica Mineira de Aparecida",
+            "endereco": "Avenida Mineira, Quadra 07, Lote 13 - Jardim Nova Era",
+            "cidade": "Aparecida de Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Diagnóstico Vila Aparecida",
+            "endereco": "Avenida Jaguarão, R. L - 11, Qd, 23 , SN - Vila Brasília",
+            "cidade": "Aparecida de Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Laboratório Jardim América - Posto 2",
+            "endereco": "Rua C148 , 1289 - Jardim América",
+            "cidade": "Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Centro de Imagem Jardim América",
+            "endereco": "Rua C-148, esquina com a T-63, nº 1280 - Setor Jardim América",
+            "cidade": "Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Clínica Rio Araguaia",
+            "endereco": "Avenida T-1 , Quadra 74, Lote 08 - Setor Bueno",
+            "cidade": "Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Goiânia",
+            "endereco": "Rua C-149, 1400 - Jardim América",
+            "cidade": "Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Hospital e Maternidade América",
+            "endereco": "Alameda Coronel Joaquim Bastos, nº 120, Quadra 216, Lote 6-E - Setor Marista",
+            "cidade": "Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Policlínica América",
+            "endereco": "Rua 96, nº 27, Quadra F-13, Lote 01 - Setor Sul",
+            "cidade": "Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Hospital Promed",
+            "endereco": "Rua C-184, Quadra 453, Lote 01-05. S/N - Jardim América",
+            "cidade": "Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Laboratório Jardim América - Matriz",
+            "endereco": "Rua C 148, 854 - Jardim América",
+            "cidade": "Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Hospital e Maternidade Quirinópolis",
+            "endereco": "Av. Lázaro Xavier, 21 - Centro",
+            "cidade": "Quirinópolis",
+            "estado": "GO"
+        },
+        {
+            "nome": "Laboratório Cohab",
+            "endereco": "Avenida Jerônimo Albuquerque, 619 - Cohab",
+            "cidade": "São Luis",
+            "estado": "MA"
+        },
+        {
+            "nome": "Laboratório Lia Varella",
+            "endereco": "Av. Vitorino Freire, 1956 - Areinha",
+            "cidade": "São Luis",
+            "estado": "MA"
+        },
+        {
+            "nome": "Hapvida Diagnóstico São Luís",
+            "endereco": "Av. Guaxenduba, 260 - Centro",
+            "cidade": "São Luís",
+            "estado": "MA"
+        },
+        {
+            "nome": "Laboratório Bairro de Fátima",
+            "endereco": "Rua Armando Vieira da Silva, S/N - Bairro de Fátima",
+            "cidade": "São Luís",
+            "estado": "MA"
+        },
+        {
+            "nome": "Diagnóstico do Hospital Maternidade Octaviano Neves",
+            "endereco": "Rua Ceará, 186 - Santa Efigênia",
+            "cidade": "Belo Horizonte",
+            "estado": "MG"
+        },
+        {
+            "nome": "Diagnóstico do Hospital Vera Cruz",
+            "endereco": "Av. Barbacena, 643 - Barro Preto",
+            "cidade": "Belo Horizonte",
+            "estado": "MG"
+        },
+        {
+            "nome": "Diagnóstico Efigênia",
+            "endereco": "Rua Rio Grande do Norte , 441 - Santa Efigênia",
+            "cidade": "Belo Horizonte",
+            "estado": "MG"
+        },
+        {
+            "nome": "Diagnóstico Raja Gabaglia",
+            "endereco": "Avenida Raja Gabaglia, 4091 - Santa Lúcia",
+            "cidade": "Belo Horizonte",
+            "estado": "MG"
+        },
+        {
+            "nome": "Diagnóstico Timbiras",
+            "endereco": "Rua dos Timbiras, 3210 - Barro Preto",
+            "cidade": "Belo Horizonte",
+            "estado": "MG"
+        },
+        {
+            "nome": "Diagnóstico Santa Maria",
+            "endereco": "Avenida Santos Dumont , 2140 - Santa Maria",
+            "cidade": "Uberaba",
+            "estado": "MG"
+        },
+        {
+            "nome": "Diagnóstico Uberaba",
+            "endereco": "Avenida Santa Beatriz da Silva, 1861 - São Benedito",
+            "cidade": "Uberaba",
+            "estado": "MG"
+        },
+        {
+            "nome": "Diagnóstico Uberlândia",
+            "endereco": "Rua Virgílio Melo Franco, 465 - Maracanã",
+            "cidade": "Uberlândia",
+            "estado": "MG"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Campo Grande",
+            "endereco": "Rua Dom Aquino, 2274 - Centro",
+            "cidade": "Campo Grande",
+            "estado": "MS"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Carandá Bosque",
+            "endereco": "Av. Mato Grosso, 5151, 1º andar - Carandá Bosque",
+            "cidade": "Campo Grande",
+            "estado": "MS"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Dom Aquino",
+            "endereco": "Rua Dom Aquino, 1682 - Amambai",
+            "cidade": "Campo Grande",
+            "estado": "MS"
+        },
+        {
+            "nome": "Pronto Atendimento Dourados",
+            "endereco": "Rua Ciro Melo, 1470 - Jardim Central",
+            "cidade": "Dourados",
+            "estado": "MS"
+        },
+        {
+            "nome": "Pronto Atendimento Ivinhema",
+            "endereco": "Av. Brasil, 647 - Centro",
+            "cidade": "Ivinhema",
+            "estado": "MS"
+        },
+        {
+            "nome": "Diagnóstico Jardim Guanabara",
+            "endereco": "Rua Fernando Corrêa da Costa, 2256 - Jardim Guanabara",
+            "cidade": "Rondonópolis",
+            "estado": "MT"
+        },
+        {
+            "nome": "Central de Atendimento Lomas",
+            "endereco": "Lomas Valentina, 1176",
+            "cidade": "Belém",
+            "estado": "PA"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Hospital RioMar",
+            "endereco": "Travessa Antônio Baena, 527 - Marco",
+            "cidade": "Belém",
+            "estado": "PA"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Lomas",
+            "endereco": "Tv. Lomas Valentina, 1186",
+            "cidade": "Belém",
+            "estado": "PA"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Nazaré",
+            "endereco": "Av. Alcindo Cacela, 1581 - Nazaré",
+            "cidade": "Belém",
+            "estado": "PA"
+        },
+        {
+            "nome": "Laboratório Ananindeua",
+            "endereco": "BR 316 km 2 , 90 - Ananindeua",
+            "cidade": "Belém",
+            "estado": "PA"
+        },
+        {
+            "nome": "Laboratório Augusto Montenegro",
+            "endereco": "Rodovia Augusto Montenegro Km 5, 55 - Parque Verde",
+            "cidade": "Belém",
+            "estado": "PA"
+        },
+        {
+            "nome": "Laboratório Batista Campos",
+            "endereco": "Tv Padre Eutíquio, 1983",
+            "cidade": "Belém",
+            "estado": "PA"
+        },
+        {
+            "nome": "Diagnóstico Via Principal 08",
+            "endereco": "Av. Vp- Oito, 16 - Vila Militar Pres. Castelo Branco",
+            "cidade": "Marabá",
+            "estado": "PA"
+        },
+        {
+            "nome": "Hapvida Diagnósticos Centro",
+            "endereco": "Rua Doutor Severino Ribeiro Cruz, 277 - Centro",
+            "cidade": "Campina Grande",
+            "estado": "PB"
+        },
+        {
+            "nome": "Centro Diagnóstico por Imagem João Pessoa",
+            "endereco": "Av. Júlia Freire, 1058 - Expedicionários",
+            "cidade": "João Pessoa",
+            "estado": "PB"
+        },
+        {
+            "nome": "Laboratório Expedicionários",
+            "endereco": "Avenida Júlia Freire, 1058 - Expedicionários",
+            "cidade": "João Pessoa",
+            "estado": "PB"
+        },
+        {
+            "nome": "Hapvida Diagnóstico João Pessoa",
+            "endereco": "Rua Silvio Almeida, 494 - Expedicionários",
+            "cidade": "João Pessoa",
+            "estado": "PB"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Centro",
+            "endereco": "Av. Presidente Vargas, 428 - Centro",
+            "cidade": "Cabo de Santo Agostinho",
+            "estado": "PE"
+        },
+        {
+            "nome": "Laboratório Centro",
+            "endereco": "Avenida Presidente Vargas, 428 - Centro",
+            "cidade": "Cabo de Santo Agostinho",
+            "estado": "PE"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Pronto Atendimento Olinda",
+            "endereco": "Avenida Gov. Carlos de Lima Cavalcanti, 751 - Bairro Novo",
+            "cidade": "Olinda",
+            "estado": "PE"
+        },
+        {
+            "nome": "Laboratório Pronto Atendimento Olinda",
+            "endereco": "Avenida Gov. Carlos de Lima Cavalcanti, 751 - Bairro Novo",
+            "cidade": "Olinda",
+            "estado": "PE"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Paulista",
+            "endereco": "Rua Epitácio Pessoa, 231 - Centro",
+            "cidade": "Paulista",
+            "estado": "PE"
+        },
+        {
+            "nome": "Centro de Diagnóstico por Imagem",
+            "endereco": "Rua Fernandes Vieira, 699 - Boa Vista",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Hapvida Diagnósticos Casa Forte",
+            "endereco": "Rua Edson Álvares, 370 - Casa Forte",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Hapvida Diagnósticos Iputinga",
+            "endereco": "Av. Prof. Moraes Rego, 314 - Iputinga",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Zona Sul",
+            "endereco": "Rua João Cardoso Aires, 647 - Setúbal",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Laboratório Agamenon Magalhães",
+            "endereco": "Av. Agamenon Magalhães, 107 - Boa Vista",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Laboratório Boa Vista",
+            "endereco": "Rua Paissandu, 767 - Boa Vista",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Laboratório Caxangá",
+            "endereco": "Av. Prof. Moraes Rego, 314 - Iputinga",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Laboratório Centro",
+            "endereco": "Rua Milton de Souza Lopes, 84 - Centro",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Laboratório Ilha do Leite",
+            "endereco": "Rua Dr. João Asfora, 65 - Ilha do Leite",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Laboratório Paissandú",
+            "endereco": "Rua do Paissandú, 738 - Boa Vista",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Laboratório Parque Amorim",
+            "endereco": "Rua Fernandes Vieira, 699 - Boa Vista",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Laboratório Zona Sul",
+            "endereco": "Rua João Cardoso Aires, 647 - Boa Viagem",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Teresina",
+            "endereco": "Rua Eliseu Martins, 1672 - Centro",
+            "cidade": "Teresina",
+            "estado": "PI"
+        },
+        {
+            "nome": "Hapvida Diagnósticos Hospital Celina Guimarães",
+            "endereco": "Rua Raimundo Leão de Moura, 10 - Nova Betânia",
+            "cidade": "Mossoró",
+            "estado": "RN"
+        },
+        {
+            "nome": "Hapvida Diagnósticos Alecrim",
+            "endereco": "Rua Presidente Quaresma, 967 - Alecrim",
+            "cidade": "Natal",
+            "estado": "RN"
+        },
+        {
+            "nome": "Laboratório Zona Sul",
+            "endereco": "Av. Alameda das Acácias , 4421 - Neópolis",
+            "cidade": "Natal",
+            "estado": "RN"
+        },
+        {
+            "nome": "Laboratório Zona Norte",
+            "endereco": "Av. Tomaz Landim, 1022 - Jardim Lola",
+            "cidade": "São Gonçalo",
+            "estado": "RN"
+        },
+        {
+            "nome": "Clínica Bucarein",
+            "endereco": "Rua Coronel Procópio Gomes, Nº1056 - Bairro Bucarein",
+            "cidade": "Joinville",
+            "estado": "SC"
+        },
+        {
+            "nome": "Clínica Zona Leste",
+            "endereco": "Rua Prefeito Helmuth Fallgatter, 3365 - Boa Vista",
+            "cidade": "Joinville",
+            "estado": "SC"
+        },
+        {
+            "nome": "Hospital Geral Joinville",
+            "endereco": "Rua Itaiópolis, Nº128 - Bairro América",
+            "cidade": "Joinville",
+            "estado": "SC"
+        },
+        {
+            "nome": "Diagnóstico Aracaju",
+            "endereco": "R. Campo do Brito, 1180 - São José",
+            "cidade": "Aracaju",
+            "estado": "SE"
+        },
+        {
+            "nome": "Diagnóstico Hospital Gabriel Soares",
+            "endereco": "Rua Itabaiana, 690 - Centro",
+            "cidade": "Aracaju",
+            "estado": "SE"
+        },
+        {
+            "nome": "Laboratório Hermes Fontes",
+            "endereco": "Avenida Hermes Fontes, 160 - Suissa",
+            "cidade": "Aracaju",
+            "estado": "SE"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Centro",
+            "endereco": "Rua Itabaianinha, 66 - Centro",
+            "cidade": "Aracaju",
+            "estado": "SE"
+        },
+        {
+            "nome": "Pronto Atendimento Maria Mendes",
+            "endereco": "Rua Maria Mendes, 69 - Vila Cerqueira",
+            "cidade": "Américo Brasiliense",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hospital Araraquara",
+            "endereco": "Av. José Bonifácio, 569 - Centro",
+            "cidade": "Araraquara",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Araras",
+            "endereco": "Rua José Marangon, 120 - Vila Pastorello",
+            "cidade": "Araras",
+            "estado": "SP"
+        },
+        {
+            "nome": "Pronto Atendimento Barra Bonita",
+            "endereco": "Rua Manoel Almeida Camargo, 135 - Vila Operária",
+            "cidade": "Barra Bonita",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Jardim Alvorada",
+            "endereco": "Av. Quarenta e Três , 780 - Jardim Alvorada",
+            "cidade": "Barretos",
+            "estado": "SP"
+        },
+        {
+            "nome": "Pronto Atendimento de Barretos",
+            "endereco": "Av. Engenheiro Necker Carvalho de Camargos, 1701 - Rios",
+            "cidade": "Barretos",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Nações Unidas",
+            "endereco": "Av. Nações Unidas, 17-27 - Vila Santo Antônio",
+            "cidade": "Bauru",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Rio Branco",
+            "endereco": "Rua Gustavo Maciel, 15-15 - Centro",
+            "cidade": "Bauru",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hospital Bauru",
+            "endereco": "Rua Agenor Meira, 11-27 - Centro",
+            "cidade": "Bauru",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Cajuru",
+            "endereco": "Rua Major Palma, 410, Sala 08 - Centro",
+            "cidade": "Cajuru",
+            "estado": "SP"
+        },
+        {
+            "nome": "Pronto Atendimento Descalvado",
+            "endereco": "Rua Conselheiro Antônio Prado, 159 - Centro",
+            "cidade": "Descalvado",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Campos Sales",
+            "endereco": "Rua Campos Sales, 1901 - Centro",
+            "cidade": "Franca",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hospital Franca",
+            "endereco": "Rua Doutor Fernando Falleiros de Lima, 2233 - Centro",
+            "cidade": "Franca",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Guaíra",
+            "endereco": "Rua Dez, 137 - Centro",
+            "cidade": "Guaíra",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Rui Barbosa",
+            "endereco": "Rua Rui Barbosa, 958 - Centro",
+            "cidade": "Guariba",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico São Marcos",
+            "endereco": "Av. Aristides Bellodi, 100 - Jardim São Marcos I",
+            "cidade": "Jaboticabal",
+            "estado": "SP"
+        },
+        {
+            "nome": "Pronto Atendimento Leme",
+            "endereco": "Av.Doutor Jambeiro Costa, 850 - Centro",
+            "cidade": "Leme",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Iracemápolis",
+            "endereco": "R. Duque de Caxias, 222 - Centro",
+            "cidade": "Limeira",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Vila São João",
+            "endereco": "Av. Piracicaba, 91 - Vila São João",
+            "cidade": "Limeira",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hospital e Maternidade Lins",
+            "endereco": "Av. Nicolau Zarvo, 1640 - Jardim Aeroporto",
+            "cidade": "Lins",
+            "estado": "SP"
+        },
+        {
+            "nome": "Pronto Atendimento Marília",
+            "endereco": "Av. Castro Alves, 1701 - Somenzari",
+            "cidade": "Marília",
+            "estado": "SP"
+        },
+        {
+            "nome": "Pronto Atendimento Orlândia",
+            "endereco": "Rua 18, 565 - Centro",
+            "cidade": "Orlândia",
+            "estado": "SP"
+        },
+        {
+            "nome": "Diagnóstico Prudente de Moraes",
+            "endereco": "Rua Prudente de Moraes, 670",
+            "cidade": "Piracicaba",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Madre Cecília",
+            "endereco": "Rua Madre Cecília, 1867 - Centro",
+            "cidade": "Piracicaba",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Madre Cecília",
+            "endereco": "Rua Madre Cecilia, 1867 - Centro",
+            "cidade": "Piracicaba",
+            "estado": "SP"
+        },
+        {
+            "nome": "Pronto Atendimento Piracicaba",
+            "endereco": "Av. Independência, 2475 - Alemães",
+            "cidade": "Piracicaba",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Lauro Pozzi",
+            "endereco": "Rua Siqueira Campos , 3993 - Jardim Santa Rita",
+            "cidade": "Pirassununga",
+            "estado": "SP"
+        },
+        {
+            "nome": "Pronto Atendimento Porto Ferreira",
+            "endereco": "Rua Bento José de Carvalho, 315 - Centro",
+            "cidade": "Porto Ferreira",
+            "estado": "SP"
+        },
+        {
+            "nome": "Pronto Atendimento Ribeirão Preto (Atendimento Adulto)",
+            "endereco": "Rua Pedro Pegoraro, 99 - Ribeirânia",
+            "cidade": "Ribeirão Preto",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Alto da Boa Vista",
+            "endereco": "Rua Marechal Deodoro, 1591 - Alto da Boa Vista",
+            "cidade": "Ribeirão Preto",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico João Penteado",
+            "endereco": "Rua João Penteado, 1244 - Jardim Sumaré",
+            "cidade": "Ribeirão Preto",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hospital de Ribeirão Preto",
+            "endereco": "Rua Dom Alberto Gonçalves, 1500 - Vila Tamandar",
+            "cidade": "Ribeirão Preto",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Alcebíades",
+            "endereco": "Rua Dr. Alcebíades, 136 - Centro",
+            "cidade": "Santa Cruz das Palmeiras",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Monte Alto",
+            "endereco": "Rua Bahia, 133, Quadra 01, Lote 14 - Jardim Boa Vista",
+            "cidade": "Santa Rosa de Viterbo",
+            "estado": "SP"
+        },
+        {
+            "nome": "Pronto Atendimento Santa Rosa",
+            "endereco": "Rua Dr. Mario Carneiro da Cunha, 949 - Monte Alto",
+            "cidade": "Santa Rosa de Viterbo",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Centro",
+            "endereco": "Rua nove de julho, 2075 - Centro",
+            "cidade": "São Carlos",
+            "estado": "SP"
+        },
+        {
+            "nome": "Pronto Atendimento São Carlos",
+            "endereco": "Rua Paulino Botelho de Abreu Sampaio, 800 - Jardim Bethânia",
+            "cidade": "São Carlos",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Acácias",
+            "endereco": "Rua Taubaté, 101 - Vila Nair",
+            "cidade": "São José dos Campos",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Vicentina Aranha",
+            "endereco": "Avenida Nove de Julho, 331 - Jardim Apolo",
+            "cidade": "São José dos Campos",
+            "estado": "SP"
+        },
+        {
+            "nome": "Hospital e Maternidade Netto Campelo",
+            "endereco": "Rua Voluntário Otto Gomes Martins, 1671 - Centro",
+            "cidade": "Sertãozinho",
+            "estado": "SP"
+        }
+    ]
+}

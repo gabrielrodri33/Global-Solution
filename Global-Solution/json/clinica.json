@@ -1,0 +1,574 @@
+{
+    "clínicas": [
+        {
+            "nome": "Clínica Fernandes Lima",
+            "endereco": "Avenida Fernandes Lima , 139 - Farol",
+            "cidade": "Maceió",
+            "estado": "AL"
+        },
+        {
+            "nome": "Clínica Oldemburgo Paranhos",
+            "endereco": "Rua Oldemburgo da Silva Paranhos, 55 - Farol",
+            "cidade": "Maceió",
+            "estado": "AL"
+        },
+        {
+            "nome": "Clínica de Cardiologia Jardim América",
+            "endereco": "Rua C-139, Quadra 321, Lote 14, Casa 01 - Setor Jardim América",
+            "cidade": "Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Clínica Rio Araguaia",
+            "endereco": "Avenida T-1, Quadra 74, Lote 08 - Setor Bueno",
+            "cidade": "Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Clínica Setor Bueno",
+            "endereco": "Avenida T-2, 2.787, Quadra 98, Lote 4 - Setor Bueno",
+            "cidade": "Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Clínica Setor Oeste",
+            "endereco": "Rua 5, 75 - Setor Oeste",
+            "cidade": "Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Clínica Setor Sul",
+            "endereco": "Rua 96, nº 27, Quadra F-13, Lote 01 - Setor Sul",
+            "cidade": "Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Clínica C-147",
+            "endereco": "Rua C-139 , N°. 874 Qd. 321 Lt. 12 - Jardim América",
+            "cidade": "Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Clínica Nova Suíça",
+            "endereco": "Rua C 267 , s/n, Quadra 603, Lote, 13 - Nova Suiça",
+            "cidade": "Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Clínica Avenida 85",
+            "endereco": "Avenida 85, Quadra G-21, 2138 - Setor Marista",
+            "cidade": "Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Clínica C-139",
+            "endereco": "C 139, Quadra 322, Lote13/15 , 820 Esquina com C149 - Jardim América",
+            "cidade": "Goiânia",
+            "estado": "GO"
+        },
+        {
+            "nome": "Clínica Quirinópolis",
+            "endereco": "Avenida Garibalde Teixeira, 122 - Centro",
+            "cidade": "Quirinópolis",
+            "estado": "GO"
+        },
+        {
+            "nome": "Clínica Rio Verde",
+            "endereco": "Rua Rosulino Ferreira Guimarães, 1082, Quadra 0006,Lote 22 - Centro",
+            "cidade": "Rio Verde",
+            "estado": "GO"
+        },
+        {
+            "nome": "Clínica Jerônimo de Albuquerque",
+            "endereco": "Avenida Jerônimo de Albuquerque - Loja 2 - Shopping Dal Plaza Center, 619 - Bairro Cohab",
+            "cidade": "São Luís",
+            "estado": "MA"
+        },
+        {
+            "nome": "Clínica São Luis",
+            "endereco": "Av. Guaxenduba, 260 - Centro",
+            "cidade": "São Luís",
+            "estado": "MA"
+        },
+        {
+            "nome": "Clínica Lia Varella",
+            "endereco": "Av. Senador Vitorino , 1956 - Areinha",
+            "cidade": "São Luís",
+            "estado": "MA"
+        },
+        {
+            "nome": "Ambulatório do Hospital Maternidade Octaviano Neves",
+            "endereco": "Rua Domingos Vieira, 561 - Santa Efigênia",
+            "cidade": "Belo Horizonte",
+            "estado": "MG"
+        },
+        {
+            "nome": "Clínica e Diagnóstico Barreiro",
+            "endereco": "Av.Sinfrônio Brochado, 587 - Barreiro",
+            "cidade": "Belo Horizonte",
+            "estado": "MG"
+        },
+        {
+            "nome": "Clínica e Diagnóstico Minerva",
+            "endereco": "Rua dos Aimores, 3000 - Barro Preto",
+            "cidade": "Belo Horizonte",
+            "estado": "MG"
+        },
+        {
+            "nome": "Centro Médico Proclin Eldorado",
+            "endereco": "Av. João Cesar de Oliveira, 1009 - Eldorado",
+            "cidade": "Contagem",
+            "estado": "MG"
+        },
+        {
+            "nome": "Clínica Ituiutaba",
+            "endereco": "Rua Vinte e Seis , 1547 - Centro",
+            "cidade": "Ituiutaba",
+            "estado": "MG"
+        },
+        {
+            "nome": "Clínica Nova Ponte",
+            "endereco": "Rua Olindino Soares, 913 - Centro",
+            "cidade": "Nova Ponte",
+            "estado": "MG"
+        },
+        {
+            "nome": "Clínica Prime",
+            "endereco": "Avenida Frei Paulino, 364 - Nossa Senhora",
+            "cidade": "Uberaba",
+            "estado": "MG"
+        },
+        {
+            "nome": "Clínica Uberaba",
+            "endereco": "Avenida Santa Beatriz da Silva, 1880 - Santa Maria",
+            "cidade": "Uberaba",
+            "estado": "MG"
+        },
+        {
+            "nome": "Clínica Marechal Deodoro",
+            "endereco": "Rua Marechal Deodoro, Quadra 00, Lote 00, 11 - General Osório",
+            "cidade": "Uberlândia",
+            "estado": "MG"
+        },
+        {
+            "nome": "Clínica Uberlândia",
+            "endereco": "Rua Virgílio Melo Franco, 465 - Maracanã",
+            "cidade": "Uberlândia",
+            "estado": "MG"
+        },
+        {
+            "nome": "Clínica Jardim dos Estados",
+            "endereco": "Rua Antônio Maria Coelho, 2926 - Jardim dos Estados",
+            "cidade": "Campo Grande",
+            "estado": "MS"
+        },
+        {
+            "nome": "Clínica Guarani",
+            "endereco": "Av. Cap. Olinto Mancini, 2560 - Centro",
+            "cidade": "Três Lagoas",
+            "estado": "MS"
+        },
+        {
+            "nome": "Clínica Jardim Guanabara",
+            "endereco": "Rua Anacleto Martinelli, 49 - Jardim Guanabara",
+            "cidade": "Rondonópolis",
+            "estado": "MT"
+        },
+        {
+            "nome": "Clínica Augusto Montenegro",
+            "endereco": "Rodovia Augusto Montenegro Km5, 55 - Parque Verde-Belém",
+            "cidade": "Belém",
+            "estado": "PA"
+        },
+        {
+            "nome": "Clínica Batista Campos",
+            "endereco": "Travessa Padre Eutíquio, 1983",
+            "cidade": "Belém",
+            "estado": "PA"
+        },
+        {
+            "nome": "Clínica Conselheiro",
+            "endereco": "Avenida Conselheiro Furtado, 1885 - Cremação",
+            "cidade": "Belém",
+            "estado": "PA"
+        },
+        {
+            "nome": "Clínica Lomas Valentinas",
+            "endereco": "Travessa Lomás Valentina, 1140",
+            "cidade": "Belém",
+            "estado": "PA"
+        },
+        {
+            "nome": "Clínica Marco",
+            "endereco": "Avenida Rômulo Maiorana, 1662 - Marco",
+            "cidade": "Belém",
+            "estado": "PA"
+        },
+        {
+            "nome": "Clínica Metropolitana",
+            "endereco": "BR 316 , 555 - Coqueiro",
+            "cidade": "Belém",
+            "estado": "PA"
+        },
+        {
+            "nome": "Clínica Mundurucus",
+            "endereco": "Rua dos Mundurucus, 2313 - Batista Campos",
+            "cidade": "Belém",
+            "estado": "PA"
+        },
+        {
+            "nome": "Clínica Rio Azul",
+            "endereco": "Rua H , 248 - União",
+            "cidade": "Parauapebas",
+            "estado": "PA"
+        },
+        {
+            "nome": "Clínica Campinense",
+            "endereco": "Rua Doutor Severino Ribeiro Cruz, 277 - Centro",
+            "cidade": "Campina Grande",
+            "estado": "PB"
+        },
+        {
+            "nome": "Clínica Ariano Suassuna",
+            "endereco": "Av. Presidente Epitácio Pessoa, 3160 - Tambauzinho",
+            "cidade": "João Pessoa",
+            "estado": "PB"
+        },
+        {
+            "nome": "Clínica João Pessoa",
+            "endereco": "Rua Treze de Maio, 73 - Centro",
+            "cidade": "João Pessoa",
+            "estado": "PB"
+        },
+        {
+            "nome": "Clínica Cabo",
+            "endereco": "Av. Pres. Vargas, 428 - Centro",
+            "cidade": "Cabo de Santo Agostinho",
+            "estado": "PE"
+        },
+        {
+            "nome": "Clínica Piedade",
+            "endereco": "Av. Bernardo Vieira de Melo, 788 - Piedade",
+            "cidade": "Jaboatão dos Guararapes",
+            "estado": "PE"
+        },
+        {
+            "nome": "Clínica Olinda",
+            "endereco": "Av. Getúlio Vargas, 514 - Bairro Novo",
+            "cidade": "Olinda",
+            "estado": "PE"
+        },
+        {
+            "nome": "Unidade de Fisioterapia Olinda",
+            "endereco": "Av. Getúlio Vargas, 481 - Bairro Novo",
+            "cidade": "Olinda",
+            "estado": "PE"
+        },
+        {
+            "nome": "Clínica Barão de Itamaracá",
+            "endereco": "Rua Barão de Itamaracá, 142 - Espinheiro",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Clínica Boa Viagem",
+            "endereco": "Rua Dálhia , 95 - Setúbal",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Clínica Boa Vista",
+            "endereco": "Avenida Manoel Borba, 737 - Boa Vista",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Clínica Casa Forte",
+            "endereco": "Rua Edson Álvares, 370 - Casa Forte",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Clínica Conselheiro Aguiar",
+            "endereco": "Av. Conselheiro Aguiar, 3763 - Boa Viagem",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Clínica Epaminondas",
+            "endereco": "Rua Epaminondas de Melo, 177 - Derby",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Clínica Espinheiro",
+            "endereco": "R. Drº José Luiz da Silveira Barros, 122 - Espinheiro",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Clínica Graças",
+            "endereco": "Rua da Hora, 543 - Espinheiro",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Clínica Mário Domingues",
+            "endereco": "R. Mário Domingues, 152 - Boa Vista",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Clínica Pedro da Hora",
+            "endereco": "Rua da Hora, 366 - Espinheiro",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Clínica Recife",
+            "endereco": "Rua do Espinheiro, 119 - Espinheiro",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Clínica Recife",
+            "endereco": "Rua do Espinheiro, 119 - Espinheiro",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Clínica Zona Sul",
+            "endereco": "Rua João Cardoso Aires, 647 - Setúbal",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Clínica Dib Tajra",
+            "endereco": "Rua São Pedro, 3125 - Ilhotas",
+            "cidade": "Teresina",
+            "estado": "PI"
+        },
+        {
+            "nome": "Clínica Rodolfo Fernandes",
+            "endereco": "Avenida Diocesana, 260 - Nova Betânia",
+            "cidade": "Mossoró",
+            "estado": "RN"
+        },
+        {
+            "nome": "Clínica Complexo Alecrim",
+            "endereco": "Rua Presidente Quaresma, 967 - Alecrim",
+            "cidade": "Natal",
+            "estado": "RN"
+        },
+        {
+            "nome": "Clínica Felipe Camarão",
+            "endereco": "Rua Felipe Camarão, 417 - Cidade Alta",
+            "cidade": "Natal",
+            "estado": "RN"
+        },
+        {
+            "nome": "Clínica Potengi",
+            "endereco": "Av. Dr. João Medeiros Filho, 301 - Igapó",
+            "cidade": "Natal",
+            "estado": "RN"
+        },
+        {
+            "nome": "Clínica Tirol",
+            "endereco": "Av. Hermes da Fonseca, 1052 - Tirol",
+            "cidade": "Natal",
+            "estado": "RN"
+        },
+        {
+            "nome": "Clínica Zona Sul",
+            "endereco": "Av. Senador Salgado Filho, 4420 - Candelária",
+            "cidade": "Natal",
+            "estado": "RN"
+        },
+        {
+            "nome": "Clínica Zona Norte",
+            "endereco": "Avenida Barachal Thomaz Landim, 1211 - Jardim Lola",
+            "cidade": "São Gonçalo do Amarante",
+            "estado": "RN"
+        },
+        {
+            "nome": "Clínica América",
+            "endereco": "Rua Doutor João Colin, Nº1440 - Bairro América",
+            "cidade": "Joinville",
+            "estado": "SC"
+        },
+        {
+            "nome": "Clínica Bucarein",
+            "endereco": "Rua Coronel Procópio Gomes, Nº1056 - Bairro Bucarein",
+            "cidade": "Joinville",
+            "estado": "SC"
+        },
+        {
+            "nome": "Clínica Zona Leste",
+            "endereco": "Rua Prefeito Helmuth Fallgatter, 3365 - Boa Vista",
+            "cidade": "Joinville",
+            "estado": "SC"
+        },
+        {
+            "nome": "Clínica Aracaju",
+            "endereco": "Rua Campo do Brito, 1180 - Bairro São José",
+            "cidade": "Aracaju",
+            "estado": "SE"
+        },
+        {
+            "nome": "Clínica Campos de Sergipe",
+            "endereco": "Rua Campos, 927 - Bairro São José",
+            "cidade": "Aracaju",
+            "estado": "SE"
+        },
+        {
+            "nome": "Clínica Hermes Fontes",
+            "endereco": "Av. Hermes Fontes, 160 - Suissa",
+            "cidade": "Aracaju",
+            "estado": "SE"
+        },
+        {
+            "nome": "Clínica Gentil Tavares",
+            "endereco": "Avenida Engenheiro Gentil Tavares, 831 - Getúlio Vargas",
+            "cidade": "Aracaju",
+            "estado": "SE"
+        },
+        {
+            "nome": "Clínica 9 de julho",
+            "endereco": "Rua 9 de Julho, 5 - Centro",
+            "cidade": "Araraquara",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica Recreio Campestre",
+            "endereco": "Av. Djalma Dutra, 255 - Vila Furlan",
+            "cidade": "Araraquara",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica Araras",
+            "endereco": "Rua José Marangoni, 120 - Vila Pastorello",
+            "cidade": "Araras",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica Araras",
+            "endereco": "Rua José Marangoni, 120 - Vila Pastorello",
+            "cidade": "Araras",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica Capivari",
+            "endereco": "Av.Brigadeiro Faria Lima, 40 - Bela Vista",
+            "cidade": "Capivari",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica Franca",
+            "endereco": "Rua Marechal Deodoro, 2253 - Centro",
+            "cidade": "Franca",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica Ibaté",
+            "endereco": "Av. São João - Jardim Mariana",
+            "cidade": "Ibaté",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica de Oncologia de Limeira",
+            "endereco": "R. Dr Trajano de Barros Camargo, 1445 - Centro",
+            "cidade": "Limeira",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica Espaço Saúde II",
+            "endereco": "R. São Benedito, 234 - Vila Fascina",
+            "cidade": "Limeira",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica Iracemápolis",
+            "endereco": "R. Duque de Caxias, 222 - Centro",
+            "cidade": "Limeira",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica Trajano Barros",
+            "endereco": "R. Dr. Trajano de Barros Camargo, 1507 - Centro",
+            "cidade": "Limeira",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica Via Fascina",
+            "endereco": "R. São Benedito, 47 - Vila Fascina",
+            "cidade": "Limeira",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica Lins",
+            "endereco": "Rua Pedro de Toledo, 265 - Centro",
+            "cidade": "Lins",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica Luís Antônio",
+            "endereco": "Rua América de Araújo Pires, 182 - Centro",
+            "cidade": "Luís Antônio",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clinica Campos Sales",
+            "endereco": "Tv. Pedro Ometo, 77 - Jardim Europa",
+            "cidade": "Piracicaba",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clinica Florença Paulista",
+            "endereco": "Av. Carlos Botelho, 590 - São Dimas",
+            "cidade": "Piracicaba",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica Lauro Pozzi",
+            "endereco": "Rua Siqueira Campos , 3993 - Jardim Santa Rita",
+            "cidade": "Pirassununga",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica Garibaldi",
+            "endereco": "Rua Garibaldi, 1210 - Centro",
+            "cidade": "Ribeirão Preto",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica Santa Rita",
+            "endereco": "Rua Ignacio Ribeiro, 423 - Centro",
+            "cidade": "Santa Rita do Passa Quatro",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica São José dos Campos",
+            "endereco": "Praça Elza Ferreira Rahal, 83 - Centro",
+            "cidade": "São José dos Campos",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica Jaú",
+            "endereco": "Rua Rangel Pestana, 917 - Centro",
+            "cidade": "São Paulo",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica Barão do Rio Branco",
+            "endereco": "Rua Barão do Rio Branco, 2069, Quadra A - Jardim Alexandre Balbo",
+            "cidade": "Sertãozinho",
+            "estado": "SP"
+        },
+        {
+            "nome": "Clínica Tambaú",
+            "endereco": "Rua Cel. Manoel De Souza Meirelles, 20 - Centro",
+            "cidade": "Tambaú",
+            "estado": "SP"
+        }
+    ]
+}

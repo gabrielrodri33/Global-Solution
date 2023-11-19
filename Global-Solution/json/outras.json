@@ -1,0 +1,40 @@
+{
+    "outras": [
+        {
+            "nome": "Diagnóstico Hospital Maceió",
+            "endereco": "Avenida Presidente Getúlio Vargas, 300 - Serraria",
+            "cidade": "Maceió",
+            "estado": "AL"
+        },
+        {
+            "nome": "Hapvida Diagnóstico Maceió",
+            "endereco": "Rua Oldemburgo da Silva Paranhos, 55 - Farol",
+            "cidade": "Maceió",
+            "estado": "AL"
+        },
+        {
+            "nome": "Medicina Preventiva Cachoeirinha",
+            "endereco": "Avenida Tefé, 625 - Cachoeirinha",
+            "cidade": "Manaus",
+            "estado": "AM"
+        },
+        {
+            "nome": "Medicina Preventiva Manaus",
+            "endereco": "Av João Valério, 123 - São Geraldo",
+            "cidade": "Manaus",
+            "estado": "AM"
+        },
+        {
+            "nome": "Unidade da Mulher",
+            "endereco": "Rua Francisco Alves, 938 - Ilha do Leite",
+            "cidade": "Recife",
+            "estado": "PE"
+        },
+        {
+            "nome": "Diagnóstico Ipanguaçu",
+            "endereco": "Avenida Luíz Gonzaga , 648 - Centro",
+            "cidade": "Ipanguaçu",
+            "estado": "RN"
+        }
+    ]
+}
