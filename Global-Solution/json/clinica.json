@@ -1,5 +1,5 @@
 {
-    "clínicas": [
+    "clinicas": [
         {
             "nome": "Clínica Fernandes Lima",
             "endereco": "Avenida Fernandes Lima , 139 - Farol",
@@ -14,19 +14,19 @@
         },
         {
             "nome": "Clínica de Cardiologia Jardim América",
-            "endereco": "Rua C-139, Quadra 321, Lote 14, Casa 01 - Setor Jardim América",
+            "endereco": "Rua C-139, Setor Jardim América",
             "cidade": "Goiânia",
             "estado": "GO"
         },
         {
             "nome": "Clínica Rio Araguaia",
-            "endereco": "Avenida T-1, Quadra 74, Lote 08 - Setor Bueno",
+            "endereco": "Avenida T-1, - Setor Bueno",
             "cidade": "Goiânia",
             "estado": "GO"
         },
         {
             "nome": "Clínica Setor Bueno",
-            "endereco": "Avenida T-2, 2.787, Quadra 98, Lote 4 - Setor Bueno",
+            "endereco": "Avenida T-2, - Setor Bueno",
             "cidade": "Goiânia",
             "estado": "GO"
         },
@@ -38,31 +38,31 @@
         },
         {
             "nome": "Clínica Setor Sul",
-            "endereco": "Rua 96, nº 27, Quadra F-13, Lote 01 - Setor Sul",
+            "endereco": "Rua 96, nº 27, - Setor Sul",
             "cidade": "Goiânia",
             "estado": "GO"
         },
         {
             "nome": "Clínica C-147",
-            "endereco": "Rua C-139 , N°. 874 Qd. 321 Lt. 12 - Jardim América",
+            "endereco": "Rua C-139 , - Jardim América",
             "cidade": "Goiânia",
             "estado": "GO"
         },
         {
             "nome": "Clínica Nova Suíça",
-            "endereco": "Rua C 267 , s/n, Quadra 603, Lote, 13 - Nova Suiça",
+            "endereco": "Rua C 267 , - Nova Suiça",
             "cidade": "Goiânia",
             "estado": "GO"
         },
         {
             "nome": "Clínica Avenida 85",
-            "endereco": "Avenida 85, Quadra G-21, 2138 - Setor Marista",
+            "endereco": "Avenida 85, - Setor Marista",
             "cidade": "Goiânia",
             "estado": "GO"
         },
         {
             "nome": "Clínica C-139",
-            "endereco": "C 139, Quadra 322, Lote13/15 , 820 Esquina com C149 - Jardim América",
+            "endereco": "C 139, - Jardim América",
             "cidade": "Goiânia",
             "estado": "GO"
         },
@@ -74,13 +74,13 @@
         },
         {
             "nome": "Clínica Rio Verde",
-            "endereco": "Rua Rosulino Ferreira Guimarães, 1082, Quadra 0006,Lote 22 - Centro",
+            "endereco": "Rua Rosulino Ferreira Guimarães, 1082, - Centro",
             "cidade": "Rio Verde",
             "estado": "GO"
         },
         {
             "nome": "Clínica Jerônimo de Albuquerque",
-            "endereco": "Avenida Jerônimo de Albuquerque - Loja 2 - Shopping Dal Plaza Center, 619 - Bairro Cohab",
+            "endereco": "Avenida Jerônimo de Albuquerque, 619 - Bairro Cohab",
             "cidade": "São Luís",
             "estado": "MA"
         },
