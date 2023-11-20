@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c00f73c85ccb62d3c4f48278ac6d3a29 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c00f73c85ccb62d3c4f48278ac6d3a29" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c00f73c85ccb62d3c4f48278ac6d3a29 = L.map(
+                "map_c00f73c85ccb62d3c4f48278ac6d3a29",
+                {
+                    center: [-23.469357, -46.6076581],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d293c68cae950bf00a4af070b56f9bb7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_d293c68cae950bf00a4af070b56f9bb7.addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+    
+            var marker_e9e9c79b29f8ff023607f65d1f174153 = L.marker(
+                [-23.469357, -46.6076581],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+            var icon_1d831f419a0a799c1fe6ace36a6a9a9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e9e9c79b29f8ff023607f65d1f174153.setIcon(icon_1d831f419a0a799c1fe6ace36a6a9a9e);
+        
+    
+        var popup_7d917608b078fc88bf72b1fab086a145 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fb4c3aca4771efa4b64e3b5273f5ff9 = $(`<div id="html_6fb4c3aca4771efa4b64e3b5273f5ff9" style="width: 100.0%; height: 100.0%;">Minha Localização</div>`)[0];
+                popup_7d917608b078fc88bf72b1fab086a145.setContent(html_6fb4c3aca4771efa4b64e3b5273f5ff9);
+            
+        
+
+        marker_e9e9c79b29f8ff023607f65d1f174153.bindPopup(popup_7d917608b078fc88bf72b1fab086a145)
+        ;
+
+        
+    
+    
+            var marker_db82053f6ef3d61cc23dc4500d14a8b9 = L.marker(
+                [-3.0276366, -59.9611075],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_2f6b62344450a868773fd0ca8a02dce3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e57917e7ddfca72af307529f57de990d = $(`<div id="html_e57917e7ddfca72af307529f57de990d" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Cidade Nova</div>`)[0];
+                popup_2f6b62344450a868773fd0ca8a02dce3.setContent(html_e57917e7ddfca72af307529f57de990d);
+            
+        
+
+        marker_db82053f6ef3d61cc23dc4500d14a8b9.bindPopup(popup_2f6b62344450a868773fd0ca8a02dce3)
+        ;
+
+        
+    
+    
+            var marker_5c734fa96bfb3e44524f66bff700eec2 = L.marker(
+                [-3.1090483, -59.960287],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_14cefbada744c05dd39fae907603a97c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b15d77280817150abb54bf2924f39621 = $(`<div id="html_b15d77280817150abb54bf2924f39621" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Distrito</div>`)[0];
+                popup_14cefbada744c05dd39fae907603a97c.setContent(html_b15d77280817150abb54bf2924f39621);
+            
+        
+
+        marker_5c734fa96bfb3e44524f66bff700eec2.bindPopup(popup_14cefbada744c05dd39fae907603a97c)
+        ;
+
+        
+    
+    
+            var marker_8a5648e64b7d8de739a39fd626f5b5b3 = L.marker(
+                [-3.727661, -38.5478667],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_4ce22cc5181570da0e129ca88009977c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_567db38fe6f17878d5633c2fcaee8e40 = $(`<div id="html_567db38fe6f17878d5633c2fcaee8e40" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Bezerra de Menezes</div>`)[0];
+                popup_4ce22cc5181570da0e129ca88009977c.setContent(html_567db38fe6f17878d5633c2fcaee8e40);
+            
+        
+
+        marker_8a5648e64b7d8de739a39fd626f5b5b3.bindPopup(popup_4ce22cc5181570da0e129ca88009977c)
+        ;
+
+        
+    
+    
+            var marker_d0257304f2957568d4ae928b267173d3 = L.marker(
+                [-3.8074978, -38.4795488],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_f255c0ccb1cafe49ec545bf6ba168dea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd66b21c28c6941d71ba13070c4754aa = $(`<div id="html_dd66b21c28c6941d71ba13070c4754aa" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Mário Barreto</div>`)[0];
+                popup_f255c0ccb1cafe49ec545bf6ba168dea.setContent(html_dd66b21c28c6941d71ba13070c4754aa);
+            
+        
+
+        marker_d0257304f2957568d4ae928b267173d3.bindPopup(popup_f255c0ccb1cafe49ec545bf6ba168dea)
+        ;
+
+        
+    
+    
+            var marker_17636da9e2886444f21d589acfec96d4 = L.marker(
+                [-3.77813535, -38.56540817927045],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_6d07eedcf250670811ddec8249dc0e2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ebb32011558a1e700f5890a04895ea1c = $(`<div id="html_ebb32011558a1e700f5890a04895ea1c" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Parangaba</div>`)[0];
+                popup_6d07eedcf250670811ddec8249dc0e2a.setContent(html_ebb32011558a1e700f5890a04895ea1c);
+            
+        
+
+        marker_17636da9e2886444f21d589acfec96d4.bindPopup(popup_6d07eedcf250670811ddec8249dc0e2a)
+        ;
+
+        
+    
+    
+            var marker_076f57b4b315e093cfaed56b3df11d8a = L.marker(
+                [-16.3287057, -48.9524891],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_2b8d9e6cdd0cd7bfc6e7e7b95cbceddf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb51aa1a6653b7eb2104c7d8567ced6d = $(`<div id="html_cb51aa1a6653b7eb2104c7d8567ced6d" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Anápolis</div>`)[0];
+                popup_2b8d9e6cdd0cd7bfc6e7e7b95cbceddf.setContent(html_cb51aa1a6653b7eb2104c7d8567ced6d);
+            
+        
+
+        marker_076f57b4b315e093cfaed56b3df11d8a.bindPopup(popup_2b8d9e6cdd0cd7bfc6e7e7b95cbceddf)
+        ;
+
+        
+    
+    
+            var marker_7683312b76f782b18b674b2d45d5b8cd = L.marker(
+                [-19.9343864, -43.951685],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_076d9b5696fff44207a02e8160fe1422 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e52366e98efcde2fb78882225b84f418 = $(`<div id="html_e52366e98efcde2fb78882225b84f418" style="width: 100.0%; height: 100.0%;">PA Contorno</div>`)[0];
+                popup_076d9b5696fff44207a02e8160fe1422.setContent(html_e52366e98efcde2fb78882225b84f418);
+            
+        
+
+        marker_7683312b76f782b18b674b2d45d5b8cd.bindPopup(popup_076d9b5696fff44207a02e8160fe1422)
+        ;
+
+        
+    
+    
+            var marker_6a6f1dc9721e0f56516ca9862531ae90 = L.marker(
+                [-19.9310433, -43.9543442],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_642c72a5d49bc396ec84a438f4466aeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ed2335ef8c4756d816e602e4f743498 = $(`<div id="html_5ed2335ef8c4756d816e602e4f743498" style="width: 100.0%; height: 100.0%;">Pronto Atendimento do Hospital Vera Cruz</div>`)[0];
+                popup_642c72a5d49bc396ec84a438f4466aeb.setContent(html_5ed2335ef8c4756d816e602e4f743498);
+            
+        
+
+        marker_6a6f1dc9721e0f56516ca9862531ae90.bindPopup(popup_642c72a5d49bc396ec84a438f4466aeb)
+        ;
+
+        
+    
+    
+            var marker_cb9b46a6d0edff01e5988da0fd80c31a = L.marker(
+                [-19.7584001, -47.9557233],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_320e0dfb2841b85a62a56faa2c97dfe2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9dad7e6676e54638fb32ed66b61670ad = $(`<div id="html_9dad7e6676e54638fb32ed66b61670ad" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Santa Maria</div>`)[0];
+                popup_320e0dfb2841b85a62a56faa2c97dfe2.setContent(html_9dad7e6676e54638fb32ed66b61670ad);
+            
+        
+
+        marker_cb9b46a6d0edff01e5988da0fd80c31a.bindPopup(popup_320e0dfb2841b85a62a56faa2c97dfe2)
+        ;
+
+        
+    
+    
+            var marker_2ed95a4d97019ca1b933515565488f91 = L.marker(
+                [-16.4572339, -54.6419093],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_2cee4ba22d7511e451b379d5ea7e079c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ca10c7fcd9be78e4045addf5af07689 = $(`<div id="html_3ca10c7fcd9be78e4045addf5af07689" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Rondonópolis</div>`)[0];
+                popup_2cee4ba22d7511e451b379d5ea7e079c.setContent(html_3ca10c7fcd9be78e4045addf5af07689);
+            
+        
+
+        marker_2ed95a4d97019ca1b933515565488f91.bindPopup(popup_2cee4ba22d7511e451b379d5ea7e079c)
+        ;
+
+        
+    
+    
+            var marker_7994b1690f6b3cafb2d9d48051402b1e = L.marker(
+                [-8.0402076, -34.9421293],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_f646e5bfe3c91f80770d0475d9ef2dbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e297c549cfde3d4c3e158b8f1e991dbc = $(`<div id="html_e297c549cfde3d4c3e158b8f1e991dbc" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Caxangá</div>`)[0];
+                popup_f646e5bfe3c91f80770d0475d9ef2dbe.setContent(html_e297c549cfde3d4c3e158b8f1e991dbc);
+            
+        
+
+        marker_7994b1690f6b3cafb2d9d48051402b1e.bindPopup(popup_f646e5bfe3c91f80770d0475d9ef2dbe)
+        ;
+
+        
+    
+    
+            var marker_563006535bb27feb613003b9eabc1a1b = L.marker(
+                [-8.0552817, -34.9003724],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_e9f84f54027cc3fed4cc6e50000244dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fee7b3f7bf7ca2a59a3de2863af8040b = $(`<div id="html_fee7b3f7bf7ca2a59a3de2863af8040b" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Derby</div>`)[0];
+                popup_e9f84f54027cc3fed4cc6e50000244dc.setContent(html_fee7b3f7bf7ca2a59a3de2863af8040b);
+            
+        
+
+        marker_563006535bb27feb613003b9eabc1a1b.bindPopup(popup_e9f84f54027cc3fed4cc6e50000244dc)
+        ;
+
+        
+    
+    
+            var marker_4b997718ee422b617034ee15800ff07d = L.marker(
+                [-21.735046, -48.1112797],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_d70e1c61e547a96de2f8f7ad6a7a6df6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3474c26075c5b331054569d63b07caff = $(`<div id="html_3474c26075c5b331054569d63b07caff" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Américo Brasiliense</div>`)[0];
+                popup_d70e1c61e547a96de2f8f7ad6a7a6df6.setContent(html_3474c26075c5b331054569d63b07caff);
+            
+        
+
+        marker_4b997718ee422b617034ee15800ff07d.bindPopup(popup_d70e1c61e547a96de2f8f7ad6a7a6df6)
+        ;
+
+        
+    
+    
+            var marker_b11c2451813508f88cd33e8ba99efe35 = L.marker(
+                [-22.1949866, -47.3905893],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_eede5f380a335716dd441d3c4043ebb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e32ce7d85204bbeeacb3f4915abe0ea3 = $(`<div id="html_e32ce7d85204bbeeacb3f4915abe0ea3" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Leme</div>`)[0];
+                popup_eede5f380a335716dd441d3c4043ebb8.setContent(html_e32ce7d85204bbeeacb3f4915abe0ea3);
+            
+        
+
+        marker_b11c2451813508f88cd33e8ba99efe35.bindPopup(popup_eede5f380a335716dd441d3c4043ebb8)
+        ;
+
+        
+    
+    
+            var marker_aad29ef7a2590bce8bde8132f7e2a7d9 = L.marker(
+                [-21.0111047, -48.2137612],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_49f9e2c4b9d8da018f650995f2b0e427 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea19651d6832cd57217cd543e2880997 = $(`<div id="html_ea19651d6832cd57217cd543e2880997" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Pitangueiras</div>`)[0];
+                popup_49f9e2c4b9d8da018f650995f2b0e427.setContent(html_ea19651d6832cd57217cd543e2880997);
+            
+        
+
+        marker_aad29ef7a2590bce8bde8132f7e2a7d9.bindPopup(popup_49f9e2c4b9d8da018f650995f2b0e427)
+        ;
+
+        
+    
+    
+            var marker_70dbe93824046a826c27e68c347e238f = L.marker(
+                [-21.0111047, -48.2137612],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_91e75067669f10056ebdd552fced799c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2165f7afe8df9f9cfba5eab6d54e6823 = $(`<div id="html_2165f7afe8df9f9cfba5eab6d54e6823" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Pitangueiras</div>`)[0];
+                popup_91e75067669f10056ebdd552fced799c.setContent(html_2165f7afe8df9f9cfba5eab6d54e6823);
+            
+        
+
+        marker_70dbe93824046a826c27e68c347e238f.bindPopup(popup_91e75067669f10056ebdd552fced799c)
+        ;
+
+        
+    
+    
+            var marker_d01d7c3816bfaac08806110de50adb08 = L.marker(
+                [-21.196369136554868, -47.77805009601814],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_93daa74e025583abe796fab86edcae33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f973dd8c9b8138e648bc7fdadf7aaf0c = $(`<div id="html_f973dd8c9b8138e648bc7fdadf7aaf0c" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Mais Saúde (Atendimento Adulto)</div>`)[0];
+                popup_93daa74e025583abe796fab86edcae33.setContent(html_f973dd8c9b8138e648bc7fdadf7aaf0c);
+            
+        
+
+        marker_d01d7c3816bfaac08806110de50adb08.bindPopup(popup_93daa74e025583abe796fab86edcae33)
+        ;
+
+        
+    
+    
+            var marker_85a6ee789b3f4bc30b0df3a577f5d7b6 = L.marker(
+                [-21.18533594864865, -47.80846345945946],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_d63bae92903b5d6ffc6fd9cc0996c58a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72d7933354156716c9391f35d3e805de = $(`<div id="html_72d7933354156716c9391f35d3e805de" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Ribeirão Preto (Atendimento Adulto)</div>`)[0];
+                popup_d63bae92903b5d6ffc6fd9cc0996c58a.setContent(html_72d7933354156716c9391f35d3e805de);
+            
+        
+
+        marker_85a6ee789b3f4bc30b0df3a577f5d7b6.bindPopup(popup_d63bae92903b5d6ffc6fd9cc0996c58a)
+        ;
+
+        
+    
+    
+            var marker_158d75423fec2d19b191a01ffa84b867 = L.marker(
+                [-22.0133476, -47.9007033],
+                {}
+            ).addTo(map_c00f73c85ccb62d3c4f48278ac6d3a29);
+        
+    
+        var popup_7bf33cd89d8cf0f103d2393054753153 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_130a93950391af97a1fdf398c1d38a8c = $(`<div id="html_130a93950391af97a1fdf398c1d38a8c" style="width: 100.0%; height: 100.0%;">Pronto Atendimento São Carlos</div>`)[0];
+                popup_7bf33cd89d8cf0f103d2393054753153.setContent(html_130a93950391af97a1fdf398c1d38a8c);
+            
+        
+
+        marker_158d75423fec2d19b191a01ffa84b867.bindPopup(popup_7bf33cd89d8cf0f103d2393054753153)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7a0425aaed09588bde381c31d24a1c33 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7a0425aaed09588bde381c31d24a1c33" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7a0425aaed09588bde381c31d24a1c33 = L.map(
+                "map_7a0425aaed09588bde381c31d24a1c33",
+                {
+                    center: [-23.469357, -46.6076581],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7159232d8e4691c4bc141bb1a2c8690f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_7159232d8e4691c4bc141bb1a2c8690f.addTo(map_7a0425aaed09588bde381c31d24a1c33);
+    
+            var marker_8b38748c788143a3b77786a23a11839a = L.marker(
+                [-23.469357, -46.6076581],
+                {}
+            ).addTo(map_7a0425aaed09588bde381c31d24a1c33);
+        
+    
+            var icon_1951815024c5a5924cbb407c9939ee45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8b38748c788143a3b77786a23a11839a.setIcon(icon_1951815024c5a5924cbb407c9939ee45);
+        
+    
+        var popup_b70dd4c1bf42ba5999efa4157d86856f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_428d2eca95be0fc29bffa09362124891 = $(`<div id="html_428d2eca95be0fc29bffa09362124891" style="width: 100.0%; height: 100.0%;">Minha Localização</div>`)[0];
+                popup_b70dd4c1bf42ba5999efa4157d86856f.setContent(html_428d2eca95be0fc29bffa09362124891);
+            
+        
+
+        marker_8b38748c788143a3b77786a23a11839a.bindPopup(popup_b70dd4c1bf42ba5999efa4157d86856f)
+        ;
+
+        
+    
+    
+            var marker_f2516b7e65cca4a987d41cf4741309d4 = L.marker(
+                [-9.6123732, -35.7278191],
+                {}
+            ).addTo(map_7a0425aaed09588bde381c31d24a1c33);
+        
+    
+        var popup_ed0329937dbfe66657f0b39c24a7a68e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e479f491d3f89af0a506b1d3110820b9 = $(`<div id="html_e479f491d3f89af0a506b1d3110820b9" style="width: 100.0%; height: 100.0%;">Diagnóstico Hospital Maceió</div>`)[0];
+                popup_ed0329937dbfe66657f0b39c24a7a68e.setContent(html_e479f491d3f89af0a506b1d3110820b9);
+            
+        
+
+        marker_f2516b7e65cca4a987d41cf4741309d4.bindPopup(popup_ed0329937dbfe66657f0b39c24a7a68e)
+        ;
+
+        
+    
+    
+            var marker_62a6775b4766dca09b4b1f2e21c6cb96 = L.marker(
+                [-9.6429999, -35.7337954],
+                {}
+            ).addTo(map_7a0425aaed09588bde381c31d24a1c33);
+        
+    
+        var popup_3a92d6356820fb4fe0973d871a0afc84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5aecca5671922f8780475866678cadff = $(`<div id="html_5aecca5671922f8780475866678cadff" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Maceió</div>`)[0];
+                popup_3a92d6356820fb4fe0973d871a0afc84.setContent(html_5aecca5671922f8780475866678cadff);
+            
+        
+
+        marker_62a6775b4766dca09b4b1f2e21c6cb96.bindPopup(popup_3a92d6356820fb4fe0973d871a0afc84)
+        ;
+
+        
+    
+    
+            var marker_ccf1fd097ee2a9313f6ef63b6ecb0fd9 = L.marker(
+                [-3.1246451, -60.002737],
+                {}
+            ).addTo(map_7a0425aaed09588bde381c31d24a1c33);
+        
+    
+        var popup_f8a081a5ba1413f251477ad0b64fff6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_993486a041ebb1ff0b25be2493128987 = $(`<div id="html_993486a041ebb1ff0b25be2493128987" style="width: 100.0%; height: 100.0%;">Medicina Preventiva Cachoeirinha</div>`)[0];
+                popup_f8a081a5ba1413f251477ad0b64fff6d.setContent(html_993486a041ebb1ff0b25be2493128987);
+            
+        
+
+        marker_ccf1fd097ee2a9313f6ef63b6ecb0fd9.bindPopup(popup_f8a081a5ba1413f251477ad0b64fff6d)
+        ;
+
+        
+    
+    
+            var marker_7fc42741eb7aed40b1e5f49eed265797 = L.marker(
+                [-3.1065744, -60.0250696],
+                {}
+            ).addTo(map_7a0425aaed09588bde381c31d24a1c33);
+        
+    
+        var popup_19eaf743967c3d6730ea9324e5070a03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cb39a624cd7f2072fbba4ac2cea4f9a = $(`<div id="html_4cb39a624cd7f2072fbba4ac2cea4f9a" style="width: 100.0%; height: 100.0%;">Medicina Preventiva Manaus</div>`)[0];
+                popup_19eaf743967c3d6730ea9324e5070a03.setContent(html_4cb39a624cd7f2072fbba4ac2cea4f9a);
+            
+        
+
+        marker_7fc42741eb7aed40b1e5f49eed265797.bindPopup(popup_19eaf743967c3d6730ea9324e5070a03)
+        ;
+
+        
+    
+    
+            var marker_0b43213c84a23f3d63bad144f08338d7 = L.marker(
+                [-8.0659602, -34.896021259769064],
+                {}
+            ).addTo(map_7a0425aaed09588bde381c31d24a1c33);
+        
+    
+        var popup_6faac23103b9d035c73903d7ba20929b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a7b210fb3cbbe24b2a2968501629c7d = $(`<div id="html_0a7b210fb3cbbe24b2a2968501629c7d" style="width: 100.0%; height: 100.0%;">Unidade da Mulher</div>`)[0];
+                popup_6faac23103b9d035c73903d7ba20929b.setContent(html_0a7b210fb3cbbe24b2a2968501629c7d);
+            
+        
+
+        marker_0b43213c84a23f3d63bad144f08338d7.bindPopup(popup_6faac23103b9d035c73903d7ba20929b)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_68073f889bcf27f11c14157bc1233ede {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_68073f889bcf27f11c14157bc1233ede" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_68073f889bcf27f11c14157bc1233ede = L.map(
+                "map_68073f889bcf27f11c14157bc1233ede",
+                {
+                    center: [-23.469357, -46.6076581],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9a83e2341f448a9dbd7323dc8fd96930 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_9a83e2341f448a9dbd7323dc8fd96930.addTo(map_68073f889bcf27f11c14157bc1233ede);
+    
+            var marker_9b99386e87d02ab56b5c1ee3804735ca = L.marker(
+                [-23.469357, -46.6076581],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+            var icon_3f7320e35e15bff3756bfcd3369b38e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9b99386e87d02ab56b5c1ee3804735ca.setIcon(icon_3f7320e35e15bff3756bfcd3369b38e5);
+        
+    
+        var popup_c9b8033cb68f21f3f880fd0036453e03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aee23c74756c00112f5780983d9f23bd = $(`<div id="html_aee23c74756c00112f5780983d9f23bd" style="width: 100.0%; height: 100.0%;">Minha Localização</div>`)[0];
+                popup_c9b8033cb68f21f3f880fd0036453e03.setContent(html_aee23c74756c00112f5780983d9f23bd);
+            
+        
+
+        marker_9b99386e87d02ab56b5c1ee3804735ca.bindPopup(popup_c9b8033cb68f21f3f880fd0036453e03)
+        ;
+
+        
+    
+    
+            var marker_6378222b603aa8874747a431b0f4ee3b = L.marker(
+                [-9.6123732, -35.7278191],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_a268179a154969455d84e66beace2ad2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b129de96c5e15e832416ab93d8f7566b = $(`<div id="html_b129de96c5e15e832416ab93d8f7566b" style="width: 100.0%; height: 100.0%;">Diagnóstico Hospital Maceió</div>`)[0];
+                popup_a268179a154969455d84e66beace2ad2.setContent(html_b129de96c5e15e832416ab93d8f7566b);
+            
+        
+
+        marker_6378222b603aa8874747a431b0f4ee3b.bindPopup(popup_a268179a154969455d84e66beace2ad2)
+        ;
+
+        
+    
+    
+            var marker_83d9423e28f3e4560977aef90e451306 = L.marker(
+                [-9.6429999, -35.7337954],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_01bfcd0622181f50693a8011cab8cd5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e22bef22c9b00caea07b153880787dc = $(`<div id="html_0e22bef22c9b00caea07b153880787dc" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Maceió</div>`)[0];
+                popup_01bfcd0622181f50693a8011cab8cd5b.setContent(html_0e22bef22c9b00caea07b153880787dc);
+            
+        
+
+        marker_83d9423e28f3e4560977aef90e451306.bindPopup(popup_01bfcd0622181f50693a8011cab8cd5b)
+        ;
+
+        
+    
+    
+            var marker_fe668c1690964fa725d24f5df9c4a0ba = L.marker(
+                [-3.1123146, -60.0133729],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_f0a6a0f9b87fe70c78bfe64992661661 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f53d90231a30dac5c3c8c809cac675de = $(`<div id="html_f53d90231a30dac5c3c8c809cac675de" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Adrianópolis</div>`)[0];
+                popup_f0a6a0f9b87fe70c78bfe64992661661.setContent(html_f53d90231a30dac5c3c8c809cac675de);
+            
+        
+
+        marker_fe668c1690964fa725d24f5df9c4a0ba.bindPopup(popup_f0a6a0f9b87fe70c78bfe64992661661)
+        ;
+
+        
+    
+    
+            var marker_d79b3734b45bf267b5227188f0edfdfd = L.marker(
+                [-12.7042915, -38.3232253],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_3c0ecdd6c325404c8b12b81b0a39ebd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef8c0096a7de148bebfa03869e687009 = $(`<div id="html_ef8c0096a7de148bebfa03869e687009" style="width: 100.0%; height: 100.0%;">Diagnóstico Dois de Maio</div>`)[0];
+                popup_3c0ecdd6c325404c8b12b81b0a39ebd4.setContent(html_ef8c0096a7de148bebfa03869e687009);
+            
+        
+
+        marker_d79b3734b45bf267b5227188f0edfdfd.bindPopup(popup_3c0ecdd6c325404c8b12b81b0a39ebd4)
+        ;
+
+        
+    
+    
+            var marker_5c4c67fca529e96d952312ae9ad8c4d0 = L.marker(
+                [-12.7032895, -38.3228922],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_a1943f5793c5feb4a5e2b1004381fe6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf1e5c974d8b3f15148b16b9996d193c = $(`<div id="html_cf1e5c974d8b3f15148b16b9996d193c" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Hospital Semed</div>`)[0];
+                popup_a1943f5793c5feb4a5e2b1004381fe6b.setContent(html_cf1e5c974d8b3f15148b16b9996d193c);
+            
+        
+
+        marker_5c4c67fca529e96d952312ae9ad8c4d0.bindPopup(popup_a1943f5793c5feb4a5e2b1004381fe6b)
+        ;
+
+        
+    
+    
+            var marker_6e4f2bfcc6c314d6d9f0833f120e0b3f = L.marker(
+                [-12.6133321, -38.3018987],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_d8c2632ca386bf4aeb8c7cf916e81617 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_754c9a9946b972d1f49f9fd7a15451b1 = $(`<div id="html_754c9a9946b972d1f49f9fd7a15451b1" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Dias D'Ávila</div>`)[0];
+                popup_d8c2632ca386bf4aeb8c7cf916e81617.setContent(html_754c9a9946b972d1f49f9fd7a15451b1);
+            
+        
+
+        marker_6e4f2bfcc6c314d6d9f0833f120e0b3f.bindPopup(popup_d8c2632ca386bf4aeb8c7cf916e81617)
+        ;
+
+        
+    
+    
+            var marker_3240203b227fe14a64aad586fec0320a = L.marker(
+                [-12.2489903, -38.9508408],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_7f36017ce5df4bde92043f474a7f80df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4eb86f68fdf8f7243f7a139b986d9ab = $(`<div id="html_a4eb86f68fdf8f7243f7a139b986d9ab" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Hospital Francisca de Sande</div>`)[0];
+                popup_7f36017ce5df4bde92043f474a7f80df.setContent(html_a4eb86f68fdf8f7243f7a139b986d9ab);
+            
+        
+
+        marker_3240203b227fe14a64aad586fec0320a.bindPopup(popup_7f36017ce5df4bde92043f474a7f80df)
+        ;
+
+        
+    
+    
+            var marker_a45f33cce81ec1e77859e62ff8d5ef3b = L.marker(
+                [-12.8967689, -38.3299765],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_a5009dd0ffb451819a6f49193b4c6985 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcbc2f808cff6144cb56791c906faec0 = $(`<div id="html_bcbc2f808cff6144cb56791c906faec0" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Hospital Lauro de Freitas</div>`)[0];
+                popup_a5009dd0ffb451819a6f49193b4c6985.setContent(html_bcbc2f808cff6144cb56791c906faec0);
+            
+        
+
+        marker_a45f33cce81ec1e77859e62ff8d5ef3b.bindPopup(popup_a5009dd0ffb451819a6f49193b4c6985)
+        ;
+
+        
+    
+    
+            var marker_02618350687484f6ccd9bfc1aae5ac68 = L.marker(
+                [-12.8967689, -38.3299765],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_5fc4f6aff25bf1db5fb54aae5c78945d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_738d666fd3a52fb518715c8a0922c41d = $(`<div id="html_738d666fd3a52fb518715c8a0922c41d" style="width: 100.0%; height: 100.0%;">Laboratório Lauro de Freitas</div>`)[0];
+                popup_5fc4f6aff25bf1db5fb54aae5c78945d.setContent(html_738d666fd3a52fb518715c8a0922c41d);
+            
+        
+
+        marker_02618350687484f6ccd9bfc1aae5ac68.bindPopup(popup_5fc4f6aff25bf1db5fb54aae5c78945d)
+        ;
+
+        
+    
+    
+            var marker_3aaf25aae8bf863eafc278be6db95074 = L.marker(
+                [-12.9908824, -38.4739391],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_88924474600446de4a7432388afe0c7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37f1f27811c7af9c41bda59e69bea490 = $(`<div id="html_37f1f27811c7af9c41bda59e69bea490" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Hospital Teresa de Lisieux</div>`)[0];
+                popup_88924474600446de4a7432388afe0c7d.setContent(html_37f1f27811c7af9c41bda59e69bea490);
+            
+        
+
+        marker_3aaf25aae8bf863eafc278be6db95074.bindPopup(popup_88924474600446de4a7432388afe0c7d)
+        ;
+
+        
+    
+    
+            var marker_48ef400eb28e77c792d3ef9f3c3b58e9 = L.marker(
+                [-13.0112638, -38.4890603],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_53b19c46ac6b531f98f8c84f4b656f0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e081f16fb81005b4aaaea2598464747f = $(`<div id="html_e081f16fb81005b4aaaea2598464747f" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Lucaia</div>`)[0];
+                popup_53b19c46ac6b531f98f8c84f4b656f0b.setContent(html_e081f16fb81005b4aaaea2598464747f);
+            
+        
+
+        marker_48ef400eb28e77c792d3ef9f3c3b58e9.bindPopup(popup_53b19c46ac6b531f98f8c84f4b656f0b)
+        ;
+
+        
+    
+    
+            var marker_7a28c99ab883cf04945075ec3c6facca = L.marker(
+                [-12.9830688, -38.50350492924219],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_c50f16b40bf2c8ca4b17b1bd21b8e6e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18f9b6db67c119b2696e193f1c07ce86 = $(`<div id="html_18f9b6db67c119b2696e193f1c07ce86" style="width: 100.0%; height: 100.0%;">Laboratório Dique do Tororó</div>`)[0];
+                popup_c50f16b40bf2c8ca4b17b1bd21b8e6e4.setContent(html_18f9b6db67c119b2696e193f1c07ce86);
+            
+        
+
+        marker_7a28c99ab883cf04945075ec3c6facca.bindPopup(popup_c50f16b40bf2c8ca4b17b1bd21b8e6e4)
+        ;
+
+        
+    
+    
+            var marker_1e165fd263af92f7df29889ea93e4445 = L.marker(
+                [-3.7341544, -38.5237719],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_32e44ef5e9c24f618ca0e9a8d5bbfe42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55ebc0fd1b7fdf0de08634e842e6e987 = $(`<div id="html_55ebc0fd1b7fdf0de08634e842e6e987" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Centro</div>`)[0];
+                popup_32e44ef5e9c24f618ca0e9a8d5bbfe42.setContent(html_55ebc0fd1b7fdf0de08634e842e6e987);
+            
+        
+
+        marker_1e165fd263af92f7df29889ea93e4445.bindPopup(popup_32e44ef5e9c24f618ca0e9a8d5bbfe42)
+        ;
+
+        
+    
+    
+            var marker_10095aac001eb147feb73c16093e87eb = L.marker(
+                [-3.73532305, -38.5202642593075],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_7c8b543835e07955b3f812d7af71114f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8a3835b0a7248ffcc2d662bedf5e4f6 = $(`<div id="html_c8a3835b0a7248ffcc2d662bedf5e4f6" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Centro</div>`)[0];
+                popup_7c8b543835e07955b3f812d7af71114f.setContent(html_c8a3835b0a7248ffcc2d662bedf5e4f6);
+            
+        
+
+        marker_10095aac001eb147feb73c16093e87eb.bindPopup(popup_7c8b543835e07955b3f812d7af71114f)
+        ;
+
+        
+    
+    
+            var marker_a53132e9d2e4793f37c24dd7caf5d254 = L.marker(
+                [-3.7625857, -38.6138067],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_155768983ba072de02de620826cfa924 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd27a1fd61fc0693b57c29c8f2bbdc33 = $(`<div id="html_bd27a1fd61fc0693b57c29c8f2bbdc33" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Conjunto Ceará</div>`)[0];
+                popup_155768983ba072de02de620826cfa924.setContent(html_bd27a1fd61fc0693b57c29c8f2bbdc33);
+            
+        
+
+        marker_a53132e9d2e4793f37c24dd7caf5d254.bindPopup(popup_155768983ba072de02de620826cfa924)
+        ;
+
+        
+    
+    
+            var marker_46b063403950a880b94f2384b3f98d02 = L.marker(
+                [-3.7395219, -38.521771],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_562a391d811e87fd9a2962a1d52e65e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_121a6707330f71168d963f7c840f98b3 = $(`<div id="html_121a6707330f71168d963f7c840f98b3" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Joaquim Távora</div>`)[0];
+                popup_562a391d811e87fd9a2962a1d52e65e6.setContent(html_121a6707330f71168d963f7c840f98b3);
+            
+        
+
+        marker_46b063403950a880b94f2384b3f98d02.bindPopup(popup_562a391d811e87fd9a2962a1d52e65e6)
+        ;
+
+        
+    
+    
+            var marker_fff46ce4ea2ace2e46ce5b2ab2b4aed9 = L.marker(
+                [-3.8069213, -38.4830548],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_b764889e7624ac991ea8199880539122 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da9317a791c3cbbaeb60c8e138f1433d = $(`<div id="html_da9317a791c3cbbaeb60c8e138f1433d" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Mário Barreto</div>`)[0];
+                popup_b764889e7624ac991ea8199880539122.setContent(html_da9317a791c3cbbaeb60c8e138f1433d);
+            
+        
+
+        marker_fff46ce4ea2ace2e46ce5b2ab2b4aed9.bindPopup(popup_b764889e7624ac991ea8199880539122)
+        ;
+
+        
+    
+    
+            var marker_7f3091e69c9cb7d1ec4d29a5aab55444 = L.marker(
+                [-3.7767432, -38.5628471],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_fd73319f6c39bd2494243c6b6a8e2edd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7db128b11008b2c432c17775393f7a1a = $(`<div id="html_7db128b11008b2c432c17775393f7a1a" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Parangaba</div>`)[0];
+                popup_fd73319f6c39bd2494243c6b6a8e2edd.setContent(html_7db128b11008b2c432c17775393f7a1a);
+            
+        
+
+        marker_7f3091e69c9cb7d1ec4d29a5aab55444.bindPopup(popup_fd73319f6c39bd2494243c6b6a8e2edd)
+        ;
+
+        
+    
+    
+            var marker_b41854f46c86ae73cd37e222d52d50c2 = L.marker(
+                [-3.7392458, -38.5164907],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_45b2437220f6d31f2569adb1eef4b801 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e50e6470cf8c0a8fee6a9d9f6060cb35 = $(`<div id="html_e50e6470cf8c0a8fee6a9d9f6060cb35" style="width: 100.0%; height: 100.0%;">Hapvida Diagnósticos Aldeota</div>`)[0];
+                popup_45b2437220f6d31f2569adb1eef4b801.setContent(html_e50e6470cf8c0a8fee6a9d9f6060cb35);
+            
+        
+
+        marker_b41854f46c86ae73cd37e222d52d50c2.bindPopup(popup_45b2437220f6d31f2569adb1eef4b801)
+        ;
+
+        
+    
+    
+            var marker_9eddeb08d0d5fb4bceaa4119496b62b9 = L.marker(
+                [-3.7346535, -38.5208311],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_e5a836dfa4c80dbaa14b79f4c1e7f141 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a0182ff586aa5aeb2a0fceef09c5e7c = $(`<div id="html_7a0182ff586aa5aeb2a0fceef09c5e7c" style="width: 100.0%; height: 100.0%;">Hapvida Diagnósticos Heráclito Graça</div>`)[0];
+                popup_e5a836dfa4c80dbaa14b79f4c1e7f141.setContent(html_7a0182ff586aa5aeb2a0fceef09c5e7c);
+            
+        
+
+        marker_9eddeb08d0d5fb4bceaa4119496b62b9.bindPopup(popup_e5a836dfa4c80dbaa14b79f4c1e7f141)
+        ;
+
+        
+    
+    
+            var marker_366292b58190763bd921dc0a1c2afab6 = L.marker(
+                [-3.7515232, -38.5119718],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_6123b8d89879db9bd0085c58740e162d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66558d39da11546845625bdd3ed62b79 = $(`<div id="html_66558d39da11546845625bdd3ed62b79" style="width: 100.0%; height: 100.0%;">Laboratório Barão de Studart</div>`)[0];
+                popup_6123b8d89879db9bd0085c58740e162d.setContent(html_66558d39da11546845625bdd3ed62b79);
+            
+        
+
+        marker_366292b58190763bd921dc0a1c2afab6.bindPopup(popup_6123b8d89879db9bd0085c58740e162d)
+        ;
+
+        
+    
+    
+            var marker_c3d75d10a415891262cd35a92c2189b4 = L.marker(
+                [-3.8409591, -38.562424],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_f7e02ec6873e72e6e4a89c074973ec8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a577cca443506298b944a1699a09649 = $(`<div id="html_2a577cca443506298b944a1699a09649" style="width: 100.0%; height: 100.0%;">Laboratório José Walter</div>`)[0];
+                popup_f7e02ec6873e72e6e4a89c074973ec8e.setContent(html_2a577cca443506298b944a1699a09649);
+            
+        
+
+        marker_c3d75d10a415891262cd35a92c2189b4.bindPopup(popup_f7e02ec6873e72e6e4a89c074973ec8e)
+        ;
+
+        
+    
+    
+            var marker_c214f98d2e2065f7ac62dfc9c8b88381 = L.marker(
+                [-3.7531509, -38.5223058],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_807fca82b51a2f23c69766dea8a873a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38cda85df0c2d38154bce94c037fdecb = $(`<div id="html_38cda85df0c2d38154bce94c037fdecb" style="width: 100.0%; height: 100.0%;">Laboratório Lobo Filho</div>`)[0];
+                popup_807fca82b51a2f23c69766dea8a873a6.setContent(html_38cda85df0c2d38154bce94c037fdecb);
+            
+        
+
+        marker_c214f98d2e2065f7ac62dfc9c8b88381.bindPopup(popup_807fca82b51a2f23c69766dea8a873a6)
+        ;
+
+        
+    
+    
+            var marker_22b9e4f81c9f78817623ea80b8e1d44b = L.marker(
+                [-3.5538936, -38.8319922],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_6017cd901c98f04a2f535d5ab5fc642d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8a76e9d204049ddfcc50b1bcd6878e0 = $(`<div id="html_e8a76e9d204049ddfcc50b1bcd6878e0" style="width: 100.0%; height: 100.0%;">Laboratório Pecém</div>`)[0];
+                popup_6017cd901c98f04a2f535d5ab5fc642d.setContent(html_e8a76e9d204049ddfcc50b1bcd6878e0);
+            
+        
+
+        marker_22b9e4f81c9f78817623ea80b8e1d44b.bindPopup(popup_6017cd901c98f04a2f535d5ab5fc642d)
+        ;
+
+        
+    
+    
+            var marker_b983d23b1a9746b9d38f913dd4402578 = L.marker(
+                [-3.7336352, -38.55341327256334],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_f24cf216451039863342517fe172435c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62bf84b38222e89522a4f45dd9c07cbd = $(`<div id="html_62bf84b38222e89522a4f45dd9c07cbd" style="width: 100.0%; height: 100.0%;">Laboratório São Gerardo</div>`)[0];
+                popup_f24cf216451039863342517fe172435c.setContent(html_62bf84b38222e89522a4f45dd9c07cbd);
+            
+        
+
+        marker_b983d23b1a9746b9d38f913dd4402578.bindPopup(popup_f24cf216451039863342517fe172435c)
+        ;
+
+        
+    
+    
+            var marker_6cc2e8632823104e49b8f2c55cc45d9b = L.marker(
+                [-3.8533603, -38.5924529],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_995af6f049d9ca7bd432fdb9280918b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b7db2b314c4690e84964936a2fb56c4 = $(`<div id="html_1b7db2b314c4690e84964936a2fb56c4" style="width: 100.0%; height: 100.0%;">Laboratório Ana Lima</div>`)[0];
+                popup_995af6f049d9ca7bd432fdb9280918b3.setContent(html_1b7db2b314c4690e84964936a2fb56c4);
+            
+        
+
+        marker_6cc2e8632823104e49b8f2c55cc45d9b.bindPopup(popup_995af6f049d9ca7bd432fdb9280918b3)
+        ;
+
+        
+    
+    
+            var marker_bfc0e513b85e3e5f217676eb75caacd0 = L.marker(
+                [-15.8034701, -47.8999574],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_53cb58ee9ff44e0aa9c5a8d1cea58b36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_281824f7307c843e5050f7f2cd034afe = $(`<div id="html_281824f7307c843e5050f7f2cd034afe" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Hospital Brasiliense</div>`)[0];
+                popup_53cb58ee9ff44e0aa9c5a8d1cea58b36.setContent(html_281824f7307c843e5050f7f2cd034afe);
+            
+        
+
+        marker_bfc0e513b85e3e5f217676eb75caacd0.bindPopup(popup_53cb58ee9ff44e0aa9c5a8d1cea58b36)
+        ;
+
+        
+    
+    
+            var marker_dd434fd00cae7400a82fa6cd3bde29ce = L.marker(
+                [-16.7159723, -49.2828454],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_aa2de431b8715c86412e404bacc6b655 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5037cab7c8a6fc4ac029a30d195252e = $(`<div id="html_f5037cab7c8a6fc4ac029a30d195252e" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Goiânia</div>`)[0];
+                popup_aa2de431b8715c86412e404bacc6b655.setContent(html_f5037cab7c8a6fc4ac029a30d195252e);
+            
+        
+
+        marker_dd434fd00cae7400a82fa6cd3bde29ce.bindPopup(popup_aa2de431b8715c86412e404bacc6b655)
+        ;
+
+        
+    
+    
+            var marker_ec902437883a3e80231483659e3c73dd = L.marker(
+                [-16.7158335, -49.2836025],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_9927f2255be89d46ff282adeac06a476 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8febcdb427f54bc3b27f62a49535abd6 = $(`<div id="html_8febcdb427f54bc3b27f62a49535abd6" style="width: 100.0%; height: 100.0%;">Laboratório Jardim América - Matriz</div>`)[0];
+                popup_9927f2255be89d46ff282adeac06a476.setContent(html_8febcdb427f54bc3b27f62a49535abd6);
+            
+        
+
+        marker_ec902437883a3e80231483659e3c73dd.bindPopup(popup_9927f2255be89d46ff282adeac06a476)
+        ;
+
+        
+    
+    
+            var marker_31551afefbb42f78754037b784dfeae2 = L.marker(
+                [-18.4490858, -50.4492214],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_e3aa9b223f1c7ddd64cb2e0984a58053 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78ac6d04ec779c796eaa358fc1d12079 = $(`<div id="html_78ac6d04ec779c796eaa358fc1d12079" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Quirinópolis</div>`)[0];
+                popup_e3aa9b223f1c7ddd64cb2e0984a58053.setContent(html_78ac6d04ec779c796eaa358fc1d12079);
+            
+        
+
+        marker_31551afefbb42f78754037b784dfeae2.bindPopup(popup_e3aa9b223f1c7ddd64cb2e0984a58053)
+        ;
+
+        
+    
+    
+            var marker_e37b843deef3e65e0adea40ac2525b0a = L.marker(
+                [-2.5414407, -44.2183715],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_1102a331faa7a81d6b4dbe09ffd193af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bab26c0e0f8abb8db4ddc897a4dbdf1 = $(`<div id="html_3bab26c0e0f8abb8db4ddc897a4dbdf1" style="width: 100.0%; height: 100.0%;">Laboratório Cohab</div>`)[0];
+                popup_1102a331faa7a81d6b4dbe09ffd193af.setContent(html_3bab26c0e0f8abb8db4ddc897a4dbdf1);
+            
+        
+
+        marker_e37b843deef3e65e0adea40ac2525b0a.bindPopup(popup_1102a331faa7a81d6b4dbe09ffd193af)
+        ;
+
+        
+    
+    
+            var marker_3155e9ed545193555265cf0b9e2bab81 = L.marker(
+                [-2.5403952, -44.2880166],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_b97f5394a626d8dfcaa63f5ac2921dfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_261d73522e97f8b5ec4f7d32d847b404 = $(`<div id="html_261d73522e97f8b5ec4f7d32d847b404" style="width: 100.0%; height: 100.0%;">Laboratório Lia Varella</div>`)[0];
+                popup_b97f5394a626d8dfcaa63f5ac2921dfc.setContent(html_261d73522e97f8b5ec4f7d32d847b404);
+            
+        
+
+        marker_3155e9ed545193555265cf0b9e2bab81.bindPopup(popup_b97f5394a626d8dfcaa63f5ac2921dfc)
+        ;
+
+        
+    
+    
+            var marker_5cf4c9af6e0ea29710328c456d94a9d0 = L.marker(
+                [-2.5335858, -44.2933614],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_e4b164a23eb38d6edbe3f8e4e2f32052 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb8e1cba5578ae36d4101d04049683f9 = $(`<div id="html_fb8e1cba5578ae36d4101d04049683f9" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico São Luís</div>`)[0];
+                popup_e4b164a23eb38d6edbe3f8e4e2f32052.setContent(html_fb8e1cba5578ae36d4101d04049683f9);
+            
+        
+
+        marker_5cf4c9af6e0ea29710328c456d94a9d0.bindPopup(popup_e4b164a23eb38d6edbe3f8e4e2f32052)
+        ;
+
+        
+    
+    
+            var marker_ec544be0f501240f2e0befa0b9f49769 = L.marker(
+                [-19.9253875, -43.9265196],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_03c2fac27b0b98255378698a6e35f950 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_829dc869adbf8c1f2894d4821d81ee9d = $(`<div id="html_829dc869adbf8c1f2894d4821d81ee9d" style="width: 100.0%; height: 100.0%;">Diagnóstico do Hospital Maternidade Octaviano Neves</div>`)[0];
+                popup_03c2fac27b0b98255378698a6e35f950.setContent(html_829dc869adbf8c1f2894d4821d81ee9d);
+            
+        
+
+        marker_ec544be0f501240f2e0befa0b9f49769.bindPopup(popup_03c2fac27b0b98255378698a6e35f950)
+        ;
+
+        
+    
+    
+            var marker_319862db25b7741d5dcabc3354307b19 = L.marker(
+                [-19.9263604, -43.9517338],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_b9006487342409387abcc2ce811237fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04f6daff7a05861bf28dd1827222dc08 = $(`<div id="html_04f6daff7a05861bf28dd1827222dc08" style="width: 100.0%; height: 100.0%;">Diagnóstico do Hospital Vera Cruz</div>`)[0];
+                popup_b9006487342409387abcc2ce811237fa.setContent(html_04f6daff7a05861bf28dd1827222dc08);
+            
+        
+
+        marker_319862db25b7741d5dcabc3354307b19.bindPopup(popup_b9006487342409387abcc2ce811237fa)
+        ;
+
+        
+    
+    
+            var marker_e0ad78cc825da7f140b407fb8610b7db = L.marker(
+                [-19.9263741, -43.9295612],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_6e33f12d649969b9f8bdc4bc4d78e7fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08a948f31936c16b68d208b3d2b2f3a9 = $(`<div id="html_08a948f31936c16b68d208b3d2b2f3a9" style="width: 100.0%; height: 100.0%;">Diagnóstico Efigênia</div>`)[0];
+                popup_6e33f12d649969b9f8bdc4bc4d78e7fe.setContent(html_08a948f31936c16b68d208b3d2b2f3a9);
+            
+        
+
+        marker_e0ad78cc825da7f140b407fb8610b7db.bindPopup(popup_6e33f12d649969b9f8bdc4bc4d78e7fe)
+        ;
+
+        
+    
+    
+            var marker_674c93fffa13dc66bc191f2398f5d357 = L.marker(
+                [-19.9696359, -43.9539644],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_f7f45a5898f3d8d9a1699333a9a63536 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3dfee81874a504e2293d4a1c83b47f8f = $(`<div id="html_3dfee81874a504e2293d4a1c83b47f8f" style="width: 100.0%; height: 100.0%;">Diagnóstico Raja Gabaglia</div>`)[0];
+                popup_f7f45a5898f3d8d9a1699333a9a63536.setContent(html_3dfee81874a504e2293d4a1c83b47f8f);
+            
+        
+
+        marker_674c93fffa13dc66bc191f2398f5d357.bindPopup(popup_f7f45a5898f3d8d9a1699333a9a63536)
+        ;
+
+        
+    
+    
+            var marker_82161af90a14c5bffe58499978c3eee1 = L.marker(
+                [-19.9239599, -43.9509645],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_e225c4abaa1a3a9867f6afcbff5b95fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e926c966ea16d310ffc698963ebc84d8 = $(`<div id="html_e926c966ea16d310ffc698963ebc84d8" style="width: 100.0%; height: 100.0%;">Diagnóstico Timbiras</div>`)[0];
+                popup_e225c4abaa1a3a9867f6afcbff5b95fa.setContent(html_e926c966ea16d310ffc698963ebc84d8);
+            
+        
+
+        marker_82161af90a14c5bffe58499978c3eee1.bindPopup(popup_e225c4abaa1a3a9867f6afcbff5b95fa)
+        ;
+
+        
+    
+    
+            var marker_deff94eb6382bc3cfbe2749c1a265746 = L.marker(
+                [-19.7584001, -47.9557233],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_70fa2364b583cffcd9fb2a47db8e0190 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5794ee488b690ce018aa1c743074955f = $(`<div id="html_5794ee488b690ce018aa1c743074955f" style="width: 100.0%; height: 100.0%;">Diagnóstico Santa Maria</div>`)[0];
+                popup_70fa2364b583cffcd9fb2a47db8e0190.setContent(html_5794ee488b690ce018aa1c743074955f);
+            
+        
+
+        marker_deff94eb6382bc3cfbe2749c1a265746.bindPopup(popup_70fa2364b583cffcd9fb2a47db8e0190)
+        ;
+
+        
+    
+    
+            var marker_14325d97ad0b9ec1a4c10a5513d3fcc2 = L.marker(
+                [-19.7588008, -47.9487669],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_512bfc1dd491a2a0e6ce162d4e3d60bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f976f698f95e85dbbc7cb7bbc40ccd85 = $(`<div id="html_f976f698f95e85dbbc7cb7bbc40ccd85" style="width: 100.0%; height: 100.0%;">Diagnóstico Uberaba</div>`)[0];
+                popup_512bfc1dd491a2a0e6ce162d4e3d60bc.setContent(html_f976f698f95e85dbbc7cb7bbc40ccd85);
+            
+        
+
+        marker_14325d97ad0b9ec1a4c10a5513d3fcc2.bindPopup(popup_512bfc1dd491a2a0e6ce162d4e3d60bc)
+        ;
+
+        
+    
+    
+            var marker_367f5c266954320a67d621f3800dc9d6 = L.marker(
+                [-20.4594619, -54.6059434],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_02c8d7ac7beabf1c248af7c4ecdec064 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9786ab6c63e0be0d955cb1544c133628 = $(`<div id="html_9786ab6c63e0be0d955cb1544c133628" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Campo Grande</div>`)[0];
+                popup_02c8d7ac7beabf1c248af7c4ecdec064.setContent(html_9786ab6c63e0be0d955cb1544c133628);
+            
+        
+
+        marker_367f5c266954320a67d621f3800dc9d6.bindPopup(popup_02c8d7ac7beabf1c248af7c4ecdec064)
+        ;
+
+        
+    
+    
+            var marker_8418ab6883cea0bddeb651884f85a3eb = L.marker(
+                [-20.4634981, -54.630709],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_ed3c3aa6e10251392858744ab80fafd7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_905081cb0250524feb731fb1a7d5351a = $(`<div id="html_905081cb0250524feb731fb1a7d5351a" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Dom Aquino</div>`)[0];
+                popup_ed3c3aa6e10251392858744ab80fafd7.setContent(html_905081cb0250524feb731fb1a7d5351a);
+            
+        
+
+        marker_8418ab6883cea0bddeb651884f85a3eb.bindPopup(popup_ed3c3aa6e10251392858744ab80fafd7)
+        ;
+
+        
+    
+    
+            var marker_2d1be7117ab87b7d6a227a018b414d74 = L.marker(
+                [-22.2179658, -54.760524],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_d7ee5b9de2b2378806f7110b3f6edc0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1fb430008f622f5b6429656a006c80a = $(`<div id="html_b1fb430008f622f5b6429656a006c80a" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Dourados</div>`)[0];
+                popup_d7ee5b9de2b2378806f7110b3f6edc0d.setContent(html_b1fb430008f622f5b6429656a006c80a);
+            
+        
+
+        marker_2d1be7117ab87b7d6a227a018b414d74.bindPopup(popup_d7ee5b9de2b2378806f7110b3f6edc0d)
+        ;
+
+        
+    
+    
+            var marker_fbe572e89d9dfe6ab76259ba776d9832 = L.marker(
+                [-22.3078851, -53.8289223],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_97861b1c52a79307580292f9fb3df7e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2570de75f72b9da11cfe02031ebd48f = $(`<div id="html_f2570de75f72b9da11cfe02031ebd48f" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Ivinhema</div>`)[0];
+                popup_97861b1c52a79307580292f9fb3df7e6.setContent(html_f2570de75f72b9da11cfe02031ebd48f);
+            
+        
+
+        marker_fbe572e89d9dfe6ab76259ba776d9832.bindPopup(popup_97861b1c52a79307580292f9fb3df7e6)
+        ;
+
+        
+    
+    
+            var marker_a7987f1a676a0889da8562ec8168f72b = L.marker(
+                [-1.4359616, -48.4522841],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_23945584f5769da229dfe5de15e25615 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03a037806e14f4aadeb869ae4e0ef2f8 = $(`<div id="html_03a037806e14f4aadeb869ae4e0ef2f8" style="width: 100.0%; height: 100.0%;">Central de Atendimento Lomas</div>`)[0];
+                popup_23945584f5769da229dfe5de15e25615.setContent(html_03a037806e14f4aadeb869ae4e0ef2f8);
+            
+        
+
+        marker_a7987f1a676a0889da8562ec8168f72b.bindPopup(popup_23945584f5769da229dfe5de15e25615)
+        ;
+
+        
+    
+    
+            var marker_214f8ba461227bf2e57b7219cb6c8045 = L.marker(
+                [-1.443405, -48.4677568],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_ea865c5db799338f416f7a180664c813 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c02cac8a37186dad1d02e0a3f7de56a = $(`<div id="html_5c02cac8a37186dad1d02e0a3f7de56a" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Hospital RioMar</div>`)[0];
+                popup_ea865c5db799338f416f7a180664c813.setContent(html_5c02cac8a37186dad1d02e0a3f7de56a);
+            
+        
+
+        marker_214f8ba461227bf2e57b7219cb6c8045.bindPopup(popup_ea865c5db799338f416f7a180664c813)
+        ;
+
+        
+    
+    
+            var marker_4d6e6fb7731f798338f88f2d536514ac = L.marker(
+                [-1.4359616, -48.4522841],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_4698b0ad99464df2e52264a1c07f60d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_461e57b0fe9a5688913bb2041c9fca33 = $(`<div id="html_461e57b0fe9a5688913bb2041c9fca33" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Lomas</div>`)[0];
+                popup_4698b0ad99464df2e52264a1c07f60d4.setContent(html_461e57b0fe9a5688913bb2041c9fca33);
+            
+        
+
+        marker_4d6e6fb7731f798338f88f2d536514ac.bindPopup(popup_4698b0ad99464df2e52264a1c07f60d4)
+        ;
+
+        
+    
+    
+            var marker_a03ec24b8adb8199efe42b625de1ee7a = L.marker(
+                [-1.4503437579710146, -48.4774358942029],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_4ea45e7c0d1ce2b547168485a98836c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6c50dd15bbafe9dae2eb0f2808a1a3f = $(`<div id="html_b6c50dd15bbafe9dae2eb0f2808a1a3f" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Nazaré</div>`)[0];
+                popup_4ea45e7c0d1ce2b547168485a98836c0.setContent(html_b6c50dd15bbafe9dae2eb0f2808a1a3f);
+            
+        
+
+        marker_a03ec24b8adb8199efe42b625de1ee7a.bindPopup(popup_4ea45e7c0d1ce2b547168485a98836c0)
+        ;
+
+        
+    
+    
+            var marker_af2c67817d4136613aa19ff66bc887bf = L.marker(
+                [-1.4731996, -48.4740674],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_a8b37b57da70a7c8161efd4b07df6b05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f14cfb4171bd7ca9db59caa33b560160 = $(`<div id="html_f14cfb4171bd7ca9db59caa33b560160" style="width: 100.0%; height: 100.0%;">Laboratório Batista Campos</div>`)[0];
+                popup_a8b37b57da70a7c8161efd4b07df6b05.setContent(html_f14cfb4171bd7ca9db59caa33b560160);
+            
+        
+
+        marker_af2c67817d4136613aa19ff66bc887bf.bindPopup(popup_a8b37b57da70a7c8161efd4b07df6b05)
+        ;
+
+        
+    
+    
+            var marker_4cf396ed9413a4ea1602e28f52c9a5a5 = L.marker(
+                [-7.1225527, -34.8552353],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_4804e9c519445c5706fd27b9a6d1f2ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f3e373b76c22789861c335b01d46dc9 = $(`<div id="html_7f3e373b76c22789861c335b01d46dc9" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico João Pessoa</div>`)[0];
+                popup_4804e9c519445c5706fd27b9a6d1f2ad.setContent(html_7f3e373b76c22789861c335b01d46dc9);
+            
+        
+
+        marker_4cf396ed9413a4ea1602e28f52c9a5a5.bindPopup(popup_4804e9c519445c5706fd27b9a6d1f2ad)
+        ;
+
+        
+    
+    
+            var marker_94b3208c816e9e4a083342b7b649476e = L.marker(
+                [-8.2796362, -35.0313208],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_6151ddfe40dbab6949a581623151d23e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2274e5b2a7b3bc47092c5a9c1bb0084a = $(`<div id="html_2274e5b2a7b3bc47092c5a9c1bb0084a" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Centro</div>`)[0];
+                popup_6151ddfe40dbab6949a581623151d23e.setContent(html_2274e5b2a7b3bc47092c5a9c1bb0084a);
+            
+        
+
+        marker_94b3208c816e9e4a083342b7b649476e.bindPopup(popup_6151ddfe40dbab6949a581623151d23e)
+        ;
+
+        
+    
+    
+            var marker_9d6200163e2fbc61f715c987fec6599b = L.marker(
+                [-8.2796362, -35.0313208],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_94eeb1f878e476c120a903beb24021ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f700dd146f5d778013dfedfc9fa4aadc = $(`<div id="html_f700dd146f5d778013dfedfc9fa4aadc" style="width: 100.0%; height: 100.0%;">Laboratório Centro</div>`)[0];
+                popup_94eeb1f878e476c120a903beb24021ab.setContent(html_f700dd146f5d778013dfedfc9fa4aadc);
+            
+        
+
+        marker_9d6200163e2fbc61f715c987fec6599b.bindPopup(popup_94eeb1f878e476c120a903beb24021ab)
+        ;
+
+        
+    
+    
+            var marker_d36abcdf7a69b680030c3bca1b0484f3 = L.marker(
+                [-7.9395534, -34.8841715],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_ee6c1aae3a455f0f361f3b2b0333fabb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6233c702cfb9aa4b93603910465435e3 = $(`<div id="html_6233c702cfb9aa4b93603910465435e3" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Paulista</div>`)[0];
+                popup_ee6c1aae3a455f0f361f3b2b0333fabb.setContent(html_6233c702cfb9aa4b93603910465435e3);
+            
+        
+
+        marker_d36abcdf7a69b680030c3bca1b0484f3.bindPopup(popup_ee6c1aae3a455f0f361f3b2b0333fabb)
+        ;
+
+        
+    
+    
+            var marker_016bb51bfdcc6b06a5c7350972acccbb = L.marker(
+                [-8.0522487, -34.89404917045432],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_93fce3c09a7b828ae8cba08ee339b8cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_567778e1acbb127a9a36b8bc2da94ecb = $(`<div id="html_567778e1acbb127a9a36b8bc2da94ecb" style="width: 100.0%; height: 100.0%;">Centro de Diagnóstico por Imagem</div>`)[0];
+                popup_93fce3c09a7b828ae8cba08ee339b8cf.setContent(html_567778e1acbb127a9a36b8bc2da94ecb);
+            
+        
+
+        marker_016bb51bfdcc6b06a5c7350972acccbb.bindPopup(popup_93fce3c09a7b828ae8cba08ee339b8cf)
+        ;
+
+        
+    
+    
+            var marker_3043bebf5e5c399bfbaea2c8453565d2 = L.marker(
+                [-8.0336463, -34.9178852],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_28a6726792ffe9fd54051d3d61ac6c1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b46511944e47b27af38e058470ed20c2 = $(`<div id="html_b46511944e47b27af38e058470ed20c2" style="width: 100.0%; height: 100.0%;">Hapvida Diagnósticos Casa Forte</div>`)[0];
+                popup_28a6726792ffe9fd54051d3d61ac6c1c.setContent(html_b46511944e47b27af38e058470ed20c2);
+            
+        
+
+        marker_3043bebf5e5c399bfbaea2c8453565d2.bindPopup(popup_28a6726792ffe9fd54051d3d61ac6c1c)
+        ;
+
+        
+    
+    
+            var marker_9849e7bca12164c871e18fd581b6db90 = L.marker(
+                [-8.0402076, -34.9421293],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_1a1fefb7c44b58aa9d54a5d36589449a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab98b9ab5085aedc2cfc3e4075d73ae6 = $(`<div id="html_ab98b9ab5085aedc2cfc3e4075d73ae6" style="width: 100.0%; height: 100.0%;">Hapvida Diagnósticos Iputinga</div>`)[0];
+                popup_1a1fefb7c44b58aa9d54a5d36589449a.setContent(html_ab98b9ab5085aedc2cfc3e4075d73ae6);
+            
+        
+
+        marker_9849e7bca12164c871e18fd581b6db90.bindPopup(popup_1a1fefb7c44b58aa9d54a5d36589449a)
+        ;
+
+        
+    
+    
+            var marker_d915c83a57d3abc6201fd630e8e201e3 = L.marker(
+                [-8.054598949999999, -34.89665077048974],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_6503b571f30750384841147d0274e094 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7536d6e48258d372422f62218789294 = $(`<div id="html_d7536d6e48258d372422f62218789294" style="width: 100.0%; height: 100.0%;">Laboratório Agamenon Magalhães</div>`)[0];
+                popup_6503b571f30750384841147d0274e094.setContent(html_d7536d6e48258d372422f62218789294);
+            
+        
+
+        marker_d915c83a57d3abc6201fd630e8e201e3.bindPopup(popup_6503b571f30750384841147d0274e094)
+        ;
+
+        
+    
+    
+            var marker_3443d7a702847fce961899f50022aab9 = L.marker(
+                [-8.059533, -34.8942343],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_19f70e060053e5afb7cee3c20d5a0279 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae22f0d521f1dd93fde1bf507f0839f1 = $(`<div id="html_ae22f0d521f1dd93fde1bf507f0839f1" style="width: 100.0%; height: 100.0%;">Laboratório Boa Vista</div>`)[0];
+                popup_19f70e060053e5afb7cee3c20d5a0279.setContent(html_ae22f0d521f1dd93fde1bf507f0839f1);
+            
+        
+
+        marker_3443d7a702847fce961899f50022aab9.bindPopup(popup_19f70e060053e5afb7cee3c20d5a0279)
+        ;
+
+        
+    
+    
+            var marker_c0be120998eafc100257abdd3bec3080 = L.marker(
+                [-8.0402076, -34.9421293],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_26e4f851686e5fda5cbd9625a17a262c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_401f0cab2685e584672d768934732e77 = $(`<div id="html_401f0cab2685e584672d768934732e77" style="width: 100.0%; height: 100.0%;">Laboratório Caxangá</div>`)[0];
+                popup_26e4f851686e5fda5cbd9625a17a262c.setContent(html_401f0cab2685e584672d768934732e77);
+            
+        
+
+        marker_c0be120998eafc100257abdd3bec3080.bindPopup(popup_26e4f851686e5fda5cbd9625a17a262c)
+        ;
+
+        
+    
+    
+            var marker_5310fb2a5b757cb32ac6afd6d106a096 = L.marker(
+                [-8.0634912, -34.8948796],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_99af85fa727322d7d5c53aab12ad8398 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ca19c8b39ef8b80e64f1607fd3e40c1 = $(`<div id="html_3ca19c8b39ef8b80e64f1607fd3e40c1" style="width: 100.0%; height: 100.0%;">Laboratório Ilha do Leite</div>`)[0];
+                popup_99af85fa727322d7d5c53aab12ad8398.setContent(html_3ca19c8b39ef8b80e64f1607fd3e40c1);
+            
+        
+
+        marker_5310fb2a5b757cb32ac6afd6d106a096.bindPopup(popup_99af85fa727322d7d5c53aab12ad8398)
+        ;
+
+        
+    
+    
+            var marker_48bc7a38dcb1b316da9edae3749a0816 = L.marker(
+                [-8.0620619, -34.8971984],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_46d9ecb8da6a7a42c1b2d43ee6f2b8af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e27f1faa01e28058d65f39f7e150230b = $(`<div id="html_e27f1faa01e28058d65f39f7e150230b" style="width: 100.0%; height: 100.0%;">Laboratório Paissandú</div>`)[0];
+                popup_46d9ecb8da6a7a42c1b2d43ee6f2b8af.setContent(html_e27f1faa01e28058d65f39f7e150230b);
+            
+        
+
+        marker_48bc7a38dcb1b316da9edae3749a0816.bindPopup(popup_46d9ecb8da6a7a42c1b2d43ee6f2b8af)
+        ;
+
+        
+    
+    
+            var marker_ab0989759131c30127d38383a55e5468 = L.marker(
+                [-8.0522487, -34.89404917045432],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_410cad1a0ae15bc4992e6f2421ee2920 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4052b6a94127ae649e3a644e79a2c224 = $(`<div id="html_4052b6a94127ae649e3a644e79a2c224" style="width: 100.0%; height: 100.0%;">Laboratório Parque Amorim</div>`)[0];
+                popup_410cad1a0ae15bc4992e6f2421ee2920.setContent(html_4052b6a94127ae649e3a644e79a2c224);
+            
+        
+
+        marker_ab0989759131c30127d38383a55e5468.bindPopup(popup_410cad1a0ae15bc4992e6f2421ee2920)
+        ;
+
+        
+    
+    
+            var marker_ca07c31eda7cc0aa81f702b34ba27fe2 = L.marker(
+                [-8.141563, -34.9106726],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_9615154ee6cb66ec8025493c4c5abc0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed322d27aaa3cd023d2d76ff902a2104 = $(`<div id="html_ed322d27aaa3cd023d2d76ff902a2104" style="width: 100.0%; height: 100.0%;">Laboratório Zona Sul</div>`)[0];
+                popup_9615154ee6cb66ec8025493c4c5abc0b.setContent(html_ed322d27aaa3cd023d2d76ff902a2104);
+            
+        
+
+        marker_ca07c31eda7cc0aa81f702b34ba27fe2.bindPopup(popup_9615154ee6cb66ec8025493c4c5abc0b)
+        ;
+
+        
+    
+    
+            var marker_309c8949e708f3afce651796fe2d66ec = L.marker(
+                [-5.0892804, -42.8146103],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_f6df2547a15c0bcdcb3d52dbfe4e515f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecdb724d7c9de95be47dd71f66956d9d = $(`<div id="html_ecdb724d7c9de95be47dd71f66956d9d" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Teresina</div>`)[0];
+                popup_f6df2547a15c0bcdcb3d52dbfe4e515f.setContent(html_ecdb724d7c9de95be47dd71f66956d9d);
+            
+        
+
+        marker_309c8949e708f3afce651796fe2d66ec.bindPopup(popup_f6df2547a15c0bcdcb3d52dbfe4e515f)
+        ;
+
+        
+    
+    
+            var marker_bd68e743e84063841f162f5390448506 = L.marker(
+                [-5.1780313, -37.3597135],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_7fd0d6016554c82107006a5862d09520 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35220cff0178d641da37e9ae593dec4c = $(`<div id="html_35220cff0178d641da37e9ae593dec4c" style="width: 100.0%; height: 100.0%;">Hapvida Diagnósticos Hospital Celina Guimarães</div>`)[0];
+                popup_7fd0d6016554c82107006a5862d09520.setContent(html_35220cff0178d641da37e9ae593dec4c);
+            
+        
+
+        marker_bd68e743e84063841f162f5390448506.bindPopup(popup_7fd0d6016554c82107006a5862d09520)
+        ;
+
+        
+    
+    
+            var marker_b858d5dad6262c9b20128ce2d4aac7cb = L.marker(
+                [-5.80409055, -35.211866431710554],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_c8969b45937263edb11a0f76ae4bc966 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e5bbde762a63dfcd3c01eecfa8a0aa4 = $(`<div id="html_4e5bbde762a63dfcd3c01eecfa8a0aa4" style="width: 100.0%; height: 100.0%;">Hapvida Diagnósticos Alecrim</div>`)[0];
+                popup_c8969b45937263edb11a0f76ae4bc966.setContent(html_4e5bbde762a63dfcd3c01eecfa8a0aa4);
+            
+        
+
+        marker_b858d5dad6262c9b20128ce2d4aac7cb.bindPopup(popup_c8969b45937263edb11a0f76ae4bc966)
+        ;
+
+        
+    
+    
+            var marker_69775a9d67966e36cd79c28e13baa544 = L.marker(
+                [-5.7769943, -35.251296079568434],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_011e31ccc193cfd4537bfc3d6a9268bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a063def645acefbbc7147198d9f349d = $(`<div id="html_7a063def645acefbbc7147198d9f349d" style="width: 100.0%; height: 100.0%;">Laboratório Zona Norte</div>`)[0];
+                popup_011e31ccc193cfd4537bfc3d6a9268bf.setContent(html_7a063def645acefbbc7147198d9f349d);
+            
+        
+
+        marker_69775a9d67966e36cd79c28e13baa544.bindPopup(popup_011e31ccc193cfd4537bfc3d6a9268bf)
+        ;
+
+        
+    
+    
+            var marker_75072f464a3a2274bfbbf2777f093bfc = L.marker(
+                [-26.2909343, -48.813418],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_0b759a0a418cb0318e7afbbb35f4945c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12f7d69c4138adde6b1841e153e69cd0 = $(`<div id="html_12f7d69c4138adde6b1841e153e69cd0" style="width: 100.0%; height: 100.0%;">Clínica Zona Leste</div>`)[0];
+                popup_0b759a0a418cb0318e7afbbb35f4945c.setContent(html_12f7d69c4138adde6b1841e153e69cd0);
+            
+        
+
+        marker_75072f464a3a2274bfbbf2777f093bfc.bindPopup(popup_0b759a0a418cb0318e7afbbb35f4945c)
+        ;
+
+        
+    
+    
+            var marker_8b204e484d725553511479c6971db7c2 = L.marker(
+                [-10.9254022, -37.0471028],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_b01a6ff53ee2be325b6a38d6d2bce76d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6717b3eaf4cf6465772e949c6b12f014 = $(`<div id="html_6717b3eaf4cf6465772e949c6b12f014" style="width: 100.0%; height: 100.0%;">Diagnóstico Aracaju</div>`)[0];
+                popup_b01a6ff53ee2be325b6a38d6d2bce76d.setContent(html_6717b3eaf4cf6465772e949c6b12f014);
+            
+        
+
+        marker_8b204e484d725553511479c6971db7c2.bindPopup(popup_b01a6ff53ee2be325b6a38d6d2bce76d)
+        ;
+
+        
+    
+    
+            var marker_4442d4526361f8e7230481f96f498535 = L.marker(
+                [-10.9161341, -37.0503269],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_4a9663e691b1d40151a004a6b134d20d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a80ad4469707bd84058217fd61715a6 = $(`<div id="html_6a80ad4469707bd84058217fd61715a6" style="width: 100.0%; height: 100.0%;">Diagnóstico Hospital Gabriel Soares</div>`)[0];
+                popup_4a9663e691b1d40151a004a6b134d20d.setContent(html_6a80ad4469707bd84058217fd61715a6);
+            
+        
+
+        marker_4442d4526361f8e7230481f96f498535.bindPopup(popup_4a9663e691b1d40151a004a6b134d20d)
+        ;
+
+        
+    
+    
+            var marker_8e546ecbc42880ba2d67c6ce24256769 = L.marker(
+                [-10.9230541, -37.0573811],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_c992cea94ec9638985644d5c6d7485b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0302236bb69bc3e2c22349b201605234 = $(`<div id="html_0302236bb69bc3e2c22349b201605234" style="width: 100.0%; height: 100.0%;">Laboratório Hermes Fontes</div>`)[0];
+                popup_c992cea94ec9638985644d5c6d7485b9.setContent(html_0302236bb69bc3e2c22349b201605234);
+            
+        
+
+        marker_8e546ecbc42880ba2d67c6ce24256769.bindPopup(popup_c992cea94ec9638985644d5c6d7485b9)
+        ;
+
+        
+    
+    
+            var marker_df6c8460f96ee30eed0cb26b917a95f4 = L.marker(
+                [-10.9116092, -37.0503355],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_7b27f92401975314e13ea9b8a0663f92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39929fd8ff344379bd0302a91a6a2551 = $(`<div id="html_39929fd8ff344379bd0302a91a6a2551" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Centro</div>`)[0];
+                popup_7b27f92401975314e13ea9b8a0663f92.setContent(html_39929fd8ff344379bd0302a91a6a2551);
+            
+        
+
+        marker_df6c8460f96ee30eed0cb26b917a95f4.bindPopup(popup_7b27f92401975314e13ea9b8a0663f92)
+        ;
+
+        
+    
+    
+            var marker_41b9f17602cf9785c1a54a7884508bfd = L.marker(
+                [-21.735046, -48.1112797],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_433c0ce29aa1e592d896dcba6b385d53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7554a01533a514ee45a09db072ab39b9 = $(`<div id="html_7554a01533a514ee45a09db072ab39b9" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Maria Mendes</div>`)[0];
+                popup_433c0ce29aa1e592d896dcba6b385d53.setContent(html_7554a01533a514ee45a09db072ab39b9);
+            
+        
+
+        marker_41b9f17602cf9785c1a54a7884508bfd.bindPopup(popup_433c0ce29aa1e592d896dcba6b385d53)
+        ;
+
+        
+    
+    
+            var marker_c4fdb71e0c2e59d6df135878a8dc992c = L.marker(
+                [-20.5576155, -48.5889335],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_1be5cb762114097a88e3430252b0dbaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f739eb2ad8e94b7f0c617349844fbd77 = $(`<div id="html_f739eb2ad8e94b7f0c617349844fbd77" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Jardim Alvorada</div>`)[0];
+                popup_1be5cb762114097a88e3430252b0dbaa.setContent(html_f739eb2ad8e94b7f0c617349844fbd77);
+            
+        
+
+        marker_c4fdb71e0c2e59d6df135878a8dc992c.bindPopup(popup_1be5cb762114097a88e3430252b0dbaa)
+        ;
+
+        
+    
+    
+            var marker_11bc408137cffb38e638afa41dd6641a = L.marker(
+                [-20.5722503, -48.5800045],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_333dc6f9c4d22458f06a6a154dce04a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a97139b63ad73347745e4bbc16d45a68 = $(`<div id="html_a97139b63ad73347745e4bbc16d45a68" style="width: 100.0%; height: 100.0%;">Pronto Atendimento de Barretos</div>`)[0];
+                popup_333dc6f9c4d22458f06a6a154dce04a2.setContent(html_a97139b63ad73347745e4bbc16d45a68);
+            
+        
+
+        marker_11bc408137cffb38e638afa41dd6641a.bindPopup(popup_333dc6f9c4d22458f06a6a154dce04a2)
+        ;
+
+        
+    
+    
+            var marker_d5aa058b170310992644ed156b868ea2 = L.marker(
+                [-22.3372151, -49.0667994],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_40592662cc00ec6e4240a59f9045814c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ae24a1b7e0f9697eeb59df4d6e264d9 = $(`<div id="html_8ae24a1b7e0f9697eeb59df4d6e264d9" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Rio Branco</div>`)[0];
+                popup_40592662cc00ec6e4240a59f9045814c.setContent(html_8ae24a1b7e0f9697eeb59df4d6e264d9);
+            
+        
+
+        marker_d5aa058b170310992644ed156b868ea2.bindPopup(popup_40592662cc00ec6e4240a59f9045814c)
+        ;
+
+        
+    
+    
+            var marker_0a40c3ce31b901531a16379e3d15d014 = L.marker(
+                [-22.332199, -49.0703225],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_acae60fd3ba5a9ffe55ddd1f45ce1637 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db766d692eea13ee6627bfece2d86bbb = $(`<div id="html_db766d692eea13ee6627bfece2d86bbb" style="width: 100.0%; height: 100.0%;">Hospital Bauru</div>`)[0];
+                popup_acae60fd3ba5a9ffe55ddd1f45ce1637.setContent(html_db766d692eea13ee6627bfece2d86bbb);
+            
+        
+
+        marker_0a40c3ce31b901531a16379e3d15d014.bindPopup(popup_acae60fd3ba5a9ffe55ddd1f45ce1637)
+        ;
+
+        
+    
+    
+            var marker_92ab3518f8c4d1098dc0bcc615d70eb5 = L.marker(
+                [-20.3307202, -48.311934],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_6b25cb12ed3e25cbfc97096e95b52992 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f2fb3dbb53796e7ca3b3333ea90a559 = $(`<div id="html_4f2fb3dbb53796e7ca3b3333ea90a559" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Guaíra</div>`)[0];
+                popup_6b25cb12ed3e25cbfc97096e95b52992.setContent(html_4f2fb3dbb53796e7ca3b3333ea90a559);
+            
+        
+
+        marker_92ab3518f8c4d1098dc0bcc615d70eb5.bindPopup(popup_6b25cb12ed3e25cbfc97096e95b52992)
+        ;
+
+        
+    
+    
+            var marker_eb60d8fcfdfcdc280c30ea4277c9a984 = L.marker(
+                [-22.1949866, -47.3905893],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_59849689b2cf85e8dc51dd672afb5760 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20d06b5a33b5d8fc97fde5b74a6730fd = $(`<div id="html_20d06b5a33b5d8fc97fde5b74a6730fd" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Leme</div>`)[0];
+                popup_59849689b2cf85e8dc51dd672afb5760.setContent(html_20d06b5a33b5d8fc97fde5b74a6730fd);
+            
+        
+
+        marker_eb60d8fcfdfcdc280c30ea4277c9a984.bindPopup(popup_59849689b2cf85e8dc51dd672afb5760)
+        ;
+
+        
+    
+    
+            var marker_c437c47079e47e3df4ccc6b34f2f5dac = L.marker(
+                [-22.5575243, -47.4021877],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_6b8afc45213a08b48e95bc3ad22cb4fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd114b59d10a8ac1d538839772b7fb8f = $(`<div id="html_fd114b59d10a8ac1d538839772b7fb8f" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Iracemápolis</div>`)[0];
+                popup_6b8afc45213a08b48e95bc3ad22cb4fc.setContent(html_fd114b59d10a8ac1d538839772b7fb8f);
+            
+        
+
+        marker_c437c47079e47e3df4ccc6b34f2f5dac.bindPopup(popup_6b8afc45213a08b48e95bc3ad22cb4fc)
+        ;
+
+        
+    
+    
+            var marker_5e7030dc918e0295343069ae4819e5af = L.marker(
+                [-22.1723225, -47.382562],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_d54d90983171a9ded55d886d54e2120d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd2525e4b8720ad83fd3b327bb6289de = $(`<div id="html_cd2525e4b8720ad83fd3b327bb6289de" style="width: 100.0%; height: 100.0%;">Diagnóstico Prudente de Moraes</div>`)[0];
+                popup_d54d90983171a9ded55d886d54e2120d.setContent(html_cd2525e4b8720ad83fd3b327bb6289de);
+            
+        
+
+        marker_5e7030dc918e0295343069ae4819e5af.bindPopup(popup_d54d90983171a9ded55d886d54e2120d)
+        ;
+
+        
+    
+    
+            var marker_85e1508c744e475234fa6e8a4ad9c2b3 = L.marker(
+                [-22.730613, -47.6560132],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_d9b450121941de074f8a79d9e938fbe1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87653212b3a867b7bafeb08bf4b85557 = $(`<div id="html_87653212b3a867b7bafeb08bf4b85557" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Madre Cecília</div>`)[0];
+                popup_d9b450121941de074f8a79d9e938fbe1.setContent(html_87653212b3a867b7bafeb08bf4b85557);
+            
+        
+
+        marker_85e1508c744e475234fa6e8a4ad9c2b3.bindPopup(popup_d9b450121941de074f8a79d9e938fbe1)
+        ;
+
+        
+    
+    
+            var marker_997d6e16884a9a48b3bbd91c41cf510c = L.marker(
+                [-22.730613, -47.6560132],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_856bf04244825b534bcbf8f3813cdad5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71a857e631332a36173b44568ca1b9b1 = $(`<div id="html_71a857e631332a36173b44568ca1b9b1" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Madre Cecília</div>`)[0];
+                popup_856bf04244825b534bcbf8f3813cdad5.setContent(html_71a857e631332a36173b44568ca1b9b1);
+            
+        
+
+        marker_997d6e16884a9a48b3bbd91c41cf510c.bindPopup(popup_856bf04244825b534bcbf8f3813cdad5)
+        ;
+
+        
+    
+    
+            var marker_bc97e43aea78e09d080c8d70adaa315c = L.marker(
+                [-21.2012235, -47.774905],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_b4eb42d362328c852cb7d845683f9648 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f3a3ddc15ce2eeed3a52a6ae0f494b0 = $(`<div id="html_3f3a3ddc15ce2eeed3a52a6ae0f494b0" style="width: 100.0%; height: 100.0%;">Pronto Atendimento Ribeirão Preto (Atendimento Adulto)</div>`)[0];
+                popup_b4eb42d362328c852cb7d845683f9648.setContent(html_3f3a3ddc15ce2eeed3a52a6ae0f494b0);
+            
+        
+
+        marker_bc97e43aea78e09d080c8d70adaa315c.bindPopup(popup_b4eb42d362328c852cb7d845683f9648)
+        ;
+
+        
+    
+    
+            var marker_a5db9c0386f1a1160c6fcf50e941ea15 = L.marker(
+                [-21.1850212, -47.8070898],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_4e855ddf469c26118c001a1147e8c5f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce21a7440ff04cc924b3a255a7be0d15 = $(`<div id="html_ce21a7440ff04cc924b3a255a7be0d15" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Alto da Boa Vista</div>`)[0];
+                popup_4e855ddf469c26118c001a1147e8c5f5.setContent(html_ce21a7440ff04cc924b3a255a7be0d15);
+            
+        
+
+        marker_a5db9c0386f1a1160c6fcf50e941ea15.bindPopup(popup_4e855ddf469c26118c001a1147e8c5f5)
+        ;
+
+        
+    
+    
+            var marker_20755d40214b7d991e7d087adbed65d3 = L.marker(
+                [-21.18874149424307, -47.808109482729215],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_bb59caa74474299aed0964c17d8b4797 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce0a93d758dc213c4b7c95ed74a5d7a7 = $(`<div id="html_ce0a93d758dc213c4b7c95ed74a5d7a7" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico João Penteado</div>`)[0];
+                popup_bb59caa74474299aed0964c17d8b4797.setContent(html_ce0a93d758dc213c4b7c95ed74a5d7a7);
+            
+        
+
+        marker_20755d40214b7d991e7d087adbed65d3.bindPopup(popup_bb59caa74474299aed0964c17d8b4797)
+        ;
+
+        
+    
+    
+            var marker_e83c31d2561ba18700c089a6c22d9e27 = L.marker(
+                [-22.0169484, -47.8926722],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_12f98cbf631dff5ce23fe7b4669b5349 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96b9c55b45a6d60a4754e9c1b0b5d483 = $(`<div id="html_96b9c55b45a6d60a4754e9c1b0b5d483" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Centro</div>`)[0];
+                popup_12f98cbf631dff5ce23fe7b4669b5349.setContent(html_96b9c55b45a6d60a4754e9c1b0b5d483);
+            
+        
+
+        marker_e83c31d2561ba18700c089a6c22d9e27.bindPopup(popup_12f98cbf631dff5ce23fe7b4669b5349)
+        ;
+
+        
+    
+    
+            var marker_8786ffe742461d4454d2d0c79ab12934 = L.marker(
+                [-22.0133476, -47.9007033],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_806adf024ed90d02344d1388e20575fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab76cb0a0602597a1e66de3f22bb7ad6 = $(`<div id="html_ab76cb0a0602597a1e66de3f22bb7ad6" style="width: 100.0%; height: 100.0%;">Pronto Atendimento São Carlos</div>`)[0];
+                popup_806adf024ed90d02344d1388e20575fa.setContent(html_ab76cb0a0602597a1e66de3f22bb7ad6);
+            
+        
+
+        marker_8786ffe742461d4454d2d0c79ab12934.bindPopup(popup_806adf024ed90d02344d1388e20575fa)
+        ;
+
+        
+    
+    
+            var marker_22bed377cf6f44e170457bd44510414a = L.marker(
+                [-22.9133093, -45.4708155],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_b29f72830268694a53d1c93e890a8891 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4549291e9924c4acb367f4a06a1ab545 = $(`<div id="html_4549291e9924c4acb367f4a06a1ab545" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Acácias</div>`)[0];
+                popup_b29f72830268694a53d1c93e890a8891.setContent(html_4549291e9924c4acb367f4a06a1ab545);
+            
+        
+
+        marker_22bed377cf6f44e170457bd44510414a.bindPopup(popup_b29f72830268694a53d1c93e890a8891)
+        ;
+
+        
+    
+    
+            var marker_65f25e5de2816e4cf1eee418d172e9d4 = L.marker(
+                [-23.2007563, -45.8957856],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_fc03b2f0edffae962d8cdeb08a57b33a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f10a70503014f90774016b12e14d0cab = $(`<div id="html_f10a70503014f90774016b12e14d0cab" style="width: 100.0%; height: 100.0%;">Hapvida Diagnóstico Vicentina Aranha</div>`)[0];
+                popup_fc03b2f0edffae962d8cdeb08a57b33a.setContent(html_f10a70503014f90774016b12e14d0cab);
+            
+        
+
+        marker_65f25e5de2816e4cf1eee418d172e9d4.bindPopup(popup_fc03b2f0edffae962d8cdeb08a57b33a)
+        ;
+
+        
+    
+    
+            var marker_73a53eee6ed401ffc9b18118a35a53e1 = L.marker(
+                [-21.1410834, -47.9914659],
+                {}
+            ).addTo(map_68073f889bcf27f11c14157bc1233ede);
+        
+    
+        var popup_330c12606108ffe56398b3447f040b65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a0e5b3b7960a912b3286eb1a55ce34e = $(`<div id="html_2a0e5b3b7960a912b3286eb1a55ce34e" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Netto Campelo</div>`)[0];
+                popup_330c12606108ffe56398b3447f040b65.setContent(html_2a0e5b3b7960a912b3286eb1a55ce34e);
+            
+        
+
+        marker_73a53eee6ed401ffc9b18118a35a53e1.bindPopup(popup_330c12606108ffe56398b3447f040b65)
+        ;
+
+        
+    
+</script>
+</html>

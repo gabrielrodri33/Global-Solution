@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9b83bc1365676f31b3c19bb5fbd01576 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9b83bc1365676f31b3c19bb5fbd01576" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9b83bc1365676f31b3c19bb5fbd01576 = L.map(
+                "map_9b83bc1365676f31b3c19bb5fbd01576",
+                {
+                    center: [-23.469357, -46.6076581],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_56aeef82e158411c35fd886a8400b92c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_56aeef82e158411c35fd886a8400b92c.addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+    
+            var marker_234fcca8a921661221039bda93d64764 = L.marker(
+                [-23.469357, -46.6076581],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+            var icon_338db2efe462108e48cb229c4563c5c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_234fcca8a921661221039bda93d64764.setIcon(icon_338db2efe462108e48cb229c4563c5c1);
+        
+    
+        var popup_c2c7321ce322881192d84e16687d9217 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1bcf2daf603b8974bf60f39a95a12b5b = $(`<div id="html_1bcf2daf603b8974bf60f39a95a12b5b" style="width: 100.0%; height: 100.0%;">Minha Localização</div>`)[0];
+                popup_c2c7321ce322881192d84e16687d9217.setContent(html_1bcf2daf603b8974bf60f39a95a12b5b);
+            
+        
+
+        marker_234fcca8a921661221039bda93d64764.bindPopup(popup_c2c7321ce322881192d84e16687d9217)
+        ;
+
+        
+    
+    
+            var marker_2983bc6ff2696ba8f09dca00a2cade80 = L.marker(
+                [-9.6123732, -35.7278191],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_8fe1970d49a2e1820b986cd6aaff8b14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efdf6046c3f8ebdefc91f5bf72cf1c8e = $(`<div id="html_efdf6046c3f8ebdefc91f5bf72cf1c8e" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Maceió</div>`)[0];
+                popup_8fe1970d49a2e1820b986cd6aaff8b14.setContent(html_efdf6046c3f8ebdefc91f5bf72cf1c8e);
+            
+        
+
+        marker_2983bc6ff2696ba8f09dca00a2cade80.bindPopup(popup_8fe1970d49a2e1820b986cd6aaff8b14)
+        ;
+
+        
+    
+    
+            var marker_bbef088e0c14f59a6ba6323f85c60703 = L.marker(
+                [-3.1151276, -60.0097057],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_42e7a0e2739d367e34da41f08a6c15a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9e89e4183e5fbe4282c88c65b0433b9 = $(`<div id="html_b9e89e4183e5fbe4282c88c65b0433b9" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Rio Amazonas</div>`)[0];
+                popup_42e7a0e2739d367e34da41f08a6c15a9.setContent(html_b9e89e4183e5fbe4282c88c65b0433b9);
+            
+        
+
+        marker_bbef088e0c14f59a6ba6323f85c60703.bindPopup(popup_42e7a0e2739d367e34da41f08a6c15a9)
+        ;
+
+        
+    
+    
+            var marker_c7077d822e3334592c632ca39371943d = L.marker(
+                [-3.1156176, -60.0297234],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_952686f377483ffd169841abf0b7c503 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_799d84cc751dae8ea1fe6245f8da91f8 = $(`<div id="html_799d84cc751dae8ea1fe6245f8da91f8" style="width: 100.0%; height: 100.0%;">Hospital Pediátrico Rio Solimões</div>`)[0];
+                popup_952686f377483ffd169841abf0b7c503.setContent(html_799d84cc751dae8ea1fe6245f8da91f8);
+            
+        
+
+        marker_c7077d822e3334592c632ca39371943d.bindPopup(popup_952686f377483ffd169841abf0b7c503)
+        ;
+
+        
+    
+    
+            var marker_cc74880b1e12724b7896a67c886a016a = L.marker(
+                [-3.1303028, -60.028843484077115],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_91a2d238e6c51a00e0d6f74a544614c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0766660d1814bbf510aaa2d0fedb91dc = $(`<div id="html_0766660d1814bbf510aaa2d0fedb91dc" style="width: 100.0%; height: 100.0%;">Hospital São Lucas</div>`)[0];
+                popup_91a2d238e6c51a00e0d6f74a544614c6.setContent(html_0766660d1814bbf510aaa2d0fedb91dc);
+            
+        
+
+        marker_cc74880b1e12724b7896a67c886a016a.bindPopup(popup_91a2d238e6c51a00e0d6f74a544614c6)
+        ;
+
+        
+    
+    
+            var marker_4490890e609987a28d0c0da94b0d2bc5 = L.marker(
+                [-12.1381993, -38.4181374],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_09240318f65707ea52946f01f4a5d315 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f16ae4d69b1f794c611ec1fee25cc57 = $(`<div id="html_4f16ae4d69b1f794c611ec1fee25cc57" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Cetro</div>`)[0];
+                popup_09240318f65707ea52946f01f4a5d315.setContent(html_4f16ae4d69b1f794c611ec1fee25cc57);
+            
+        
+
+        marker_4490890e609987a28d0c0da94b0d2bc5.bindPopup(popup_09240318f65707ea52946f01f4a5d315)
+        ;
+
+        
+    
+    
+            var marker_501ce5e6454e0b1e3a96589764a7fb94 = L.marker(
+                [-12.7032895, -38.3228922],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_b781f970bc80fb3d32f9ceacee22f0fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89ccb4784a9fe6580c8c2db9705a3e80 = $(`<div id="html_89ccb4784a9fe6580c8c2db9705a3e80" style="width: 100.0%; height: 100.0%;">Hospital Semed</div>`)[0];
+                popup_b781f970bc80fb3d32f9ceacee22f0fd.setContent(html_89ccb4784a9fe6580c8c2db9705a3e80);
+            
+        
+
+        marker_501ce5e6454e0b1e3a96589764a7fb94.bindPopup(popup_b781f970bc80fb3d32f9ceacee22f0fd)
+        ;
+
+        
+    
+    
+            var marker_e16dedb60b8f0fb3d94c8215989099d7 = L.marker(
+                [-12.2489903, -38.9508408],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_f2b889d557f4b07cd345a83c1565534c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46e39ef166d2761f7c0b60b89c1b6385 = $(`<div id="html_46e39ef166d2761f7c0b60b89c1b6385" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Francisca de Sande</div>`)[0];
+                popup_f2b889d557f4b07cd345a83c1565534c.setContent(html_46e39ef166d2761f7c0b60b89c1b6385);
+            
+        
+
+        marker_e16dedb60b8f0fb3d94c8215989099d7.bindPopup(popup_f2b889d557f4b07cd345a83c1565534c)
+        ;
+
+        
+    
+    
+            var marker_f512778212017646526ef35a7c45428a = L.marker(
+                [-12.8967689, -38.3299765],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_4ed656e220047083b9519a6352fc9688 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90a9bfe0d171bf54a2dee25462e1c2a9 = $(`<div id="html_90a9bfe0d171bf54a2dee25462e1c2a9" style="width: 100.0%; height: 100.0%;">Hospital Lauro de Freitas</div>`)[0];
+                popup_4ed656e220047083b9519a6352fc9688.setContent(html_90a9bfe0d171bf54a2dee25462e1c2a9);
+            
+        
+
+        marker_f512778212017646526ef35a7c45428a.bindPopup(popup_4ed656e220047083b9519a6352fc9688)
+        ;
+
+        
+    
+    
+            var marker_3cc5afd303b3f0ad98b1ad55eb631c2e = L.marker(
+                [-12.9908824, -38.4739391],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_e9ab3c9acc2775197675976bccd8d056 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78f4edd9bffdf6c2c2970b471074ce8e = $(`<div id="html_78f4edd9bffdf6c2c2970b471074ce8e" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Teresa de Lisieux</div>`)[0];
+                popup_e9ab3c9acc2775197675976bccd8d056.setContent(html_78f4edd9bffdf6c2c2970b471074ce8e);
+            
+        
+
+        marker_3cc5afd303b3f0ad98b1ad55eb631c2e.bindPopup(popup_e9ab3c9acc2775197675976bccd8d056)
+        ;
+
+        
+    
+    
+            var marker_5b640a8410c5d02349d3edcc1c52e365 = L.marker(
+                [-3.7420763, -38.494368],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_55e135a8e845bb8c6e2c4b34495b1dc1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90a17a22968d9066d98251d0fd32a2a7 = $(`<div id="html_90a17a22968d9066d98251d0fd32a2a7" style="width: 100.0%; height: 100.0%;">Hospital Aldeota</div>`)[0];
+                popup_55e135a8e845bb8c6e2c4b34495b1dc1.setContent(html_90a17a22968d9066d98251d0fd32a2a7);
+            
+        
+
+        marker_5b640a8410c5d02349d3edcc1c52e365.bindPopup(popup_55e135a8e845bb8c6e2c4b34495b1dc1)
+        ;
+
+        
+    
+    
+            var marker_28c3ed1293f2496ae5c73d76427ef1ca = L.marker(
+                [-3.73532305, -38.5202642593075],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_e2f6fad12418e17a56476fe885b1ec17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c32e9a511f82a1f4bb92484fe78995c3 = $(`<div id="html_c32e9a511f82a1f4bb92484fe78995c3" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Eugênia Pinheiro</div>`)[0];
+                popup_e2f6fad12418e17a56476fe885b1ec17.setContent(html_c32e9a511f82a1f4bb92484fe78995c3);
+            
+        
+
+        marker_28c3ed1293f2496ae5c73d76427ef1ca.bindPopup(popup_e2f6fad12418e17a56476fe885b1ec17)
+        ;
+
+        
+    
+    
+            var marker_b5a0092ca8b2fcad0e197a5dc7408e6e = L.marker(
+                [-3.7341544, -38.5237719],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_0ea4ce76f48182a4e57987eda51e9326 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f53016674a2a2a7b8fc59322c7e3e7b2 = $(`<div id="html_f53016674a2a2a7b8fc59322c7e3e7b2" style="width: 100.0%; height: 100.0%;">Hospital Luís França</div>`)[0];
+                popup_0ea4ce76f48182a4e57987eda51e9326.setContent(html_f53016674a2a2a7b8fc59322c7e3e7b2);
+            
+        
+
+        marker_b5a0092ca8b2fcad0e197a5dc7408e6e.bindPopup(popup_0ea4ce76f48182a4e57987eda51e9326)
+        ;
+
+        
+    
+    
+            var marker_1803bcc5feef8d59fa5023f4ef8d618d = L.marker(
+                [-7.2274267, -39.3476911],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_20caa89702159c691ec497c9951cff81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f8ddb49e44659acfe966ed2a66025fc = $(`<div id="html_7f8ddb49e44659acfe966ed2a66025fc" style="width: 100.0%; height: 100.0%;">Hospital Geral e Maternidade Padre Cícero</div>`)[0];
+                popup_20caa89702159c691ec497c9951cff81.setContent(html_7f8ddb49e44659acfe966ed2a66025fc);
+            
+        
+
+        marker_1803bcc5feef8d59fa5023f4ef8d618d.bindPopup(popup_20caa89702159c691ec497c9951cff81)
+        ;
+
+        
+    
+    
+            var marker_5edfe76255560b24517bcbadd8575d9c = L.marker(
+                [-15.8034701, -47.8999574],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_fd84411825bf84013a5c3bed7a22edef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a2259601feb5813eac78cc9cb3534a7 = $(`<div id="html_4a2259601feb5813eac78cc9cb3534a7" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Brasiliense</div>`)[0];
+                popup_fd84411825bf84013a5c3bed7a22edef.setContent(html_4a2259601feb5813eac78cc9cb3534a7);
+            
+        
+
+        marker_5edfe76255560b24517bcbadd8575d9c.bindPopup(popup_fd84411825bf84013a5c3bed7a22edef)
+        ;
+
+        
+    
+    
+            var marker_74886b0aff6b58b7179db897ccd14889 = L.marker(
+                [-16.7157454, -49.2837344],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_49698651af3a7eb00e092da4896a6dae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec4131bde4f90114e04345dbd506a239 = $(`<div id="html_ec4131bde4f90114e04345dbd506a239" style="width: 100.0%; height: 100.0%;">Hospital Jardim América</div>`)[0];
+                popup_49698651af3a7eb00e092da4896a6dae.setContent(html_ec4131bde4f90114e04345dbd506a239);
+            
+        
+
+        marker_74886b0aff6b58b7179db897ccd14889.bindPopup(popup_49698651af3a7eb00e092da4896a6dae)
+        ;
+
+        
+    
+    
+            var marker_b58db73285b4665ac283f64f8757905a = L.marker(
+                [-18.4490858, -50.4492214],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_1d9eca44efab0d2969f536c0d0eebb9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f9836367cfad9d7f552c6bb34b03a36 = $(`<div id="html_6f9836367cfad9d7f552c6bb34b03a36" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Quirinópolis</div>`)[0];
+                popup_1d9eca44efab0d2969f536c0d0eebb9f.setContent(html_6f9836367cfad9d7f552c6bb34b03a36);
+            
+        
+
+        marker_b58db73285b4665ac283f64f8757905a.bindPopup(popup_1d9eca44efab0d2969f536c0d0eebb9f)
+        ;
+
+        
+    
+    
+            var marker_53937e6fb2c2dae95b1c8f9de87d3afa = L.marker(
+                [-19.923903199999998, -43.95275900522029],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_582fa4846dc26ed54948cc57f653dc1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_346358f8a15fe9320f76a1aee4b72117 = $(`<div id="html_346358f8a15fe9320f76a1aee4b72117" style="width: 100.0%; height: 100.0%;">Hospital Vera Cruz</div>`)[0];
+                popup_582fa4846dc26ed54948cc57f653dc1a.setContent(html_346358f8a15fe9320f76a1aee4b72117);
+            
+        
+
+        marker_53937e6fb2c2dae95b1c8f9de87d3afa.bindPopup(popup_582fa4846dc26ed54948cc57f653dc1a)
+        ;
+
+        
+    
+    
+            var marker_42c7f0a7a9904fdd040ae82eadeb64d1 = L.marker(
+                [-19.9253875, -43.9265196],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_65695be29084121c270e7acc39e1fd26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6addd145a1202b9505cdd98e7e457270 = $(`<div id="html_6addd145a1202b9505cdd98e7e457270" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Octaviano Neves</div>`)[0];
+                popup_65695be29084121c270e7acc39e1fd26.setContent(html_6addd145a1202b9505cdd98e7e457270);
+            
+        
+
+        marker_42c7f0a7a9904fdd040ae82eadeb64d1.bindPopup(popup_65695be29084121c270e7acc39e1fd26)
+        ;
+
+        
+    
+    
+            var marker_4c55e9159aeeab9b9ac387935f77f255 = L.marker(
+                [-1.443405, -48.4677568],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_1e06c5a49b9f131ed800994a9cdb5e4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abdd81cf5ef28921fc55aec64b8f0468 = $(`<div id="html_abdd81cf5ef28921fc55aec64b8f0468" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Rio Mar</div>`)[0];
+                popup_1e06c5a49b9f131ed800994a9cdb5e4e.setContent(html_abdd81cf5ef28921fc55aec64b8f0468);
+            
+        
+
+        marker_4c55e9159aeeab9b9ac387935f77f255.bindPopup(popup_1e06c5a49b9f131ed800994a9cdb5e4e)
+        ;
+
+        
+    
+    
+            var marker_faebe20391ae213101a45a122d7d088d = L.marker(
+                [-6.0695838, -49.9057949],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_6da47b28a8bb60aef36774c2033c42cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd902515fae849c3705abbffdaef017e = $(`<div id="html_dd902515fae849c3705abbffdaef017e" style="width: 100.0%; height: 100.0%;">Hospital das Clínicas e Maternidade de Parauapebas</div>`)[0];
+                popup_6da47b28a8bb60aef36774c2033c42cf.setContent(html_dd902515fae849c3705abbffdaef017e);
+            
+        
+
+        marker_faebe20391ae213101a45a122d7d088d.bindPopup(popup_6da47b28a8bb60aef36774c2033c42cf)
+        ;
+
+        
+    
+    
+            var marker_5cd18de57be691b555145e1d5aa84593 = L.marker(
+                [-8.0468434, -34.8959385],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_50d35767947536b86352dbcc26100406 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99e346db370e2592985152937130831d = $(`<div id="html_99e346db370e2592985152937130831d" style="width: 100.0%; height: 100.0%;">Hospital Espinheiro</div>`)[0];
+                popup_50d35767947536b86352dbcc26100406.setContent(html_99e346db370e2592985152937130831d);
+            
+        
+
+        marker_5cd18de57be691b555145e1d5aa84593.bindPopup(popup_50d35767947536b86352dbcc26100406)
+        ;
+
+        
+    
+    
+            var marker_45a2aa17ae29399a881090428470d666 = L.marker(
+                [-8.059533, -34.8942343],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_4ade24124b6ee0cc4696e53d70cc551b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c76ff033351bcd7fd7ffbc187b3a9464 = $(`<div id="html_c76ff033351bcd7fd7ffbc187b3a9464" style="width: 100.0%; height: 100.0%;">Hospital Capibaribe</div>`)[0];
+                popup_4ade24124b6ee0cc4696e53d70cc551b.setContent(html_c76ff033351bcd7fd7ffbc187b3a9464);
+            
+        
+
+        marker_45a2aa17ae29399a881090428470d666.bindPopup(popup_4ade24124b6ee0cc4696e53d70cc551b)
+        ;
+
+        
+    
+    
+            var marker_cc09084da8406ebd1f6268911e757357 = L.marker(
+                [-8.0336463, -34.9178852],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_80c31fc41a5e09a5a46877cc011464d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cb4f02ed00af5271f02108cc897fc85 = $(`<div id="html_4cb4f02ed00af5271f02108cc897fc85" style="width: 100.0%; height: 100.0%;">Hospital Casa Forte</div>`)[0];
+                popup_80c31fc41a5e09a5a46877cc011464d7.setContent(html_4cb4f02ed00af5271f02108cc897fc85);
+            
+        
+
+        marker_cc09084da8406ebd1f6268911e757357.bindPopup(popup_80c31fc41a5e09a5a46877cc011464d7)
+        ;
+
+        
+    
+    
+            var marker_b18505d443de7c62cbf1edce4a48765b = L.marker(
+                [-8.0593453, -34.88916145],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_8d9e6c58bc48e446b506217db41b2e44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a9ce002bac0a8e1683de84e5bc40d56 = $(`<div id="html_7a9ce002bac0a8e1683de84e5bc40d56" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Vasco Lucena</div>`)[0];
+                popup_8d9e6c58bc48e446b506217db41b2e44.setContent(html_7a9ce002bac0a8e1683de84e5bc40d56);
+            
+        
+
+        marker_b18505d443de7c62cbf1edce4a48765b.bindPopup(popup_8d9e6c58bc48e446b506217db41b2e44)
+        ;
+
+        
+    
+    
+            var marker_a6fce652bb60bf56247500092efda924 = L.marker(
+                [-8.0638725, -34.89515950592181],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_63ef79b0e78bdd8a13fa4ceba9079b6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b63b2772da3193eee8a7df8841656de3 = $(`<div id="html_b63b2772da3193eee8a7df8841656de3" style="width: 100.0%; height: 100.0%;">Hospital Ilha do Leite</div>`)[0];
+                popup_63ef79b0e78bdd8a13fa4ceba9079b6b.setContent(html_b63b2772da3193eee8a7df8841656de3);
+            
+        
+
+        marker_a6fce652bb60bf56247500092efda924.bindPopup(popup_63ef79b0e78bdd8a13fa4ceba9079b6b)
+        ;
+
+        
+    
+    
+            var marker_8dc82b42028ff754cf81e30b4b87bdcb = L.marker(
+                [-25.4619311, -49.28814608419319],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_59fd6e5f9c5a34c5b985e9bb36aaaabb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de7875f98c2e6fc2a86dca1dbdadf6d2 = $(`<div id="html_de7875f98c2e6fc2a86dca1dbdadf6d2" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Santa Brígida</div>`)[0];
+                popup_59fd6e5f9c5a34c5b985e9bb36aaaabb.setContent(html_de7875f98c2e6fc2a86dca1dbdadf6d2);
+            
+        
+
+        marker_8dc82b42028ff754cf81e30b4b87bdcb.bindPopup(popup_59fd6e5f9c5a34c5b985e9bb36aaaabb)
+        ;
+
+        
+    
+    
+            var marker_636c2b11d324b125a3e2482548fba870 = L.marker(
+                [-22.929136, -43.321312],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_5a8b1031105f35980c15ecb5ec5bc10a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a1c4638cfaf1d32f415d8c22e8dc7e1 = $(`<div id="html_7a1c4638cfaf1d32f415d8c22e8dc7e1" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Intermédica Jacarepaguá</div>`)[0];
+                popup_5a8b1031105f35980c15ecb5ec5bc10a.setContent(html_7a1c4638cfaf1d32f415d8c22e8dc7e1);
+            
+        
+
+        marker_636c2b11d324b125a3e2482548fba870.bindPopup(popup_5a8b1031105f35980c15ecb5ec5bc10a)
+        ;
+
+        
+    
+    
+            var marker_e835d4c524b5c731103f5ee729ba9d31 = L.marker(
+                [-5.1780313, -37.3597135],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_a8d5d5b3c9d32ecfecd2adc885129931 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e52466c2503ecd46fc323a068458e35 = $(`<div id="html_6e52466c2503ecd46fc323a068458e35" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Celina Guimarães</div>`)[0];
+                popup_a8d5d5b3c9d32ecfecd2adc885129931.setContent(html_6e52466c2503ecd46fc323a068458e35);
+            
+        
+
+        marker_e835d4c524b5c731103f5ee729ba9d31.bindPopup(popup_a8d5d5b3c9d32ecfecd2adc885129931)
+        ;
+
+        
+    
+    
+            var marker_a1bcce4254d9ef5f4e5437dc78e3320c = L.marker(
+                [-10.9161341, -37.0503269],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_1a80abd5cac79f1de9ebf647dfa7de2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c4b081243b63d00a17651949eae9320 = $(`<div id="html_6c4b081243b63d00a17651949eae9320" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Gabriel Soares</div>`)[0];
+                popup_1a80abd5cac79f1de9ebf647dfa7de2f.setContent(html_6c4b081243b63d00a17651949eae9320);
+            
+        
+
+        marker_a1bcce4254d9ef5f4e5437dc78e3320c.bindPopup(popup_1a80abd5cac79f1de9ebf647dfa7de2f)
+        ;
+
+        
+    
+    
+            var marker_9c5e98676054bffb94cb321c43b45f7b = L.marker(
+                [-22.3372151, -49.0667994],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_29028b1fec0e4a8f7b159e3f6aa7fa45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01748222cb901851fa1e12d8df1b243f = $(`<div id="html_01748222cb901851fa1e12d8df1b243f" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Bauru</div>`)[0];
+                popup_29028b1fec0e4a8f7b159e3f6aa7fa45.setContent(html_01748222cb901851fa1e12d8df1b243f);
+            
+        
+
+        marker_9c5e98676054bffb94cb321c43b45f7b.bindPopup(popup_29028b1fec0e4a8f7b159e3f6aa7fa45)
+        ;
+
+        
+    
+    
+            var marker_ec0960bd23e91c3e44343cab2e04f46d = L.marker(
+                [-22.892622600000003, -47.06364436148244],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_7c335e11129b06629e6a162577535948 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57653b91bf6ac0b3427b75540bc6bd14 = $(`<div id="html_57653b91bf6ac0b3427b75540bc6bd14" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Renascença de Campinas</div>`)[0];
+                popup_7c335e11129b06629e6a162577535948.setContent(html_57653b91bf6ac0b3427b75540bc6bd14);
+            
+        
+
+        marker_ec0960bd23e91c3e44343cab2e04f46d.bindPopup(popup_7c335e11129b06629e6a162577535948)
+        ;
+
+        
+    
+    
+            var marker_43ecaf87fdf836a027fbbae0a4fca3c4 = L.marker(
+                [-23.1033192, -46.7279863],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_b424d8bb75be483e33a2645c1cf8623c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8deda5c529d7981418bf79cd1fb7d91 = $(`<div id="html_b8deda5c529d7981418bf79cd1fb7d91" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Paulo Sacramento</div>`)[0];
+                popup_b424d8bb75be483e33a2645c1cf8623c.setContent(html_b8deda5c529d7981418bf79cd1fb7d91);
+            
+        
+
+        marker_43ecaf87fdf836a027fbbae0a4fca3c4.bindPopup(popup_b424d8bb75be483e33a2645c1cf8623c)
+        ;
+
+        
+    
+    
+            var marker_e4f7abc81c19d40984ce50bde61e7528 = L.marker(
+                [-21.1852706, -47.8087444],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_d142d91e3a156ab0654bf379c932ff2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f43b64a1b44303042b5a959357ecf111 = $(`<div id="html_f43b64a1b44303042b5a959357ecf111" style="width: 100.0%; height: 100.0%;">Hospital São Francisco</div>`)[0];
+                popup_d142d91e3a156ab0654bf379c932ff2b.setContent(html_f43b64a1b44303042b5a959357ecf111);
+            
+        
+
+        marker_e4f7abc81c19d40984ce50bde61e7528.bindPopup(popup_d142d91e3a156ab0654bf379c932ff2b)
+        ;
+
+        
+    
+    
+            var marker_7c398c343d1507db4d1a44d88640a491 = L.marker(
+                [-23.6907857, -46.547790090352734],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_5fdf23ba614a6dab0274e2e3224f1ac4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2f024f9b8ec23016dd323502480b842 = $(`<div id="html_d2f024f9b8ec23016dd323502480b842" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade NotreCare São Bernardo</div>`)[0];
+                popup_5fdf23ba614a6dab0274e2e3224f1ac4.setContent(html_d2f024f9b8ec23016dd323502480b842);
+            
+        
+
+        marker_7c398c343d1507db4d1a44d88640a491.bindPopup(popup_5fdf23ba614a6dab0274e2e3224f1ac4)
+        ;
+
+        
+    
+    
+            var marker_3f4a85ed3ddbae2b76560e0d166eed29 = L.marker(
+                [-23.2035092, -45.8973637],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_a402804ddb9f10d13130a6e73445104d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f76b15ffd648cd7cff447a577bad57f = $(`<div id="html_0f76b15ffd648cd7cff447a577bad57f" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade São José</div>`)[0];
+                popup_a402804ddb9f10d13130a6e73445104d.setContent(html_0f76b15ffd648cd7cff447a577bad57f);
+            
+        
+
+        marker_3f4a85ed3ddbae2b76560e0d166eed29.bindPopup(popup_a402804ddb9f10d13130a6e73445104d)
+        ;
+
+        
+    
+    
+            var marker_587f29ff4d3cfe1c52e7b255facfd75f = L.marker(
+                [-23.54652185, -46.60471268663953],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_5c7c13901b9b9db338564ea3206c8d0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_574d33c0bac65f64e6af91f6221bd834 = $(`<div id="html_574d33c0bac65f64e6af91f6221bd834" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Salvalus</div>`)[0];
+                popup_5c7c13901b9b9db338564ea3206c8d0b.setContent(html_574d33c0bac65f64e6af91f6221bd834);
+            
+        
+
+        marker_587f29ff4d3cfe1c52e7b255facfd75f.bindPopup(popup_5c7c13901b9b9db338564ea3206c8d0b)
+        ;
+
+        
+    
+    
+            var marker_75c0d636cee58c3295d122ac696e4642 = L.marker(
+                [-21.1366858, -47.9884022],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_a692e9c8b1c795bcbaf353b31f418dbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2c1b5414db07107f7a3ed4f698af98f = $(`<div id="html_a2c1b5414db07107f7a3ed4f698af98f" style="width: 100.0%; height: 100.0%;">Hospital Netto Campelo</div>`)[0];
+                popup_a692e9c8b1c795bcbaf353b31f418dbe.setContent(html_a2c1b5414db07107f7a3ed4f698af98f);
+            
+        
+
+        marker_75c0d636cee58c3295d122ac696e4642.bindPopup(popup_a692e9c8b1c795bcbaf353b31f418dbe)
+        ;
+
+        
+    
+    
+            var marker_3f9763c6beee718559403a69e0f7925a = L.marker(
+                [-23.493838, -47.47292206618408],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_f9a018e53c74ede2e7fa7b1fec228003 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b61a387faeda50ab751ead9193a92619 = $(`<div id="html_b61a387faeda50ab751ead9193a92619" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Modelo</div>`)[0];
+                popup_f9a018e53c74ede2e7fa7b1fec228003.setContent(html_b61a387faeda50ab751ead9193a92619);
+            
+        
+
+        marker_3f9763c6beee718559403a69e0f7925a.bindPopup(popup_f9a018e53c74ede2e7fa7b1fec228003)
+        ;
+
+        
+    
+    
+            var marker_ea08e54c83e37184428ce79590e4167f = L.marker(
+                [-23.6057419, -46.7505095],
+                {}
+            ).addTo(map_9b83bc1365676f31b3c19bb5fbd01576);
+        
+    
+        var popup_007fbaff9c2b6ea98fb777721ff8b738 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbab4b697aae88d6f85eaac303428e2f = $(`<div id="html_dbab4b697aae88d6f85eaac303428e2f" style="width: 100.0%; height: 100.0%;">Hospital e Maternidade Family</div>`)[0];
+                popup_007fbaff9c2b6ea98fb777721ff8b738.setContent(html_dbab4b697aae88d6f85eaac303428e2f);
+            
+        
+
+        marker_ea08e54c83e37184428ce79590e4167f.bindPopup(popup_007fbaff9c2b6ea98fb777721ff8b738)
+        ;
+
+        
+    
+</script>
+</html>

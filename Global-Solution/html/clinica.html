@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_302cba576b935949f5830d5319492da3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_302cba576b935949f5830d5319492da3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_302cba576b935949f5830d5319492da3 = L.map(
+                "map_302cba576b935949f5830d5319492da3",
+                {
+                    center: [-23.469357, -46.6076581],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f61887bad801fa48e217b532bded76d7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_f61887bad801fa48e217b532bded76d7.addTo(map_302cba576b935949f5830d5319492da3);
+    
+            var marker_71e30aef1301ba804de2fea20e78a540 = L.marker(
+                [-23.469357, -46.6076581],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+            var icon_40c85a7efb6d6f6133301e548b546aaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_71e30aef1301ba804de2fea20e78a540.setIcon(icon_40c85a7efb6d6f6133301e548b546aaf);
+        
+    
+        var popup_a43bea64bd61e3259238d958dedc0780 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8424bd3e7040daa142f4707310a71b5 = $(`<div id="html_b8424bd3e7040daa142f4707310a71b5" style="width: 100.0%; height: 100.0%;">Minha Localização</div>`)[0];
+                popup_a43bea64bd61e3259238d958dedc0780.setContent(html_b8424bd3e7040daa142f4707310a71b5);
+            
+        
+
+        marker_71e30aef1301ba804de2fea20e78a540.bindPopup(popup_a43bea64bd61e3259238d958dedc0780)
+        ;
+
+        
+    
+    
+            var marker_237d8071317bf16cae99a1a737e20822 = L.marker(
+                [-9.6410165, -35.7353546],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_1e586f59a7ddd55a9868d9c588082b63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a18c6f35d3d44963d87d0aa0c10f242f = $(`<div id="html_a18c6f35d3d44963d87d0aa0c10f242f" style="width: 100.0%; height: 100.0%;">Clínica Fernandes Lima</div>`)[0];
+                popup_1e586f59a7ddd55a9868d9c588082b63.setContent(html_a18c6f35d3d44963d87d0aa0c10f242f);
+            
+        
+
+        marker_237d8071317bf16cae99a1a737e20822.bindPopup(popup_1e586f59a7ddd55a9868d9c588082b63)
+        ;
+
+        
+    
+    
+            var marker_a3971737509858b3080c35a600a431bb = L.marker(
+                [-9.6429999, -35.7337954],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_aa4f767867c6ea781d1db719695a8479 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a39bc9380f83ca51f36ab645aefae374 = $(`<div id="html_a39bc9380f83ca51f36ab645aefae374" style="width: 100.0%; height: 100.0%;">Clínica Oldemburgo Paranhos</div>`)[0];
+                popup_aa4f767867c6ea781d1db719695a8479.setContent(html_a39bc9380f83ca51f36ab645aefae374);
+            
+        
+
+        marker_a3971737509858b3080c35a600a431bb.bindPopup(popup_aa4f767867c6ea781d1db719695a8479)
+        ;
+
+        
+    
+    
+            var marker_08034639b7ae85e66a3a20a09deec5c5 = L.marker(
+                [-16.7144754, -49.2841923],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_1e44b793f16e214fe4944ba7b1dd3b68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f06cc06c10624aa4ab0afaf91407ba33 = $(`<div id="html_f06cc06c10624aa4ab0afaf91407ba33" style="width: 100.0%; height: 100.0%;">Clínica de Cardiologia Jardim América</div>`)[0];
+                popup_1e44b793f16e214fe4944ba7b1dd3b68.setContent(html_f06cc06c10624aa4ab0afaf91407ba33);
+            
+        
+
+        marker_08034639b7ae85e66a3a20a09deec5c5.bindPopup(popup_1e44b793f16e214fe4944ba7b1dd3b68)
+        ;
+
+        
+    
+    
+            var marker_d9d8be1ecd40ccbe0c85d45ca5de914b = L.marker(
+                [-16.6971912, -49.2742092],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_b257bd7cdfc9d5851091af12c4359770 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ae30bf0d8c337abcd7eff254abda339 = $(`<div id="html_8ae30bf0d8c337abcd7eff254abda339" style="width: 100.0%; height: 100.0%;">Clínica Rio Araguaia</div>`)[0];
+                popup_b257bd7cdfc9d5851091af12c4359770.setContent(html_8ae30bf0d8c337abcd7eff254abda339);
+            
+        
+
+        marker_d9d8be1ecd40ccbe0c85d45ca5de914b.bindPopup(popup_b257bd7cdfc9d5851091af12c4359770)
+        ;
+
+        
+    
+    
+            var marker_ed96bd195e0dd0cc3404c49df94abfb2 = L.marker(
+                [-16.6932938, -49.2800367],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_fea813e62bc28639ed698a80208ec833 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f5d6feb33feaef80b5e56b485dfbb00 = $(`<div id="html_1f5d6feb33feaef80b5e56b485dfbb00" style="width: 100.0%; height: 100.0%;">Clínica Setor Bueno</div>`)[0];
+                popup_fea813e62bc28639ed698a80208ec833.setContent(html_1f5d6feb33feaef80b5e56b485dfbb00);
+            
+        
+
+        marker_ed96bd195e0dd0cc3404c49df94abfb2.bindPopup(popup_fea813e62bc28639ed698a80208ec833)
+        ;
+
+        
+    
+    
+            var marker_33fb5b926c7ae192cc0a7c43f6058edf = L.marker(
+                [-16.6867784, -49.2637929],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_7bd0302d13de9d0a4baea8e39bc956d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e322e079c5dedbb25d47f15cf045e53f = $(`<div id="html_e322e079c5dedbb25d47f15cf045e53f" style="width: 100.0%; height: 100.0%;">Clínica Setor Oeste</div>`)[0];
+                popup_7bd0302d13de9d0a4baea8e39bc956d2.setContent(html_e322e079c5dedbb25d47f15cf045e53f);
+            
+        
+
+        marker_33fb5b926c7ae192cc0a7c43f6058edf.bindPopup(popup_7bd0302d13de9d0a4baea8e39bc956d2)
+        ;
+
+        
+    
+    
+            var marker_0a97886e721a88abef8b090bac8740fe = L.marker(
+                [-16.6808632, -49.253586],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_7b3bfde5a4944ab5bbed0f8ce97f6820 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aca0f7359a4d54906131c09883be0891 = $(`<div id="html_aca0f7359a4d54906131c09883be0891" style="width: 100.0%; height: 100.0%;">Clínica Setor Sul</div>`)[0];
+                popup_7b3bfde5a4944ab5bbed0f8ce97f6820.setContent(html_aca0f7359a4d54906131c09883be0891);
+            
+        
+
+        marker_0a97886e721a88abef8b090bac8740fe.bindPopup(popup_7b3bfde5a4944ab5bbed0f8ce97f6820)
+        ;
+
+        
+    
+    
+            var marker_b0836b96d1e47ce5407aa4f585858a7f = L.marker(
+                [-16.7144754, -49.2841923],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_9db549cbb8385ca6af4870c3d74d98c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4d1a41b82dd7fa8247b1eb681c5766b = $(`<div id="html_f4d1a41b82dd7fa8247b1eb681c5766b" style="width: 100.0%; height: 100.0%;">Clínica C-147</div>`)[0];
+                popup_9db549cbb8385ca6af4870c3d74d98c4.setContent(html_f4d1a41b82dd7fa8247b1eb681c5766b);
+            
+        
+
+        marker_b0836b96d1e47ce5407aa4f585858a7f.bindPopup(popup_9db549cbb8385ca6af4870c3d74d98c4)
+        ;
+
+        
+    
+    
+            var marker_e4fd9e5fabfb30c7bf132f7f368db3b9 = L.marker(
+                [-16.7202434, -49.2734801],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_f5d38d67db57b4996ced999e6bdce5a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b009606cdbc31262a6b08d58f0182f89 = $(`<div id="html_b009606cdbc31262a6b08d58f0182f89" style="width: 100.0%; height: 100.0%;">Clínica Nova Suíça</div>`)[0];
+                popup_f5d38d67db57b4996ced999e6bdce5a3.setContent(html_b009606cdbc31262a6b08d58f0182f89);
+            
+        
+
+        marker_e4fd9e5fabfb30c7bf132f7f368db3b9.bindPopup(popup_f5d38d67db57b4996ced999e6bdce5a3)
+        ;
+
+        
+    
+    
+            var marker_803a6173090fd8045f100e81c6fe477e = L.marker(
+                [-16.7122058, -49.2637153],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_fa77b9cf7909f4e49f07f7166f67259d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_163d94952a336e7fe0037e7f943a12c2 = $(`<div id="html_163d94952a336e7fe0037e7f943a12c2" style="width: 100.0%; height: 100.0%;">Clínica Avenida 85</div>`)[0];
+                popup_fa77b9cf7909f4e49f07f7166f67259d.setContent(html_163d94952a336e7fe0037e7f943a12c2);
+            
+        
+
+        marker_803a6173090fd8045f100e81c6fe477e.bindPopup(popup_fa77b9cf7909f4e49f07f7166f67259d)
+        ;
+
+        
+    
+    
+            var marker_d3290f4796b73fd6bf055f300a7f9f51 = L.marker(
+                [-16.7091245, -49.2888233],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_89f7661ac5b492bb6a8da9c5fbefe708 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_728d9bfb3ac6bd9261f3fe6c6efe6b49 = $(`<div id="html_728d9bfb3ac6bd9261f3fe6c6efe6b49" style="width: 100.0%; height: 100.0%;">Clínica C-139</div>`)[0];
+                popup_89f7661ac5b492bb6a8da9c5fbefe708.setContent(html_728d9bfb3ac6bd9261f3fe6c6efe6b49);
+            
+        
+
+        marker_d3290f4796b73fd6bf055f300a7f9f51.bindPopup(popup_89f7661ac5b492bb6a8da9c5fbefe708)
+        ;
+
+        
+    
+    
+            var marker_e7ad1a66ddd3431511dd328de0313373 = L.marker(
+                [-2.5335858, -44.2933614],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_59a54f8cef08e09c8704a13720301b5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9714cf2f7e1b14a9caed56d0df56f939 = $(`<div id="html_9714cf2f7e1b14a9caed56d0df56f939" style="width: 100.0%; height: 100.0%;">Clínica São Luis</div>`)[0];
+                popup_59a54f8cef08e09c8704a13720301b5f.setContent(html_9714cf2f7e1b14a9caed56d0df56f939);
+            
+        
+
+        marker_e7ad1a66ddd3431511dd328de0313373.bindPopup(popup_59a54f8cef08e09c8704a13720301b5f)
+        ;
+
+        
+    
+    
+            var marker_aa17cbb002421ac55cd3ac3e1b84f91f = L.marker(
+                [-19.92222667804878, -43.92591520487805],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_044e917e8e0ec2b066ff2102b58b92ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3282cbcdd54ca11a27f9ef07ad31145 = $(`<div id="html_d3282cbcdd54ca11a27f9ef07ad31145" style="width: 100.0%; height: 100.0%;">Ambulatório do Hospital Maternidade Octaviano Neves</div>`)[0];
+                popup_044e917e8e0ec2b066ff2102b58b92ef.setContent(html_d3282cbcdd54ca11a27f9ef07ad31145);
+            
+        
+
+        marker_aa17cbb002421ac55cd3ac3e1b84f91f.bindPopup(popup_044e917e8e0ec2b066ff2102b58b92ef)
+        ;
+
+        
+    
+    
+            var marker_a1c316a30c4681bbec5f56fd3ce46727 = L.marker(
+                [-19.9754725, -44.0131713],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_34f71f693c8e7463edfdd64a40cd641a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c0b139721460efd5d296642683c0809 = $(`<div id="html_2c0b139721460efd5d296642683c0809" style="width: 100.0%; height: 100.0%;">Clínica e Diagnóstico Barreiro</div>`)[0];
+                popup_34f71f693c8e7463edfdd64a40cd641a.setContent(html_2c0b139721460efd5d296642683c0809);
+            
+        
+
+        marker_a1c316a30c4681bbec5f56fd3ce46727.bindPopup(popup_34f71f693c8e7463edfdd64a40cd641a)
+        ;
+
+        
+    
+    
+            var marker_4053a816155848b127ebf3571de2c9cd = L.marker(
+                [-19.9246764, -43.952049450000004],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_df4e1217c054d331a9695632d7baf9cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8a864253e6be40cb7363814e14e018d = $(`<div id="html_a8a864253e6be40cb7363814e14e018d" style="width: 100.0%; height: 100.0%;">Clínica e Diagnóstico Minerva</div>`)[0];
+                popup_df4e1217c054d331a9695632d7baf9cf.setContent(html_a8a864253e6be40cb7363814e14e018d);
+            
+        
+
+        marker_4053a816155848b127ebf3571de2c9cd.bindPopup(popup_df4e1217c054d331a9695632d7baf9cf)
+        ;
+
+        
+    
+    
+            var marker_ab6fda9b458d7b15d18c7794a5a3572b = L.marker(
+                [-19.9292869, -44.0681077],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_99c79e049e951040d369d435a1b6e446 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43b769d46ab54c044c261bf4ab19f404 = $(`<div id="html_43b769d46ab54c044c261bf4ab19f404" style="width: 100.0%; height: 100.0%;">Centro Médico Proclin Eldorado</div>`)[0];
+                popup_99c79e049e951040d369d435a1b6e446.setContent(html_43b769d46ab54c044c261bf4ab19f404);
+            
+        
+
+        marker_ab6fda9b458d7b15d18c7794a5a3572b.bindPopup(popup_99c79e049e951040d369d435a1b6e446)
+        ;
+
+        
+    
+    
+            var marker_313fbf3d3731aea7d23f3d47c79388bd = L.marker(
+                [-18.9700112, -49.4612437],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_6cf8dc037b1bb6969015eea7a346e27f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84d54b2a7dd10a9fcb541181e52dd9c8 = $(`<div id="html_84d54b2a7dd10a9fcb541181e52dd9c8" style="width: 100.0%; height: 100.0%;">Clínica Ituiutaba</div>`)[0];
+                popup_6cf8dc037b1bb6969015eea7a346e27f.setContent(html_84d54b2a7dd10a9fcb541181e52dd9c8);
+            
+        
+
+        marker_313fbf3d3731aea7d23f3d47c79388bd.bindPopup(popup_6cf8dc037b1bb6969015eea7a346e27f)
+        ;
+
+        
+    
+    
+            var marker_570eb86c0873df4c12d596c2f9c51642 = L.marker(
+                [-19.1678999, -47.6731295],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_19abd785e0538c0c65be8dde5389610f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d537e55a222295ca7db1568de691ab18 = $(`<div id="html_d537e55a222295ca7db1568de691ab18" style="width: 100.0%; height: 100.0%;">Clínica Nova Ponte</div>`)[0];
+                popup_19abd785e0538c0c65be8dde5389610f.setContent(html_d537e55a222295ca7db1568de691ab18);
+            
+        
+
+        marker_570eb86c0873df4c12d596c2f9c51642.bindPopup(popup_19abd785e0538c0c65be8dde5389610f)
+        ;
+
+        
+    
+    
+            var marker_727bcc655e8962fc172e13e4a1a56905 = L.marker(
+                [-19.7656825, -47.9518327],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_76d9875e1fa209d32d58aae9b4bd0c6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85ac10f2a7627fff867d40ddcd5609ee = $(`<div id="html_85ac10f2a7627fff867d40ddcd5609ee" style="width: 100.0%; height: 100.0%;">Clínica Uberaba</div>`)[0];
+                popup_76d9875e1fa209d32d58aae9b4bd0c6e.setContent(html_85ac10f2a7627fff867d40ddcd5609ee);
+            
+        
+
+        marker_727bcc655e8962fc172e13e4a1a56905.bindPopup(popup_76d9875e1fa209d32d58aae9b4bd0c6e)
+        ;
+
+        
+    
+    
+            var marker_18c4cb3a2ca43c5d7eefb4e1f96e6151 = L.marker(
+                [-20.4533057, -54.5934286],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_cafa181cb3a5594cbbcc307e6c53fb8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d77cb65282dc0e4477a22dfd994c901 = $(`<div id="html_9d77cb65282dc0e4477a22dfd994c901" style="width: 100.0%; height: 100.0%;">Clínica Jardim dos Estados</div>`)[0];
+                popup_cafa181cb3a5594cbbcc307e6c53fb8e.setContent(html_9d77cb65282dc0e4477a22dfd994c901);
+            
+        
+
+        marker_18c4cb3a2ca43c5d7eefb4e1f96e6151.bindPopup(popup_cafa181cb3a5594cbbcc307e6c53fb8e)
+        ;
+
+        
+    
+    
+            var marker_9215e9bbda360e118e900984ca82f106 = L.marker(
+                [-20.7915315, -51.6969809],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_174cf63ae76f990fd77b46caa7a0c749 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1529e7f66708f4a04fcf83a60419c3a0 = $(`<div id="html_1529e7f66708f4a04fcf83a60419c3a0" style="width: 100.0%; height: 100.0%;">Clínica Guarani</div>`)[0];
+                popup_174cf63ae76f990fd77b46caa7a0c749.setContent(html_1529e7f66708f4a04fcf83a60419c3a0);
+            
+        
+
+        marker_9215e9bbda360e118e900984ca82f106.bindPopup(popup_174cf63ae76f990fd77b46caa7a0c749)
+        ;
+
+        
+    
+    
+            var marker_538f0eaaeed6822d60a72dca7a5d080b = L.marker(
+                [-1.4731996, -48.4740674],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_d7e9761c4c899a27c94331d561ded596 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_729725581ebe3c69ef6316470b2e2300 = $(`<div id="html_729725581ebe3c69ef6316470b2e2300" style="width: 100.0%; height: 100.0%;">Clínica Batista Campos</div>`)[0];
+                popup_d7e9761c4c899a27c94331d561ded596.setContent(html_729725581ebe3c69ef6316470b2e2300);
+            
+        
+
+        marker_538f0eaaeed6822d60a72dca7a5d080b.bindPopup(popup_d7e9761c4c899a27c94331d561ded596)
+        ;
+
+        
+    
+    
+            var marker_7c938ff8b84e9b9d35b074959357f861 = L.marker(
+                [-1.456446217437798, -48.48194310369472],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_b6b6cb10bc1fbf3e2e960eb5bc1c6e3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3593cf6974afad57ecf23674b2816d6b = $(`<div id="html_3593cf6974afad57ecf23674b2816d6b" style="width: 100.0%; height: 100.0%;">Clínica Conselheiro</div>`)[0];
+                popup_b6b6cb10bc1fbf3e2e960eb5bc1c6e3e.setContent(html_3593cf6974afad57ecf23674b2816d6b);
+            
+        
+
+        marker_7c938ff8b84e9b9d35b074959357f861.bindPopup(popup_b6b6cb10bc1fbf3e2e960eb5bc1c6e3e)
+        ;
+
+        
+    
+    
+            var marker_b3b47cef592f3def37dd085bfc93571f = L.marker(
+                [-1.4340432, -48.4551431],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_83ccee5e56d719cc39f80caf3b82e953 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1d6a5536bed82d1c7af9cc110dd71d3 = $(`<div id="html_f1d6a5536bed82d1c7af9cc110dd71d3" style="width: 100.0%; height: 100.0%;">Clínica Lomas Valentinas</div>`)[0];
+                popup_83ccee5e56d719cc39f80caf3b82e953.setContent(html_f1d6a5536bed82d1c7af9cc110dd71d3);
+            
+        
+
+        marker_b3b47cef592f3def37dd085bfc93571f.bindPopup(popup_83ccee5e56d719cc39f80caf3b82e953)
+        ;
+
+        
+    
+    
+            var marker_c197490f056fe11cabbde00d1a7ef666 = L.marker(
+                [-1.433491037359503, -48.46017481983898],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_81a565a8a91474a1b1ad0f6dabeccd94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5663d7ab2eef46970ade22cca8f52860 = $(`<div id="html_5663d7ab2eef46970ade22cca8f52860" style="width: 100.0%; height: 100.0%;">Clínica Marco</div>`)[0];
+                popup_81a565a8a91474a1b1ad0f6dabeccd94.setContent(html_5663d7ab2eef46970ade22cca8f52860);
+            
+        
+
+        marker_c197490f056fe11cabbde00d1a7ef666.bindPopup(popup_81a565a8a91474a1b1ad0f6dabeccd94)
+        ;
+
+        
+    
+    
+            var marker_8176a5576412c62df8ae9dfae400deb3 = L.marker(
+                [-1.3887425, -48.4122649],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_247b868d2113f8051db016dc3f2e2c32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01300cd817f337031e9e4dad57283267 = $(`<div id="html_01300cd817f337031e9e4dad57283267" style="width: 100.0%; height: 100.0%;">Clínica Metropolitana</div>`)[0];
+                popup_247b868d2113f8051db016dc3f2e2c32.setContent(html_01300cd817f337031e9e4dad57283267);
+            
+        
+
+        marker_8176a5576412c62df8ae9dfae400deb3.bindPopup(popup_247b868d2113f8051db016dc3f2e2c32)
+        ;
+
+        
+    
+    
+            var marker_125255fa129e0b2adf5df6ff7f0bfbf1 = L.marker(
+                [-1.4583166721960261, -48.485289935531064],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_5b58f41bd39575cbf0c246f63b2cb2f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72c0d309259734b941c00bd06f276b8d = $(`<div id="html_72c0d309259734b941c00bd06f276b8d" style="width: 100.0%; height: 100.0%;">Clínica Mundurucus</div>`)[0];
+                popup_5b58f41bd39575cbf0c246f63b2cb2f1.setContent(html_72c0d309259734b941c00bd06f276b8d);
+            
+        
+
+        marker_125255fa129e0b2adf5df6ff7f0bfbf1.bindPopup(popup_5b58f41bd39575cbf0c246f63b2cb2f1)
+        ;
+
+        
+    
+    
+            var marker_3701cfcb89b058fdbd521aab10f71529 = L.marker(
+                [-6.0695838, -49.9057949],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_b5b1be8b9cb62032f795e28bcd614ef3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f463e2f06f6fb359ccc6075197dc1bc2 = $(`<div id="html_f463e2f06f6fb359ccc6075197dc1bc2" style="width: 100.0%; height: 100.0%;">Clínica Rio Azul</div>`)[0];
+                popup_b5b1be8b9cb62032f795e28bcd614ef3.setContent(html_f463e2f06f6fb359ccc6075197dc1bc2);
+            
+        
+
+        marker_3701cfcb89b058fdbd521aab10f71529.bindPopup(popup_b5b1be8b9cb62032f795e28bcd614ef3)
+        ;
+
+        
+    
+    
+            var marker_ecb414e2ed4900d7ad89aadb73b9233c = L.marker(
+                [-7.1196003, -34.8469901],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_8bd10ac16736b57f5992474b4d3d1cef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bda4bee88f25b30ce9616b499ffddb8d = $(`<div id="html_bda4bee88f25b30ce9616b499ffddb8d" style="width: 100.0%; height: 100.0%;">Clínica Ariano Suassuna</div>`)[0];
+                popup_8bd10ac16736b57f5992474b4d3d1cef.setContent(html_bda4bee88f25b30ce9616b499ffddb8d);
+            
+        
+
+        marker_ecb414e2ed4900d7ad89aadb73b9233c.bindPopup(popup_8bd10ac16736b57f5992474b4d3d1cef)
+        ;
+
+        
+    
+    
+            var marker_ca807c917e7b39d41ce9ddd51d3ec731 = L.marker(
+                [-7.118695, -34.8820918],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_197f8c36598daeae4c9c69ee5dd74bb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6187f75eb2c9dc7645dbef31fb9599d3 = $(`<div id="html_6187f75eb2c9dc7645dbef31fb9599d3" style="width: 100.0%; height: 100.0%;">Clínica João Pessoa</div>`)[0];
+                popup_197f8c36598daeae4c9c69ee5dd74bb6.setContent(html_6187f75eb2c9dc7645dbef31fb9599d3);
+            
+        
+
+        marker_ca807c917e7b39d41ce9ddd51d3ec731.bindPopup(popup_197f8c36598daeae4c9c69ee5dd74bb6)
+        ;
+
+        
+    
+    
+            var marker_293b5694b4cc881a67d8be93c57126af = L.marker(
+                [-8.1912642, -34.9197349],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_81977a217779ae4fe75ce79e1f2bfff3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ebbd90bff39d1e9fbfd1ca0562325350 = $(`<div id="html_ebbd90bff39d1e9fbfd1ca0562325350" style="width: 100.0%; height: 100.0%;">Clínica Piedade</div>`)[0];
+                popup_81977a217779ae4fe75ce79e1f2bfff3.setContent(html_ebbd90bff39d1e9fbfd1ca0562325350);
+            
+        
+
+        marker_293b5694b4cc881a67d8be93c57126af.bindPopup(popup_81977a217779ae4fe75ce79e1f2bfff3)
+        ;
+
+        
+    
+    
+            var marker_c622515324c7af8b8b51143852853c31 = L.marker(
+                [-7.9966766, -34.83954],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_d0a3aef1f74ce2849532d712b2cdb9cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c42ad6aaa2592faacdbe16408dfbf93 = $(`<div id="html_6c42ad6aaa2592faacdbe16408dfbf93" style="width: 100.0%; height: 100.0%;">Clínica Olinda</div>`)[0];
+                popup_d0a3aef1f74ce2849532d712b2cdb9cf.setContent(html_6c42ad6aaa2592faacdbe16408dfbf93);
+            
+        
+
+        marker_c622515324c7af8b8b51143852853c31.bindPopup(popup_d0a3aef1f74ce2849532d712b2cdb9cf)
+        ;
+
+        
+    
+    
+            var marker_e7b12c3143e6abaad4f62afb84232da6 = L.marker(
+                [-7.9966766, -34.83954],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_9375867091a2e87eae50c9d190ea2e9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_714d00b8b11192f98e58c08e5a2f3ae6 = $(`<div id="html_714d00b8b11192f98e58c08e5a2f3ae6" style="width: 100.0%; height: 100.0%;">Unidade de Fisioterapia Olinda</div>`)[0];
+                popup_9375867091a2e87eae50c9d190ea2e9f.setContent(html_714d00b8b11192f98e58c08e5a2f3ae6);
+            
+        
+
+        marker_e7b12c3143e6abaad4f62afb84232da6.bindPopup(popup_9375867091a2e87eae50c9d190ea2e9f)
+        ;
+
+        
+    
+    
+            var marker_80bda2fea1b0890e580c65d5152aef11 = L.marker(
+                [-8.0440056, -34.8926061],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_7cfa8b5c7559ac9b9777ddc20b21c075 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f22e7b6c6d719dd5c37338a8bacd1b59 = $(`<div id="html_f22e7b6c6d719dd5c37338a8bacd1b59" style="width: 100.0%; height: 100.0%;">Clínica Barão de Itamaracá</div>`)[0];
+                popup_7cfa8b5c7559ac9b9777ddc20b21c075.setContent(html_f22e7b6c6d719dd5c37338a8bacd1b59);
+            
+        
+
+        marker_80bda2fea1b0890e580c65d5152aef11.bindPopup(popup_7cfa8b5c7559ac9b9777ddc20b21c075)
+        ;
+
+        
+    
+    
+            var marker_2f1586f912c2a32921179937c5ef9a47 = L.marker(
+                [-8.05945275, -34.89210381693557],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_1c815b62a57568960787467defc41db0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8566ff0c8dc99ca68ba54255c151fc6 = $(`<div id="html_a8566ff0c8dc99ca68ba54255c151fc6" style="width: 100.0%; height: 100.0%;">Clínica Boa Vista</div>`)[0];
+                popup_1c815b62a57568960787467defc41db0.setContent(html_a8566ff0c8dc99ca68ba54255c151fc6);
+            
+        
+
+        marker_2f1586f912c2a32921179937c5ef9a47.bindPopup(popup_1c815b62a57568960787467defc41db0)
+        ;
+
+        
+    
+    
+            var marker_c3c6cc55d6702a21183c9d9e156f66e8 = L.marker(
+                [-8.0336463, -34.9178852],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_b1234163965915bde8afbbecb3279efa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1148410bca7593bc2db0ea1fb792d0e9 = $(`<div id="html_1148410bca7593bc2db0ea1fb792d0e9" style="width: 100.0%; height: 100.0%;">Clínica Casa Forte</div>`)[0];
+                popup_b1234163965915bde8afbbecb3279efa.setContent(html_1148410bca7593bc2db0ea1fb792d0e9);
+            
+        
+
+        marker_c3c6cc55d6702a21183c9d9e156f66e8.bindPopup(popup_b1234163965915bde8afbbecb3279efa)
+        ;
+
+        
+    
+    
+            var marker_4b209e6d3a5b3fd6262f0c5d22ab58dc = L.marker(
+                [-8.1213958, -34.8975382],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_52e9f35f568c6efb5ab89979aec72721 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9627143c25629530619403a7a64e5f2e = $(`<div id="html_9627143c25629530619403a7a64e5f2e" style="width: 100.0%; height: 100.0%;">Clínica Conselheiro Aguiar</div>`)[0];
+                popup_52e9f35f568c6efb5ab89979aec72721.setContent(html_9627143c25629530619403a7a64e5f2e);
+            
+        
+
+        marker_4b209e6d3a5b3fd6262f0c5d22ab58dc.bindPopup(popup_52e9f35f568c6efb5ab89979aec72721)
+        ;
+
+        
+    
+    
+            var marker_f9e7cce6a9dc6aa5b625a1dd80866f7b = L.marker(
+                [-8.0469315, -34.894752],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_0c05cacf77db60f92f3e905e6151e26e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6de3dc7a6756135603ab7c009df69c82 = $(`<div id="html_6de3dc7a6756135603ab7c009df69c82" style="width: 100.0%; height: 100.0%;">Clínica Graças</div>`)[0];
+                popup_0c05cacf77db60f92f3e905e6151e26e.setContent(html_6de3dc7a6756135603ab7c009df69c82);
+            
+        
+
+        marker_f9e7cce6a9dc6aa5b625a1dd80866f7b.bindPopup(popup_0c05cacf77db60f92f3e905e6151e26e)
+        ;
+
+        
+    
+    
+            var marker_53e9988111cbd2fc2ef355470ca842bb = L.marker(
+                [-8.0598655, -34.89636],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_1a6686c85de2a64225bab20c2c37c6b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2118daaea3488710816df906d8e1eca8 = $(`<div id="html_2118daaea3488710816df906d8e1eca8" style="width: 100.0%; height: 100.0%;">Clínica Mário Domingues</div>`)[0];
+                popup_1a6686c85de2a64225bab20c2c37c6b3.setContent(html_2118daaea3488710816df906d8e1eca8);
+            
+        
+
+        marker_53e9988111cbd2fc2ef355470ca842bb.bindPopup(popup_1a6686c85de2a64225bab20c2c37c6b3)
+        ;
+
+        
+    
+    
+            var marker_4a4fed236a242e3da848e13086b7b882 = L.marker(
+                [-8.0469315, -34.894752],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_3ff3b583c914be264a3719d34f028ddf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_709dff926c799668f2a1ea0da772094b = $(`<div id="html_709dff926c799668f2a1ea0da772094b" style="width: 100.0%; height: 100.0%;">Clínica Pedro da Hora</div>`)[0];
+                popup_3ff3b583c914be264a3719d34f028ddf.setContent(html_709dff926c799668f2a1ea0da772094b);
+            
+        
+
+        marker_4a4fed236a242e3da848e13086b7b882.bindPopup(popup_3ff3b583c914be264a3719d34f028ddf)
+        ;
+
+        
+    
+    
+            var marker_105fc70311d72341c20223704c774131 = L.marker(
+                [-8.04681205, -34.89614661266307],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_d50dcecc5aba81645dfbefc79b6bf672 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a71007a1b47cbf95a6f60b2f93f1207 = $(`<div id="html_6a71007a1b47cbf95a6f60b2f93f1207" style="width: 100.0%; height: 100.0%;">Clínica Recife</div>`)[0];
+                popup_d50dcecc5aba81645dfbefc79b6bf672.setContent(html_6a71007a1b47cbf95a6f60b2f93f1207);
+            
+        
+
+        marker_105fc70311d72341c20223704c774131.bindPopup(popup_d50dcecc5aba81645dfbefc79b6bf672)
+        ;
+
+        
+    
+    
+            var marker_75531f8e7538ae671018f2d63743d24f = L.marker(
+                [-8.04681205, -34.89614661266307],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_e1a97051d20a26ca953ba3b30c671ebb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fcbad2e7638b26b1e042f932a2084f3 = $(`<div id="html_3fcbad2e7638b26b1e042f932a2084f3" style="width: 100.0%; height: 100.0%;">Clínica Recife</div>`)[0];
+                popup_e1a97051d20a26ca953ba3b30c671ebb.setContent(html_3fcbad2e7638b26b1e042f932a2084f3);
+            
+        
+
+        marker_75531f8e7538ae671018f2d63743d24f.bindPopup(popup_e1a97051d20a26ca953ba3b30c671ebb)
+        ;
+
+        
+    
+    
+            var marker_80a6c05aa24c28f6541c13280c2c2d77 = L.marker(
+                [-5.1851134, -37.3519838],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_1034b8967c90254499e4c040dcde9cd3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcf188733551daaf7968900eafb6d7b9 = $(`<div id="html_fcf188733551daaf7968900eafb6d7b9" style="width: 100.0%; height: 100.0%;">Clínica Rodolfo Fernandes</div>`)[0];
+                popup_1034b8967c90254499e4c040dcde9cd3.setContent(html_fcf188733551daaf7968900eafb6d7b9);
+            
+        
+
+        marker_80a6c05aa24c28f6541c13280c2c2d77.bindPopup(popup_1034b8967c90254499e4c040dcde9cd3)
+        ;
+
+        
+    
+    
+            var marker_cee8bc71bd3d2fac6d5c6c7f8c19d9f4 = L.marker(
+                [-5.80409055, -35.211866431710554],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_a98970be5c594100100c80fd150e4c59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47f071218fb684c1d34347e39b493a26 = $(`<div id="html_47f071218fb684c1d34347e39b493a26" style="width: 100.0%; height: 100.0%;">Clínica Complexo Alecrim</div>`)[0];
+                popup_a98970be5c594100100c80fd150e4c59.setContent(html_47f071218fb684c1d34347e39b493a26);
+            
+        
+
+        marker_cee8bc71bd3d2fac6d5c6c7f8c19d9f4.bindPopup(popup_a98970be5c594100100c80fd150e4c59)
+        ;
+
+        
+    
+    
+            var marker_10739f265e0c95e9b4ab4134e4f64dd8 = L.marker(
+                [-5.785888, -35.2051722],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_b27daa0fe1b01be0e9f8082ad71a66d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8e8700bbe7dc4a65fec7ad77b013a23 = $(`<div id="html_e8e8700bbe7dc4a65fec7ad77b013a23" style="width: 100.0%; height: 100.0%;">Clínica Felipe Camarão</div>`)[0];
+                popup_b27daa0fe1b01be0e9f8082ad71a66d5.setContent(html_e8e8700bbe7dc4a65fec7ad77b013a23);
+            
+        
+
+        marker_10739f265e0c95e9b4ab4134e4f64dd8.bindPopup(popup_b27daa0fe1b01be0e9f8082ad71a66d5)
+        ;
+
+        
+    
+    
+            var marker_6e99d56be52c0645830617ce184f5bbf = L.marker(
+                [-5.7730524, -35.25504938760896],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_a72c9b165ae1172bf25e34500517f99b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_974f2aa45ac77dbf75045ad6c7d2e4b1 = $(`<div id="html_974f2aa45ac77dbf75045ad6c7d2e4b1" style="width: 100.0%; height: 100.0%;">Clínica Potengi</div>`)[0];
+                popup_a72c9b165ae1172bf25e34500517f99b.setContent(html_974f2aa45ac77dbf75045ad6c7d2e4b1);
+            
+        
+
+        marker_6e99d56be52c0645830617ce184f5bbf.bindPopup(popup_a72c9b165ae1172bf25e34500517f99b)
+        ;
+
+        
+    
+    
+            var marker_cb508045517c4cc17e8d241297fef7fb = L.marker(
+                [-5.7969529, -35.1992389],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_782bf600d09d3a9b071706a59a8a5642 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97a28d73f0e2b88847e4be817f1dbd20 = $(`<div id="html_97a28d73f0e2b88847e4be817f1dbd20" style="width: 100.0%; height: 100.0%;">Clínica Tirol</div>`)[0];
+                popup_782bf600d09d3a9b071706a59a8a5642.setContent(html_97a28d73f0e2b88847e4be817f1dbd20);
+            
+        
+
+        marker_cb508045517c4cc17e8d241297fef7fb.bindPopup(popup_782bf600d09d3a9b071706a59a8a5642)
+        ;
+
+        
+    
+    
+            var marker_c6f95e84c937db282c6b35c14b358690 = L.marker(
+                [-5.8465772, -35.2088642],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_dc3838c57f4ab28a8ff0374cb943cc0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8af5ba235d4990ade925f384e6ed56a1 = $(`<div id="html_8af5ba235d4990ade925f384e6ed56a1" style="width: 100.0%; height: 100.0%;">Clínica Zona Sul</div>`)[0];
+                popup_dc3838c57f4ab28a8ff0374cb943cc0f.setContent(html_8af5ba235d4990ade925f384e6ed56a1);
+            
+        
+
+        marker_c6f95e84c937db282c6b35c14b358690.bindPopup(popup_dc3838c57f4ab28a8ff0374cb943cc0f)
+        ;
+
+        
+    
+    
+            var marker_681725ce6f9b5899d057821ab3f5d70d = L.marker(
+                [-26.2909343, -48.813418],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_0a55999b4094c57220a7b690064f0351 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1908371ac08e4d02fe913c9a64cf83db = $(`<div id="html_1908371ac08e4d02fe913c9a64cf83db" style="width: 100.0%; height: 100.0%;">Clínica Zona Leste</div>`)[0];
+                popup_0a55999b4094c57220a7b690064f0351.setContent(html_1908371ac08e4d02fe913c9a64cf83db);
+            
+        
+
+        marker_681725ce6f9b5899d057821ab3f5d70d.bindPopup(popup_0a55999b4094c57220a7b690064f0351)
+        ;
+
+        
+    
+    
+            var marker_73b056a3189ca5fa9332f0fcbba7527a = L.marker(
+                [-10.9230541, -37.0573811],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_bac2320f3cbabb8a7ad6e30fbfaca7e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_857ce5e4a6189152d7a20033c0fa3988 = $(`<div id="html_857ce5e4a6189152d7a20033c0fa3988" style="width: 100.0%; height: 100.0%;">Clínica Hermes Fontes</div>`)[0];
+                popup_bac2320f3cbabb8a7ad6e30fbfaca7e8.setContent(html_857ce5e4a6189152d7a20033c0fa3988);
+            
+        
+
+        marker_73b056a3189ca5fa9332f0fcbba7527a.bindPopup(popup_bac2320f3cbabb8a7ad6e30fbfaca7e8)
+        ;
+
+        
+    
+    
+            var marker_045b2cb525f1e2bc3fbaf828448ae6c5 = L.marker(
+                [-10.9074581, -37.0619777],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_fef5f27a0724382d3f63672237fc79c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f72097381f047e108f6fa9a28edd0593 = $(`<div id="html_f72097381f047e108f6fa9a28edd0593" style="width: 100.0%; height: 100.0%;">Clínica Gentil Tavares</div>`)[0];
+                popup_fef5f27a0724382d3f63672237fc79c0.setContent(html_f72097381f047e108f6fa9a28edd0593);
+            
+        
+
+        marker_045b2cb525f1e2bc3fbaf828448ae6c5.bindPopup(popup_fef5f27a0724382d3f63672237fc79c0)
+        ;
+
+        
+    
+    
+            var marker_86dc9e0ed77247434f9a7ce9375df018 = L.marker(
+                [-21.785138, -48.1767815],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_18a61b63de42f69f1474142972b8a5b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e7016116513a9628ea9526b13a9f5bf = $(`<div id="html_0e7016116513a9628ea9526b13a9f5bf" style="width: 100.0%; height: 100.0%;">Clínica 9 de julho</div>`)[0];
+                popup_18a61b63de42f69f1474142972b8a5b6.setContent(html_0e7016116513a9628ea9526b13a9f5bf);
+            
+        
+
+        marker_86dc9e0ed77247434f9a7ce9375df018.bindPopup(popup_18a61b63de42f69f1474142972b8a5b6)
+        ;
+
+        
+    
+    
+            var marker_093810e5624ea94d12e044450b81f5cc = L.marker(
+                [-22.3530522, -47.3745072],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_ae14006f39e4b1c0169b2568f60f8ca6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_209130b2f324fe0f4652db3add838070 = $(`<div id="html_209130b2f324fe0f4652db3add838070" style="width: 100.0%; height: 100.0%;">Clínica Araras</div>`)[0];
+                popup_ae14006f39e4b1c0169b2568f60f8ca6.setContent(html_209130b2f324fe0f4652db3add838070);
+            
+        
+
+        marker_093810e5624ea94d12e044450b81f5cc.bindPopup(popup_ae14006f39e4b1c0169b2568f60f8ca6)
+        ;
+
+        
+    
+    
+            var marker_20cd6a5f00c134bed5147156e9d22722 = L.marker(
+                [-22.3530522, -47.3745072],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_0f7f48f77682d3ef724d5d0181377418 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57f08af617e5587a6947b9a207308a2b = $(`<div id="html_57f08af617e5587a6947b9a207308a2b" style="width: 100.0%; height: 100.0%;">Clínica Araras</div>`)[0];
+                popup_0f7f48f77682d3ef724d5d0181377418.setContent(html_57f08af617e5587a6947b9a207308a2b);
+            
+        
+
+        marker_20cd6a5f00c134bed5147156e9d22722.bindPopup(popup_0f7f48f77682d3ef724d5d0181377418)
+        ;
+
+        
+    
+    
+            var marker_34b1f7d67ffbeff1d68fc626abe431ef = L.marker(
+                [-22.5671118, -47.3993639],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_c21df9fe417a9bd5b1e004d4f5f1c0e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ea30334c8a1fbbdd2ff5fad1d013c7b = $(`<div id="html_7ea30334c8a1fbbdd2ff5fad1d013c7b" style="width: 100.0%; height: 100.0%;">Clínica de Oncologia de Limeira</div>`)[0];
+                popup_c21df9fe417a9bd5b1e004d4f5f1c0e6.setContent(html_7ea30334c8a1fbbdd2ff5fad1d013c7b);
+            
+        
+
+        marker_34b1f7d67ffbeff1d68fc626abe431ef.bindPopup(popup_c21df9fe417a9bd5b1e004d4f5f1c0e6)
+        ;
+
+        
+    
+    
+            var marker_14d129d150201a56aa2346a92e26251c = L.marker(
+                [-22.5575243, -47.4021877],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_451f80d0db3d69604eedf06a6399f642 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ff4cae53b2c1a0559508057818f6c18 = $(`<div id="html_7ff4cae53b2c1a0559508057818f6c18" style="width: 100.0%; height: 100.0%;">Clínica Iracemápolis</div>`)[0];
+                popup_451f80d0db3d69604eedf06a6399f642.setContent(html_7ff4cae53b2c1a0559508057818f6c18);
+            
+        
+
+        marker_14d129d150201a56aa2346a92e26251c.bindPopup(popup_451f80d0db3d69604eedf06a6399f642)
+        ;
+
+        
+    
+    
+            var marker_4a38e52a2db02af8f1b749a3e19dfe15 = L.marker(
+                [-22.5671118, -47.3993639],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_da4769a15039bf899143393de27d9646 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9700fbbf8e2f02f9edcc9c0def597f4 = $(`<div id="html_b9700fbbf8e2f02f9edcc9c0def597f4" style="width: 100.0%; height: 100.0%;">Clínica Trajano Barros</div>`)[0];
+                popup_da4769a15039bf899143393de27d9646.setContent(html_b9700fbbf8e2f02f9edcc9c0def597f4);
+            
+        
+
+        marker_4a38e52a2db02af8f1b749a3e19dfe15.bindPopup(popup_da4769a15039bf899143393de27d9646)
+        ;
+
+        
+    
+    
+            var marker_9e36570215902ae5c9d0ff5f47f561e6 = L.marker(
+                [-22.7147832, -47.6376367],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_7ea3b40656cf6ad1c05c346dab5310aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1321a783500750e9657e6a50ef29a28b = $(`<div id="html_1321a783500750e9657e6a50ef29a28b" style="width: 100.0%; height: 100.0%;">Clinica Florença Paulista</div>`)[0];
+                popup_7ea3b40656cf6ad1c05c346dab5310aa.setContent(html_1321a783500750e9657e6a50ef29a28b);
+            
+        
+
+        marker_9e36570215902ae5c9d0ff5f47f561e6.bindPopup(popup_7ea3b40656cf6ad1c05c346dab5310aa)
+        ;
+
+        
+    
+    
+            var marker_b84cfbfa50d5b0ff73dd871d6aec870b = L.marker(
+                [-21.1859027, -47.8103632],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_7a0f6870d4bbdb004e59d7d8ea2eb364 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d3a8be18a89786effd0f5c790a6b604 = $(`<div id="html_3d3a8be18a89786effd0f5c790a6b604" style="width: 100.0%; height: 100.0%;">Clínica Garibaldi</div>`)[0];
+                popup_7a0f6870d4bbdb004e59d7d8ea2eb364.setContent(html_3d3a8be18a89786effd0f5c790a6b604);
+            
+        
+
+        marker_b84cfbfa50d5b0ff73dd871d6aec870b.bindPopup(popup_7a0f6870d4bbdb004e59d7d8ea2eb364)
+        ;
+
+        
+    
+    
+            var marker_37063a452d53cd10574115f7ff64c096 = L.marker(
+                [-22.6580541, -45.0137115],
+                {}
+            ).addTo(map_302cba576b935949f5830d5319492da3);
+        
+    
+        var popup_e0141a4f8d4ecbbc25a46335b3b4fafd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34d471d5461759507c8cc9eb0e00960c = $(`<div id="html_34d471d5461759507c8cc9eb0e00960c" style="width: 100.0%; height: 100.0%;">Clínica Jaú</div>`)[0];
+                popup_e0141a4f8d4ecbbc25a46335b3b4fafd.setContent(html_34d471d5461759507c8cc9eb0e00960c);
+            
+        
+
+        marker_37063a452d53cd10574115f7ff64c096.bindPopup(popup_e0141a4f8d4ecbbc25a46335b3b4fafd)
+        ;
+
+        
+    
+</script>
+</html>
