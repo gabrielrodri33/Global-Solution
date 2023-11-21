@@ -1,304 +1,304 @@
 {
-    "prontoatendimento": [
-        {
-            "nome": "Pronto Atendimento Cidade Nova",
-            "endereco": "Av. Camapuã, 8 - Cidade Nova",
-            "cidade": "Manaus",
-            "estado": "AM"
-        },
-        {
-            "nome": "Pronto Atendimento Distrito",
-            "endereco": "Avenida Buriti, 3727 - Distrito Industrial I",
-            "cidade": "Manaus",
-            "estado": "AM"
-        },
-        {
-            "nome": "Pronto Atendimento Cajazeiras",
-            "endereco": "Rua Estrada do Coqueiro Grande, 2023 - Cajazeiras",
-            "cidade": "Salvador",
-            "estado": "BA"
-        },
-        {
-            "nome": "Pronto Atendimento Uruguai",
-            "endereco": "Rua do Uruguay, 852 - Uruguai",
-            "cidade": "Salvador",
-            "estado": "BA"
-        },
-        {
-            "nome": "Pronto Atendimento Bezerra de Menezes",
-            "endereco": "Rua Ribeiro da Silva, 727 - Monte Castelo",
-            "cidade": "Fortaleza",
-            "estado": "CE"
-        },
-        {
-            "nome": "Pronto Atendimento Mário Barreto",
-            "endereco": "Rua São Raimundo, 1781 - Cambeba",
-            "cidade": "Fortaleza",
-            "estado": "CE"
-        },
-        {
-            "nome": "Pronto Atendimento Parangaba",
-            "endereco": "Av. Godofredo Maciel, 88 - Parangaba",
-            "cidade": "Fortaleza",
-            "estado": "CE"
-        },
-        {
-            "nome": "Pronto Atendimento Pacajus",
-            "endereco": "Rua Naide Costa Menezes, 525 - Centro",
-            "cidade": "Pacajus",
-            "estado": "CE"
-        },
-        {
-            "nome": "Pronto Atendimento Pecém",
-            "endereco": "Avenida Antônio Brasileiro , 06 - Centro",
-            "cidade": "Pecém",
-            "estado": "CE"
-        },
-        {
-            "nome": "Pronto Atendimento Anápolis",
-            "endereco": "Rua Coronel Batista, 29 - Setor Central",
-            "cidade": "Anápolis",
-            "estado": "GO"
-        },
-        {
-            "nome": "Pronto Atendimento Edeia",
-            "endereco": "Av. Presidente Kennedy, 276, Quadra 06, Lote 02 - Setor Alegrete",
-            "cidade": "Edeia",
-            "estado": "GO"
-        },
-        {
-            "nome": "Pronto Atendimento Cora Coralina",
-            "endereco": "Avenida Anhanguera QD 20, LT 20-E, Nº 11231 - Setor Esplananda",
-            "cidade": "Goiânia",
-            "estado": "GO"
-        },
-        {
-            "nome": "Pronto Atendimento Rio Verde",
-            "endereco": "Avenida Eurico Veloso do Carmo , 1800 - Alameda Barrinha",
-            "cidade": "Rio Verde",
-            "estado": "GO"
-        },
-        {
-            "nome": "PA Contorno",
-            "endereco": "Avenida do Contorno, 2001",
-            "cidade": "Belo Horizonte",
-            "estado": "MG"
-        },
-        {
-            "nome": "Pronto Atendimento do Hospital Vera Cruz",
-            "endereco": "Rua Paracatu, 724 - Santo Agostinho",
-            "cidade": "Belo Horizonte",
-            "estado": "MG"
-        },
-        {
-            "nome": "Pronto Atendimento Santa Maria",
-            "endereco": "Avenida Santos Dumont , 2140 - Santa Maria",
-            "cidade": "Uberaba",
-            "estado": "MG"
-        },
-        {
-            "nome": "Pronto Atendimento Digital Uberlândia",
-            "endereco": "Rua Virgílio Melo Franco, Quadra D0014, Lote 12 A, 465 - Maracanã",
-            "cidade": "Uberlândia",
-            "estado": "MG"
-        },
-        {
-            "nome": "Pronto Atendimento Dourados",
-            "endereco": "Avenida Presidente Vargas, 2145 - Cohafaba III Plano",
-            "cidade": "Dourados",
-            "estado": "MS"
-        },
-        {
-            "nome": "Pronto Atendimento Ivinhema",
-            "endereco": "Av. Brasil, 647 - Centro",
-            "cidade": "Invinhema",
-            "estado": "MS"
-        },
-        {
-            "nome": "Pronto Atendimento Rondonópolis",
-            "endereco": "Rua Agostinho de Figueiredo, 60 - Jardim Guanabara",
-            "cidade": "Rondonópolis",
-            "estado": "MT"
-        },
-        {
-            "nome": "Pronto Atendimento Ananindeua",
-            "endereco": "BR 316 - km 2, 90 - Guanabara",
-            "cidade": "Belém",
-            "estado": "PA"
-        },
-        {
-            "nome": "Pronto Atendimento Campinense",
-            "endereco": "Rua Severino Ribeiro Cruz, 265 - Centro",
-            "cidade": "Campina Grande",
-            "estado": "PB"
-        },
-        {
-            "nome": "Pronto Atendimento Centro",
-            "endereco": "Rua Doutor Severino Ribeiro Cruz, 277 - Centro",
-            "cidade": "Campina Grande",
-            "estado": "PB"
-        },
-        {
-            "nome": "Pronto Atendimento Cabo",
-            "endereco": "Av. Pres. Vargas, 428 - Centro",
-            "cidade": "Cabo de Santo Agostinho",
-            "estado": "PE"
-        },
-        {
-            "nome": "Pronto Atendimento Goiana",
-            "endereco": "Av. Marechal Deodoro da Fonseca, 234 - Centro",
-            "cidade": "Goiana",
-            "estado": "PE"
-        },
-        {
-            "nome": "Pronto Atendimento Olinda",
-            "endereco": "Avenida Gov. Carlos de Lima Cavalcanti, 751 - Bultrins",
-            "cidade": "Olinda",
-            "estado": "PE"
-        },
-        {
-            "nome": "Pronto Atendimento Paulista",
-            "endereco": "Rua Milton de Souza Lopes, 84 - Centro",
-            "cidade": "Paulista",
-            "estado": "PE"
-        },
-        {
-            "nome": "Pronto Atendimento Caxangá",
-            "endereco": "Av. Prof. Moraes Rego, 314 - Iputinga",
-            "cidade": "Recife",
-            "estado": "PE"
-        },
-        {
-            "nome": "Pronto Atendimento Derby",
-            "endereco": "Rua da Baixa Verde, 305 - Derby",
-            "cidade": "Recife",
-            "estado": "PE"
-        },
-        {
-            "nome": "Pronto Atendimento Zona Norte",
-            "endereco": "Av. Bel. Tomaz Landim, 1022 - São Gonçalo do Amarante",
-            "cidade": "Natal",
-            "estado": "RN"
-        },
-        {
-            "nome": "Pronto Atendimento Américo Brasiliense",
-            "endereco": "Rua Maria Mendes, 69 - Vila Cerqueira",
-            "cidade": "Américo Brasiliense",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento Assis",
-            "endereco": "Rua Victor Costa Romano, 97 - Jardim Eudopa",
-            "cidade": "Assis",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento Barra Bonita",
-            "endereco": "Rua Manoel D'Almeida Camargo, 135 - Vila Operária",
-            "cidade": "Barra Bonita",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento de Barretos",
-            "endereco": "Av. Eng. Necker Carvalho de Camargo, 1701 - Rios",
-            "cidade": "Barretos",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento Capivari",
-            "endereco": "Praça Dr. Mário Dias de Aguiar, 1 - Centro",
-            "cidade": "Capivari",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento Descalvado",
-            "endereco": "Rua Conselheiro Antônio Prado, 836 - Centro",
-            "cidade": "Descalvado",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento Jaboticabal",
-            "endereco": "Rua Doutor Mário de Campos I, 921 - Jardim São Marcos",
-            "cidade": "Jaboticabal",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento Villa Branca",
-            "endereco": "Avenidas das Letras, 1276 - Villa Branca",
-            "cidade": "Jacareí",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento Leme",
-            "endereco": "Av. Doutor Jambeiro Costa, 870 - Centro",
-            "cidade": "Leme",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento Marília",
-            "endereco": "Av. Castro Alves, 1717 - Polon",
-            "cidade": "Marília",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento Orlândia",
-            "endereco": "Rua 18, 565 - Jardim Teixeira",
-            "cidade": "Orlândia",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento Piracicaba",
-            "endereco": "Av. Independência , 2475 - Alemães",
-            "cidade": "Piracicaba",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento Pitangueiras",
-            "endereco": "Avenida Acre, 139 - Jardim Paraíso",
-            "cidade": "Pitangueiras",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento Pitangueiras",
-            "endereco": "Av. Acre, 139B - Jardim Brasília",
-            "cidade": "Pitangueiras",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento Porto Ferreira",
-            "endereco": "Rua Bento José de Carvalho, 315 - Centro",
-            "cidade": "Porto Ferreira",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento Mais Saúde (Atendimento Adulto)",
-            "endereco": "Av. Leão XIII, 1600 - Ribeirânia",
-            "cidade": "Ribeirão Preto",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento Ribeirão Preto (Atendimento Adulto)",
-            "endereco": "Rua Bernardino de Campos , 980 - Centro",
-            "cidade": "Ribeirão Preto",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento Santa Rosa",
-            "endereco": "Rua Mario Carneiro da Cunha, 949 - Monte Alto",
-            "cidade": "Santa Rosa do Viterbo",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento São Carlos",
-            "endereco": "Rua Paulino Botelho de Abreu Sampaio, 800 - Jardim Bethânia",
-            "cidade": "São Carlos",
-            "estado": "SP"
-        },
-        {
-            "nome": "Pronto Atendimento de Viradouro",
-            "endereco": "Rua do Hospital, 53 - Centro",
-            "cidade": "Viradouro",
-            "estado": "SP"
-        }
-    ]
+  "prontoatendimento": [
+    {
+      "nome": "Pronto Atendimento Cidade Nova",
+      "endereco": "Av. Camapuã, 8 - Cidade Nova",
+      "cidade": "Manaus",
+      "estado": "AM"
+    },
+    {
+      "nome": "Pronto Atendimento Distrito",
+      "endereco": "Avenida Buriti, 3727 - Distrito Industrial I",
+      "cidade": "Manaus",
+      "estado": "AM"
+    },
+    {
+      "nome": "Pronto Atendimento Cajazeiras",
+      "endereco": "Rua Estrada do Coqueiro Grande, 2023 - Cajazeiras",
+      "cidade": "Salvador",
+      "estado": "BA"
+    },
+    {
+      "nome": "Pronto Atendimento Uruguai",
+      "endereco": "Rua do Uruguay, 852 - Uruguai",
+      "cidade": "Salvador",
+      "estado": "BA"
+    },
+    {
+      "nome": "Pronto Atendimento Bezerra de Menezes",
+      "endereco": "Rua Ribeiro da Silva, 727 - Monte Castelo",
+      "cidade": "Fortaleza",
+      "estado": "CE"
+    },
+    {
+      "nome": "Pronto Atendimento Mário Barreto",
+      "endereco": "Rua São Raimundo, 1781 - Cambeba",
+      "cidade": "Fortaleza",
+      "estado": "CE"
+    },
+    {
+      "nome": "Pronto Atendimento Parangaba",
+      "endereco": "Av. Godofredo Maciel, 88 - Parangaba",
+      "cidade": "Fortaleza",
+      "estado": "CE"
+    },
+    {
+      "nome": "Pronto Atendimento Pacajus",
+      "endereco": "Rua Naide Costa Menezes, 525 - Centro",
+      "cidade": "Pacajus",
+      "estado": "CE"
+    },
+    {
+      "nome": "Pronto Atendimento Pecém",
+      "endereco": "Avenida Antônio Brasileiro , 06 - Centro",
+      "cidade": "Pecém",
+      "estado": "CE"
+    },
+    {
+      "nome": "Pronto Atendimento Anápolis",
+      "endereco": "Rua Coronel Batista, 29 - Setor Central",
+      "cidade": "Anápolis",
+      "estado": "GO"
+    },
+    {
+      "nome": "Pronto Atendimento Edeia",
+      "endereco": "Av. Presidente Kennedy, 276, Quadra 06, Lote 02 - Setor Alegrete",
+      "cidade": "Edeia",
+      "estado": "GO"
+    },
+    {
+      "nome": "Pronto Atendimento Cora Coralina",
+      "endereco": "Avenida Anhanguera QD 20, LT 20-E, Nº 11231 - Setor Esplananda",
+      "cidade": "Goiânia",
+      "estado": "GO"
+    },
+    {
+      "nome": "Pronto Atendimento Rio Verde",
+      "endereco": "Avenida Eurico Veloso do Carmo , 1800 - Alameda Barrinha",
+      "cidade": "Rio Verde",
+      "estado": "GO"
+    },
+    {
+      "nome": "PA Contorno",
+      "endereco": "Avenida do Contorno, 2001",
+      "cidade": "Belo Horizonte",
+      "estado": "MG"
+    },
+    {
+      "nome": "Pronto Atendimento do Hospital Vera Cruz",
+      "endereco": "Rua Paracatu, 724 - Santo Agostinho",
+      "cidade": "Belo Horizonte",
+      "estado": "MG"
+    },
+    {
+      "nome": "Pronto Atendimento Santa Maria",
+      "endereco": "Avenida Santos Dumont , 2140 - Santa Maria",
+      "cidade": "Uberaba",
+      "estado": "MG"
+    },
+    {
+      "nome": "Pronto Atendimento Digital Uberlândia",
+      "endereco": "Rua Virgílio Melo Franco, Quadra D0014, Lote 12 A, 465 - Maracanã",
+      "cidade": "Uberlândia",
+      "estado": "MG"
+    },
+    {
+      "nome": "Pronto Atendimento Dourados",
+      "endereco": "Avenida Presidente Vargas, 2145 - Cohafaba III Plano",
+      "cidade": "Dourados",
+      "estado": "MS"
+    },
+    {
+      "nome": "Pronto Atendimento Ivinhema",
+      "endereco": "Av. Brasil, 647 - Centro",
+      "cidade": "Invinhema",
+      "estado": "MS"
+    },
+    {
+      "nome": "Pronto Atendimento Rondonópolis",
+      "endereco": "Rua Agostinho de Figueiredo, 60 - Jardim Guanabara",
+      "cidade": "Rondonópolis",
+      "estado": "MT"
+    },
+    {
+      "nome": "Pronto Atendimento Ananindeua",
+      "endereco": "BR 316 - km 2, 90 - Guanabara",
+      "cidade": "Belém",
+      "estado": "PA"
+    },
+    {
+      "nome": "Pronto Atendimento Campinense",
+      "endereco": "Rua Severino Ribeiro Cruz, 265 - Centro",
+      "cidade": "Campina Grande",
+      "estado": "PB"
+    },
+    {
+      "nome": "Pronto Atendimento Centro",
+      "endereco": "Rua Doutor Severino Ribeiro Cruz, 277 - Centro",
+      "cidade": "Campina Grande",
+      "estado": "PB"
+    },
+    {
+      "nome": "Pronto Atendimento Cabo",
+      "endereco": "Av. Pres. Vargas, 428 - Centro",
+      "cidade": "Cabo de Santo Agostinho",
+      "estado": "PE"
+    },
+    {
+      "nome": "Pronto Atendimento Goiana",
+      "endereco": "Av. Marechal Deodoro da Fonseca, 234 - Centro",
+      "cidade": "Goiana",
+      "estado": "PE"
+    },
+    {
+      "nome": "Pronto Atendimento Olinda",
+      "endereco": "Avenida Gov. Carlos de Lima Cavalcanti, 751 - Bultrins",
+      "cidade": "Olinda",
+      "estado": "PE"
+    },
+    {
+      "nome": "Pronto Atendimento Paulista",
+      "endereco": "Rua Milton de Souza Lopes, 84 - Centro",
+      "cidade": "Paulista",
+      "estado": "PE"
+    },
+    {
+      "nome": "Pronto Atendimento Caxangá",
+      "endereco": "Av. Prof. Moraes Rego, 314 - Iputinga",
+      "cidade": "Recife",
+      "estado": "PE"
+    },
+    {
+      "nome": "Pronto Atendimento Derby",
+      "endereco": "Rua da Baixa Verde, 305 - Derby",
+      "cidade": "Recife",
+      "estado": "PE"
+    },
+    {
+      "nome": "Pronto Atendimento Zona Norte",
+      "endereco": "Av. Bel. Tomaz Landim, 1022 - São Gonçalo do Amarante",
+      "cidade": "Natal",
+      "estado": "RN"
+    },
+    {
+      "nome": "Pronto Atendimento Américo Brasiliense",
+      "endereco": "Rua Maria Mendes, 69 - Vila Cerqueira",
+      "cidade": "Américo Brasiliense",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento Assis",
+      "endereco": "Rua Victor Costa Romano, 97 - Jardim Eudopa",
+      "cidade": "Assis",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento Barra Bonita",
+      "endereco": "Rua Manoel D'Almeida Camargo, 135 - Vila Operária",
+      "cidade": "Barra Bonita",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento de Barretos",
+      "endereco": "Av. Eng. Necker Carvalho de Camargo, 1701 - Rios",
+      "cidade": "Barretos",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento Capivari",
+      "endereco": "Praça Dr. Mário Dias de Aguiar, 1 - Centro",
+      "cidade": "Capivari",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento Descalvado",
+      "endereco": "Rua Conselheiro Antônio Prado, 836 - Centro",
+      "cidade": "Descalvado",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento Jaboticabal",
+      "endereco": "Rua Doutor Mário de Campos I, 921 - Jardim São Marcos",
+      "cidade": "Jaboticabal",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento Villa Branca",
+      "endereco": "Avenidas das Letras, 1276 - Villa Branca",
+      "cidade": "Jacareí",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento Leme",
+      "endereco": "Av. Doutor Jambeiro Costa, 870 - Centro",
+      "cidade": "Leme",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento Marília",
+      "endereco": "Av. Castro Alves, 1717 - Polon",
+      "cidade": "Marília",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento Orlândia",
+      "endereco": "Rua 18, 565 - Jardim Teixeira",
+      "cidade": "Orlândia",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento Piracicaba",
+      "endereco": "Av. Independência , 2475 - Alemães",
+      "cidade": "Piracicaba",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento Pitangueiras",
+      "endereco": "Avenida Acre, 139 - Jardim Paraíso",
+      "cidade": "Pitangueiras",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento Pitangueiras",
+      "endereco": "Av. Acre, 139B - Jardim Brasília",
+      "cidade": "Pitangueiras",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento Porto Ferreira",
+      "endereco": "Rua Bento José de Carvalho, 315 - Centro",
+      "cidade": "Porto Ferreira",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento Mais Saúde (Atendimento Adulto)",
+      "endereco": "Av. Leão XIII, 1600 - Ribeirânia",
+      "cidade": "Ribeirão Preto",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento Ribeirão Preto (Atendimento Adulto)",
+      "endereco": "Rua Bernardino de Campos , 980 - Centro",
+      "cidade": "Ribeirão Preto",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento Santa Rosa",
+      "endereco": "Rua Mario Carneiro da Cunha, 949 - Monte Alto",
+      "cidade": "Santa Rosa do Viterbo",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento São Carlos",
+      "endereco": "Rua Paulino Botelho de Abreu Sampaio, 800 - Jardim Bethânia",
+      "cidade": "São Carlos",
+      "estado": "SP"
+    },
+    {
+      "nome": "Pronto Atendimento de Viradouro",
+      "endereco": "Rua do Hospital, 53 - Centro",
+      "cidade": "Viradouro",
+      "estado": "SP"
+    }
+  ]
 }
