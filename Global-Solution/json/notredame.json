@@ -1,0 +1,742 @@
+{
+  "unidades": [
+    {
+      "nome": "NotreLabs Santo André - XV de Novembro",
+      "endereco": "Av. Quinze de Novembro, 512 - Centro",
+      "cidade": "Santo André",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Médico ABC",
+      "endereco": "Avenida Francisco Prestes Maia, 1547 - Centro",
+      "cidade": "São Bernardo do Campo",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Interlagos",
+      "endereco": "Avenida Interlagos, 2825 - Jardim Umuarama",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Jacarepaguá",
+      "endereco": "Estrada dos Três Rios, 570 - Freguesia de Jacarepaguá",
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ"
+    },
+    {
+      "nome": "Centro Clínico Jundiaí",
+      "endereco": "Rua São Bento, 41 - Centro",
+      "cidade": "Jundiaí",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Caieiras",
+      "endereco": "Rua Ambrosina do Carmo Buonaguide, 157/159 - Centro",
+      "cidade": "Caieiras",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Rodrigues Pacheco",
+      "endereco": "Rua Rodrigues Pacheco, 204 - Centro",
+      "cidade": "Sorocaba",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Guarulhos II",
+      "endereco": "Rua Cabo João Teruel Fregoni, 555 - Ponte Grande",
+      "cidade": "Guarulhos",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Duque de Caxias",
+      "endereco": "Rua Professor José de Souza Herdy, 1216 - Jardim 25 de Agosto",
+      "cidade": "Duque de Caxias",
+      "estado": "RJ"
+    },
+    {
+      "nome": "Centro Clínico Trujillo I",
+      "endereco": "Avenida Doutor Armando Salles de Oliveira, 290 - Trujillo",
+      "cidade": "Sorocaba",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Penha",
+      "endereco": "Rua Miranda de Azevedo, 58 - Centro",
+      "cidade": "Sorocaba",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Itu",
+      "endereco": "Avenida Doutor Otaviano Pereira Mendes, 819 - Brasil",
+      "cidade": "Itu",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Santo Antônio",
+      "endereco": "Avenida Santo Antonio, 1905 - Vila Osasco",
+      "cidade": "Osasco",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Autonomistas",
+      "endereco": "Avenida dos Autonomistas, 2.606 - Centro",
+      "cidade": "Osasco",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Alphaville",
+      "endereco": "Alameda Amazonas, 329 - Alphaville Industrial",
+      "cidade": "Barueri",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Mogi das Cruzes",
+      "endereco": "Rua Engenheiro Eugênio Motta, 255 - Jardim Santista",
+      "cidade": "Mogi das Cruzes",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Guarulhos I",
+      "endereco": "Avenida Doutor Timóteo Penteado, 1168 - Vila Hulda",
+      "cidade": "Guarulhos",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico São Vicente",
+      "endereco": "Rua Frei Gaspar, 365 - Centro",
+      "cidade": "São Vicente",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico São Bernardo",
+      "endereco": "Rua João Pessoa, 107 - Centro",
+      "cidade": "São Bernardo do Campo",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Santos",
+      "endereco": "Rua Ceará, 60 - Gonzaga",
+      "cidade": "Santos",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Jabaquara",
+      "endereco": "Avenida Engenheiro Armando de Arruda Pereira, 295 - Jabaquara",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Bela Vista",
+      "endereco": "Rua Maestro Cardim, 769 - Bela Vista",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Diadema",
+      "endereco": "Rua Célia, 77 - Centro",
+      "cidade": "Diadema",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Taboão da Serra",
+      "endereco": "Rua Felipe Pinel, 60 - Jardim Monte Alegre",
+      "cidade": "Taboão da Serra",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico São Caetano do Sul",
+      "endereco": "Rua Rio Grande do Sul, 53 - Centro",
+      "cidade": "São Caetano do Sul",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Osasco",
+      "endereco": "Rua Voluntários da Pátria, 219 - Centro",
+      "cidade": "Osasco",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Ferraz de Vasconcelos",
+      "endereco": "Rua Francisco Antônio Ribeiro, 390 - Centro",
+      "cidade": "Ferraz de Vasconcelos",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Itaquaquecetuba",
+      "endereco": "Rua Santa Ernestina, 100 - Jardim Maragogipe",
+      "cidade": "Itaquaquecetuba",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Suzano",
+      "endereco": "Rua General Francisco Glicério, 1611 - Vila Maluf",
+      "cidade": "Suzano",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Mauá",
+      "endereco": "Rua General Osório, 232 - Centro",
+      "cidade": "Mauá",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Cubatão",
+      "endereco": "Rua Bahia, 250 - Jardim Casqueiro",
+      "cidade": "Cubatão",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Ribeirão Pires",
+      "endereco": "Rua Felipe Sabbag, 296 - Centro",
+      "cidade": "Ribeirão Pires",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Jacareí",
+      "endereco": "Rua Alfredo Schurig, 500 - Centro",
+      "cidade": "Jacareí",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Carapicuíba",
+      "endereco": "Rua Pedro Vaz de Campos, 294 - Centro",
+      "cidade": "Carapicuíba",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Guarujá",
+      "endereco": "Rua Buenos Aires, 95 - Centro",
+      "cidade": "Guarujá",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico São José dos Campos",
+      "endereco": "Rua Ipiranga, 45 - Centro",
+      "cidade": "São José dos Campos",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Taubaté",
+      "endereco": "Rua Voluntário Benedito Sérgio, 22 - Centro",
+      "cidade": "Taubaté",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Mogi Guaçu",
+      "endereco": "Rua José Bernardi, 438 - Centro",
+      "cidade": "Mogi Guaçu",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Campinas",
+      "endereco": "Rua Onze de Agosto, 315 - Centro",
+      "cidade": "Campinas",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Paulínia",
+      "endereco": "Rua Luiza Febrônio de Almeida, 139 - Jardim São Bento",
+      "cidade": "Paulínia",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Indaiatuba",
+      "endereco": "Rua Cerqueira César, 1071 - Centro",
+      "cidade": "Indaiatuba",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Americana",
+      "endereco": "Rua das Paineiras, 120 - Centro",
+      "cidade": "Americana",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Limeira",
+      "endereco": "Rua Senador Vergueiro, 144 - Centro",
+      "cidade": "Limeira",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Piracicaba",
+      "endereco": "Rua Dom Pedro II, 1345 - Centro",
+      "cidade": "Piracicaba",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Rio Claro",
+      "endereco": "Rua 9, 1578 - Centro",
+      "cidade": "Rio Claro",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Araras",
+      "endereco": "Rua Nunes Machado, 832 - Centro",
+      "cidade": "Araras",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Jaú",
+      "endereco": "Rua Saldanha Marinho, 888 - Centro",
+      "cidade": "Jaú",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Botucatu",
+      "endereco": "Rua Amando de Barros, 881 - Centro",
+      "cidade": "Botucatu",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Ourinhos",
+      "endereco": "Rua Cardoso Pimentel, 1051 - Centro",
+      "cidade": "Ourinhos",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Bauru",
+      "endereco": "Rua Engenheiro Saint Martin, 18-60 - Centro",
+      "cidade": "Bauru",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Marília",
+      "endereco": "Rua 9 de Julho, 977 - Centro",
+      "cidade": "Marília",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Assis",
+      "endereco": "Rua Dr. Geraldo Nogueira Leite, 53 - Vila Clementina",
+      "cidade": "Assis",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Presidente Prudente",
+      "endereco": "Avenida Washington Luiz, 548 - Centro",
+      "cidade": "Presidente Prudente",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Tupã",
+      "endereco": "Rua Marília, 1190 - Centro",
+      "cidade": "Tupã",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Araçatuba",
+      "endereco": "Rua do Fico, 54 - Centro",
+      "cidade": "Araçatuba",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Birigui",
+      "endereco": "Rua General Osório, 564 - Centro",
+      "cidade": "Birigui",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Penápolis",
+      "endereco": "Rua Campos Salles, 1026 - Centro",
+      "cidade": "Penápolis",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Lins",
+      "endereco": "Rua Campos Sales, 561 - Centro",
+      "cidade": "Lins",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Andradina",
+      "endereco": "Rua São Paulo, 591 - Centro",
+      "cidade": "Andradina",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Dracena",
+      "endereco": "Rua Tiradentes, 444 - Centro",
+      "cidade": "Dracena",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Mirandópolis",
+      "endereco": "Rua Rui Barbosa, 1254 - Centro",
+      "cidade": "Mirandópolis",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Votuporanga",
+      "endereco": "Rua Pará, 3735 - Centro",
+      "cidade": "Votuporanga",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Fernandópolis",
+      "endereco": "Avenida Amadeu Bizelli, 1517 - Centro",
+      "cidade": "Fernandópolis",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Jales",
+      "endereco": "Rua Sete, 2263 - Centro",
+      "cidade": "Jales",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Rio Preto",
+      "endereco": "Rua General Glicério, 3530 - Centro",
+      "cidade": "São José do Rio Preto",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Catanduva",
+      "endereco": "Rua Pará, 1177 - Centro",
+      "cidade": "Catanduva",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Barretos",
+      "endereco": "Rua 20, 644 - Centro",
+      "cidade": "Barretos",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Franca",
+      "endereco": "Rua São José, 1633 - Centro",
+      "cidade": "Franca",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Ituverava",
+      "endereco": "Rua Capitão Domingos Guimarães, 391 - Centro",
+      "cidade": "Ituverava",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico São Carlos",
+      "endereco": "Rua Episcopal, 2150 - Centro",
+      "cidade": "São Carlos",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Araraquara",
+      "endereco": "Rua Padre Duarte, 1145 - Centro",
+      "cidade": "Araraquara",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Rio das Pedras",
+      "endereco": "Rua 3, 68 - Centro",
+      "cidade": "Rio das Pedras",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Limeira",
+      "endereco": "Rua Sete de Setembro, 846 - Centro",
+      "cidade": "Limeira",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico São João da Boa Vista",
+      "endereco": "Rua Dr. Oscar Pirajá Martins, 268 - Centro",
+      "cidade": "São João da Boa Vista",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico São João da Boa Vista",
+      "endereco": "Rua Dr. Oscar Pirajá Martins, 268 - Centro",
+      "cidade": "São João da Boa Vista",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Mogi Mirim",
+      "endereco": "Avenida Adib Chaib, 179 - Centro",
+      "cidade": "Mogi Mirim",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Amparo",
+      "endereco": "Rua Professor Silvio Marchione, 182 - Centro",
+      "cidade": "Amparo",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Bragança Paulista",
+      "endereco": "Rua Doutor Cândido Rodrigues, 116 - Centro",
+      "cidade": "Bragança Paulista",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Atibaia",
+      "endereco": "Rua José Alvim, 528 - Centro",
+      "cidade": "Atibaia",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Itatiba",
+      "endereco": "Avenida Marechal Castelo Branco, 288 - Centro",
+      "cidade": "Itatiba",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Jundiaí II",
+      "endereco": "Rua Prudente de Moraes, 200 - Centro",
+      "cidade": "Jundiaí",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Sorocaba II",
+      "endereco": "Rua XV de Novembro, 23 - Centro",
+      "cidade": "Sorocaba",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Piracicaba II",
+      "endereco": "Rua Moraes Barros, 648 - Centro",
+      "cidade": "Piracicaba",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Limeira II",
+      "endereco": "Rua Boa Morte, 1046 - Centro",
+      "cidade": "Limeira",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Campinas II",
+      "endereco": "Avenida Anchieta, 123 - Centro",
+      "cidade": "Campinas",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Indaiatuba II",
+      "endereco": "Rua Cerqueira César, 891 - Centro",
+      "cidade": "Indaiatuba",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Americana II",
+      "endereco": "Avenida Brasil, 777 - Centro",
+      "cidade": "Americana",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Rio Claro II",
+      "endereco": "Avenida 3, 1127 - Centro",
+      "cidade": "Rio Claro",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Piracicaba III",
+      "endereco": "Rua XV de Novembro, 1234 - Centro",
+      "cidade": "Piracicaba",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Araras II",
+      "endereco": "Rua Tiradentes, 987 - Centro",
+      "cidade": "Araras",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Jaú II",
+      "endereco": "Rua São Sebastião, 567 - Centro",
+      "cidade": "Jaú",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Botucatu II",
+      "endereco": "Avenida Dom Lúcio, 295 - Centro",
+      "cidade": "Botucatu",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Ourinhos II",
+      "endereco": "Rua Cardoso Pimentel, 789 - Centro",
+      "cidade": "Ourinhos",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Bauru II",
+      "endereco": "Rua Batista de Carvalho, 1280 - Centro",
+      "cidade": "Bauru",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Marília II",
+      "endereco": "Rua Quinze de Novembro, 875 - Centro",
+      "cidade": "Marília",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Assis II",
+      "endereco": "Avenida Rui Barbosa, 981 - Centro",
+      "cidade": "Assis",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Presidente Prudente II",
+      "endereco": "Rua Doutor Gurgel, 563 - Centro",
+      "cidade": "Presidente Prudente",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Tupã II",
+      "endereco": "Rua Parecis, 1295 - Centro",
+      "cidade": "Tupã",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Araçatuba II",
+      "endereco": "Rua Floriano Peixoto, 238 - Centro",
+      "cidade": "Araçatuba",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Birigui II",
+      "endereco": "Rua São Benedito, 1234 - Centro",
+      "cidade": "Birigui",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Penápolis II",
+      "endereco": "Avenida Antônio Veronese, 665 - Centro",
+      "cidade": "Penápolis",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Lins II",
+      "endereco": "Rua XV de Novembro, 432 - Centro",
+      "cidade": "Lins",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Andradina II",
+      "endereco": "Rua Floriano Peixoto, 1245 - Centro",
+      "cidade": "Andradina",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Dracena II",
+      "endereco": "Avenida Expedicionários, 115 - Centro",
+      "cidade": "Dracena",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Mirandópolis II",
+      "endereco": "Avenida Eugênio Bérgamo, 879 - Centro",
+      "cidade": "Mirandópolis",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Votuporanga II",
+      "endereco": "Rua Tocantins, 2222 - Centro",
+      "cidade": "Votuporanga",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Fernandópolis II",
+      "endereco": "Rua Bahia, 765 - Centro",
+      "cidade": "Fernandópolis",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Jales II",
+      "endereco": "Rua Rio de Janeiro, 1515 - Centro",
+      "cidade": "Jales",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Rio Preto II",
+      "endereco": "Rua Voluntários de São Paulo, 1111 - Centro",
+      "cidade": "São José do Rio Preto",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Catanduva II",
+      "endereco": "Avenida São Paulo, 987 - Centro",
+      "cidade": "Catanduva",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Barretos II",
+      "endereco": "Rua 12, 787 - Centro",
+      "cidade": "Barretos",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Franca II",
+      "endereco": "Avenida Major Nicácio, 1234 - Centro",
+      "cidade": "Franca",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Ituverava II",
+      "endereco": "Rua Prudente de Moraes, 587 - Centro",
+      "cidade": "Ituverava",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico São Carlos II",
+      "endereco": "Rua Coronel Leopoldo Prado, 876 - Centro",
+      "cidade": "São Carlos",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Araraquara II",
+      "endereco": "Avenida Duque de Caxias, 123 - Centro",
+      "cidade": "Araraquara",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Rio das Pedras II",
+      "endereco": "Rua 5, 987 - Centro",
+      "cidade": "Rio das Pedras",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Limeira II",
+      "endereco": "Rua Sete de Setembro, 1324 - Centro",
+      "cidade": "Limeira",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico São João da Boa Vista II",
+      "endereco": "Rua São Sebastião, 789 - Centro",
+      "cidade": "São João da Boa Vista",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Mogi Mirim II",
+      "endereco": "Avenida XV de Novembro, 654 - Centro",
+      "cidade": "Mogi Mirim",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Amparo II",
+      "endereco": "Rua 13 de Maio, 321 - Centro",
+      "cidade": "Amparo",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Bragança Paulista II",
+      "endereco": "Avenida José Gomes da Rocha Leal, 999 - Centro",
+      "cidade": "Bragança Paulista",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Atibaia II",
+      "endereco": "Avenida Nove de Julho, 456 - Centro",
+      "cidade": "Atibaia",
+      "estado": "SP"
+    },
+    {
+      "nome": "Centro Clínico Itatiba II",
+      "endereco": "Rua Rui Barbosa, 987 - Centro",
+      "cidade": "Itatiba",
+      "estado": "SP"
+    }
+  ]
+}
