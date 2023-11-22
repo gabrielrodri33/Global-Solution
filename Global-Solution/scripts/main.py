@@ -7,6 +7,8 @@ import os
 import getpass
 import base64
 import bcrypt
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from api import cellerecpf
 from api import viacep
 
@@ -53,14 +55,15 @@ def carregarLista():
 
 def salvarCredenciais(email, senha):
     try:
-        dados_login = carregarLista("Sprint4/json/clientes.json")
+        with open("Global-Solution/json/cadastro.json", "r") as file:
+            data = json.load(file)
     except FileNotFoundError:
-        dados_login = {}
+        data = {}
 
-    dados_login[email] = senha
+    data[email] = senha
 
-    with open("Sprint4/json/clientes.json", "w") as arquivo:
-        json.dump(dados_login, arquivo)
+    with open("Global-Solution/json/cadastro.json", "w") as arquivo:
+        json.dump(data, arquivo)
 
 def pwd():
     while True:
@@ -213,8 +216,136 @@ def formata_valor():
         except ValueError:
             separador("Insira um número válido!", 7)
 
+def login_user():
+    status = False
+    c = 0
+    with open("Global-Solution/json/cadastro.json", "r") as file:
+        dados_login = json.load(file)
+    
+    while status == False:
+        separador(30, 3)
+        centralizar("Login", 60)
+        separador(30, 3)
+        email = logarEmail()
+        senha = getpass.getpass("Senha: ").encode("utf-8")
+        senha = base64.b64encode(senha).decode("utf-8")
+        
+        if email in dados_login and dados_login[email] == senha:
+            status = True
+            login = True
+        else:
+            clear_console()
+            separador(30, 3)
+            separador("Email ou senha incorretos!", 7)
+            c += 1
+    
+        if c == 3:
+            clear_console()
+            separador(30, 5)
+            centralizar("Limite de tentativas atingido!", 60)
+            separador(30, 5)
+            option = validacao(3)
+            if option == 1:
+                option = 2
+
+            else:
+                email = logarEmail()
+                senha, code = pwd()
+                crud.updatePwd("cliente", "senha", senha, email)
+                
+                with open("Global-Solution/json/cadastro.json", 'r') as arquivo:
+                    dados_login = json.load(arquivo)
+
+                dados_login[email] = code
+
+                with open("Global-Solution/json/cadastro.json", 'w') as arquivo:
+                    json.dump(dados_login, arquivo, indent=2)
+
+                print(f'Valor da chave {email} alterado para {code}.')
+
+                c = 0
+
+    if status == True:
+        clear_console()
+        separador(30,1)
+        centralizar("Logado!", 60)
+        atualizacao_txt("Usuário logado", email)
+        option = validacao(6)
+    senha = ""
+    return  option, login, email
+
+def validacao(dado):
+    status = False
+    match dado:
+        case 1:
+            while not status:
+                try:
+                    separador(30, 1)
+                    centralizar("Menu principal!", 60)
+                    separador(30, 1)
+                    option = int(input("1- Fazer login\n2- Fazer cadastro como paciente\n3- Fazer cadastro com médico\n4- Localização de hospitais\n5- Termos de políticas de privacidade\n6- Suporte\n7- Sair\n"))
+
+                    if 1 <= option <=7:
+                        status = True
+
+                    else:
+                        clear_console()
+                        separador(30, 1)
+                        separador("Entrada inválida!", 7)
+                        print("Por favor escolha uma opção de 1 a 7!")
+                except ValueError:
+                    clear_console()
+                    separador(30, 1)
+                    separador("Entrada inválida!", 7)
+                    print("Por favor insira um número")
+
+    return option
+
+def menu_principal():
+    option = validacao(1)
+    clear_console()
+    login = False
+
+    while True:
+        match option:
+            case 1:
+                option, login, email = login_user()
+
+            case 2:
+                pass
+
+            case 3:
+                pass
+
+            case 4:
+                url = "C:/FIAP/Computational Thinking Using Python/Global-Solution/Global-Solution/html/todos.html"
+                webbrowser.open(url)
+                print("""Vermelho: Sua localização
+                        Azul: Clínicas Notredame
+                        Roxo: Clínicas HapVida
+                        Laranja: Hospitais
+                        Vermelho escuro: Imagem e Laboratório
+                        Cinza: Pronto Atendimento
+                        Verde: Outros""")
+                
+                option = validacao(1)
+
+            case 5:
+                url = "https://www.hapvida.com.br/site/politicas-de-privacidade#:~:text=A%20Hapvida%20toma%20providências%20técnicas,não%20é%20acessível%20ao%20público."
+                webbrowser.open(url)
+                url = "https://www.gndi.com.br/portal-da-privacidade/politica-privacidade"
+                webbrowser.open(url)
+                option = validacao(1)
+
+            case 6:
+                pass
+
+            case 7:
+                break
+
 def principal():
-    pass
+    clear_console()
+    menu_principal()
 
 #Programa principal
 principal()
