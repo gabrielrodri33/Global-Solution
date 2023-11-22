@@ -1,27 +1,67 @@
-import folium
-from api import geolocalizacao
 import json
 
-#https://www.hapvida.com.br/site/rede-exclusiva
+with open("Global-Solution/json/clinica.json", "r", encoding="utf-8") as file:
+    clinicas = json.load(file)
 
-def localizacoes_outras():
-    with open("Global-Solution/json/outras.json", "r", encoding="latin-1") as file:
-        data = json.load(file)
+with open("Global-Solution/json/hospitais.json", "r", encoding="utf-8") as file:
+    hospitais = json.load(file)
 
-    latitude_usuario, longitude_usuario = geolocalizacao.coordenadas_usuario("02346-000", "158")
+with open("Global-Solution/json/imagemlaboratorio.json", "r", encoding="utf-8") as file:
+    imagem = json.load(file)
 
-    mapa = folium.Map(location=[latitude_usuario, longitude_usuario], zoom_start=10)
+with open("Global-Solution/json/notredame.json", "r", encoding="utf-8") as file:
+    notredame = json.load(file)
 
-    folium.Marker([latitude_usuario, longitude_usuario], popup='Minha Localização').add_to(mapa)
+with open("Global-Solution/json/outras.json", "r", encoding="utf-8") as file:
+    outras = json.load(file)
 
-    for d in data["outras"]:
-        latitude, longitude = geolocalizacao.coordenadas_hospitais(d)
-        
-        if latitude is not None and longitude is not None:
-            folium.Marker([latitude, longitude], popup=d["nome"]).add_to(mapa)
-        else:
-            print(f"Coordenadas inválidas para {d['nome']}")
+with open("Global-Solution/json/pa.json", "r", encoding="utf-8") as file:
+    pa = json.load(file)
 
-    mapa.show_in_browser("outras.html")
+# print(f"Clínicas: {len(clinicas['clinicas'])}")
+# print(f"Hospitais: {len(hospitais['hospital'])}")
+# print(f"imagem: {len(imagem['imagemlaboratorio'])}")
+# print(f"Notredame: {len(notredame['unidades'])}")
+# print(f"Outras: {len(outras['outras'])}")
+# print(f"PA: {len(pa['prontoatendimento'])}")
+# print(f"Soma: {len(clinicas['clinicas']) + len(hospitais['hospital']) + len(imagem['imagemlaboratorio']) + len(notredame['unidades']) + len(outras['outras']) + len(pa['prontoatendimento'])}")
 
-localizacoes_outras()
+count_clinicas = 0
+count_hospitais = 0
+count_imagem = 0
+count_notredame = 0
+count_outras = 0
+count_pa = 0
+
+for unidade in clinicas["clinicas"]:
+    if unidade["estado"] == "SP":
+        count_clinicas += 1
+
+for h in hospitais["hospital"]:
+    if h["estado"] == "SP":
+        count_hospitais += 1
+
+for i in imagem["imagemlaboratorio"]:
+    if i["estado"] == "SP":
+        count_imagem += 1
+
+for n in notredame["unidades"]:
+    if n["estado"] == "SP":
+        count_notredame += 1
+
+for o in outras["outras"]:
+    if o["estado"] == "SP":
+        count_outras += 1
+
+for p in pa["prontoatendimento"]:
+    if p["estado"] == "SP":
+        count_pa += 1
+
+print(count_clinicas)
+print(count_hospitais)
+print(count_imagem)
+print(count_notredame)
+print(count_outras)
+print(count_pa)
+print(count_clinicas + count_hospitais + count_imagem + count_notredame + count_outras + count_pa)
+
