@@ -301,6 +301,48 @@ def validacao(dado):
 
     return option
 
+def add_dict_endereco(dicionario, logradouro, bairro, localidade, uf, complemento, numero):
+    dicionario = {
+        'logradouro': logradouro,
+        'bairro': bairro,
+        'localidade': localidade,
+        'uf': uf,
+        'complemento': complemento,
+        'numero': numero
+    }
+
+    print(dicionario)
+    return dicionario
+
+def cadastroEndereco(cpf):
+    endereco_cliente = {}
+    while True:
+        separador(30,3)
+        centralizar("Endereço", 60)
+        separador(30,3)
+        cep, endereco = consultaCep()
+        logradouro = endereco['logradouro']
+        bairro = endereco['bairro']
+        localidade = endereco['localidade']
+        uf = endereco['uf']
+
+        print(f'Logradouro: {logradouro}')
+        print(f'Bairro: {bairro}')
+        print(f'Localidade: {localidade}')
+        print(f'uf: {uf}')
+        correto = validacao(4)
+        if correto == "S":
+            complemento = input("Complemento (opcional): ")
+            numero = input("Número (opcional): ")
+            endereco_cliente = add_dict_endereco(endereco_cliente, logradouro, bairro, localidade, uf, complemento, numero)
+            break
+        atualizacao_txt("Endereço cadastrado", cpf)
+
+
+    crud.insertEndereco(cpf, logradouro, bairro, numero, complemento, localidade, uf, cep)
+
+    return endereco_cliente
+
 def menu_principal():
     option = validacao(1)
     clear_console()
@@ -318,20 +360,14 @@ def menu_principal():
                 pass
 
             case 4:
-                url = "C:/FIAP/Computational Thinking Using Python/Global-Solution/Global-Solution/html/todos.html"
+                url = "../html/hospitais.html"
                 webbrowser.open(url)
-                print("""Vermelho: Sua localização
-                        Azul: Clínicas Notredame
-                        Roxo: Clínicas HapVida
-                        Laranja: Hospitais
-                        Vermelho escuro: Imagem e Laboratório
-                        Cinza: Pronto Atendimento
-                        Verde: Outros""")
+                print("Vermelho: Sua localização\nAzul: Clínicas Notredame\nRoxo: Clínicas HapVida\nLaranja: Hospitais\nVermelho escuro: Imagem e Laboratório\nCinza: Pronto Atendimento\nVerde: Outros")
                 
                 option = validacao(1)
 
             case 5:
-                url = "https://www.hapvida.com.br/site/politicas-de-privacidade#:~:text=A%20Hapvida%20toma%20providências%20técnicas,não%20é%20acessível%20ao%20público."
+                url = "https://www.hapvida.com.br/site/politicas-de-privacidade:~:text=A%20Hapvida%20toma%20providências%20técnicas,não%20é%20acessível%20ao%20público."
                 webbrowser.open(url)
                 url = "https://www.gndi.com.br/portal-da-privacidade/politica-privacidade"
                 webbrowser.open(url)
