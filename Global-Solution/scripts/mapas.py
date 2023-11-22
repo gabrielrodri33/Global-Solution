@@ -31,6 +31,8 @@ def localizacoes(json_name, value):
 
     mapa.save(mapa_name)
 
+    return data
+
 def todas_localizacoes(json_name, value, outras, clinica, hospitais, imagem, pa):
     file = f"Global-Solution/json/{json_name}.json"
     with open(file, "r", encoding="utf-8") as file:
