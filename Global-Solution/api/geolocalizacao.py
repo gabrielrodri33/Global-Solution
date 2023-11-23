@@ -3,7 +3,7 @@ from api import viacep
 from geopy.exc import GeocoderTimedOut
 
 def coordenadas_usuario(cep, numero):
-    localizacao = viacep.cep(cep)
+    cep, localizacao = viacep.cep(cep)
 
     geolocalizaco = Nominatim(user_agent="teste")
 
