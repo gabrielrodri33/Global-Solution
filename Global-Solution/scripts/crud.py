@@ -17,64 +17,198 @@ def conexao():
 def create():
     try:
         conn, cursor = conexao()
-        sql_query_paciente = """
-                            CREATE TABLE paciente (
-                                cpf         VARCHAR2(15) NOT NULL,
-                                nome        VARCHAR2(100) NOT NULL,
-                                email       VARCHAR2(100) NOT NULL,
-                                senha       VARCHAR2(1000) NOT NULL,
-                                tel_celular VARCHAR2(15),
-                                CONSTRAINT paciente_pk PRIMARY KEY (cpf)
-                            )"""
-        
+
         sql_query_endereco = """
-                            CREATE TABLE endereco (
-                                paciente_cpf   VARCHAR2(15) PRIMARY KEY,
-                                logradouro    VARCHAR2(255) NOT NULL,
-                                bairro        VARCHAR2(255) NOT NULL,
-                                numero        VARCHAR2(10),
-                                complemento   VARCHAR2(100),
-                                cidade        VARCHAR2(100) NOT NULL,
-                                estado        VARCHAR2(2) NOT NULL,
-                                cep           VARCHAR2(8) NOT NULL,
-                                CONSTRAINT endereco_paciente_fk FOREIGN KEY (paciente_cpf) REFERENCES paciente (cpf)
-                            )"""
-        
-        sql_query_bike_modelos = """
-                            CREATE TABLE bike_modelos (
-                                id_modelo   INTEGER NOT NULL,
-                                nome        VARCHAR2(255) NOT NULL,
-                                valor_aprox VARCHAR2(35),
-                                cor         VARCHAR2(255),
-                                num_serie   VARCHAR2(255) NOT NULL,
-                                obs             CLOB,
-                                cpf_paciente VARCHAR2(15) NOT NULL,
-                                CONSTRAINT bike_modelos_pk PRIMARY KEY (id_modelo)
-                            )"""
+            CREATE TABLE endereco (
+                paciente_cpf  VARCHAR2(15),
+                logradouro    VARCHAR2(255) NOT NULL,
+                bairro        VARCHAR2(255) NOT NULL,
+                numero        VARCHAR2(10),
+                complemento   VARCHAR2(100),
+                cidade        VARCHAR2(100) NOT NULL,
+                estado        VARCHAR2(2) NOT NULL,
+                cep           VARCHAR2(8) NOT NULL,
+                PRIMARY KEY (paciente_cpf)
+            )
+        """
 
-        sql_query_vistoria = """
-                            CREATE TABLE vistoria (
-                                id_vistoria     INTEGER NOT NULL,
-                                dt_inicio       DATE NOT NULL,
-                                dt_fim          DATE,
-                                aprov           CHAR(1) NOT NULL,
-                                bikes_num_serie VARCHAR2(255) NOT NULL,
-                                paciente_cpf     VARCHAR2(15) NOT NULL,
-                                CONSTRAINT vistoria_pk PRIMARY KEY (id_vistoria),
-                                CONSTRAINT vistoria_paciente_fk FOREIGN KEY (paciente_cpf) REFERENCES paciente (cpf)
-                            )"""
+        sql_query_hospital = """
+            CREATE TABLE hospital (
+                id_hospital     INTEGER GENERATED ALWAYS AS IDENTITY NOT NULL,
+                nome            VARCHAR2(50) NOT NULL,
+                endereco_numero NUMBER(6,0) NOT NULL,
+                paciente_cpf    VARCHAR2(15) NOT NULL,
+                PRIMARY KEY (id_hospital),
+                FOREIGN KEY (paciente_cpf) REFERENCES endereco (paciente_cpf)
+            )
+        """
 
-        cursor.execute(sql_query_paciente)
+        sql_query_especialidade = """
+            CREATE TABLE especialidade(
+                id_especialidade NUMBER(6, 0) NOT NULL,
+                especialidade    VARCHAR2(60) NOT NULL,
+                PRIMARY KEY (id_especialidade)
+            )
+        """
+
+        sql_query_medico = """
+            CREATE TABLE medico (
+                crm              VARCHAR2(25) NOT NULL,
+                nome             VARCHAR2(50) NOT NULL,
+                senha            VARCHAR2(1000) NOT NULL,
+                email            VARCHAR2(50) NOT NULL,
+                telefone         VARCHAR2(15) NOT NULL,
+                id_especialidade NUMBER(6,0) NOT NULL,
+                PRIMARY KEY (crm),
+                FOREIGN KEY (id_especialidade) REFERENCES especialidade (id_especialidade)
+            )
+        """
+
+        sql_query_paciente = """
+            CREATE TABLE paciente (
+                cpf             VARCHAR2(15) NOT NULL,
+                nome            VARCHAR2(50) NOT NULL,
+                senha           VARCHAR2(1000) NOT NULL,
+                email           VARCHAR2(50) NOT NULL,
+                telefone        VARCHAR2(15) NOT NULL,
+                PRIMARY KEY (cpf)
+            )
+        """
+
+        sql_query_agendamento = """
+            CREATE TABLE agendamento (
+                id_agendamento    INTEGER GENERATED ALWAYS AS IDENTITY NOT NULL,
+                dt_agendamento    DATE,
+                dt_fim            DATE,
+                descricao         VARCHAR2(255) NOT NULL,
+                crm               VARCHAR2(25) NOT NULL,
+                cpf               VARCHAR2(11) NOT NULL,
+                tipo              VARCHAR2(50) NOT NULL,
+                id_hospital       INTEGER NOT NULL,
+                PRIMARY KEY (id_agendamento),
+                FOREIGN KEY (crm) REFERENCES medico (crm),
+                FOREIGN KEY (cpf) REFERENCES paciente (cpf),
+                FOREIGN KEY (id_hospital) REFERENCES hospital (id_hospital)
+            )
+        """
+
         cursor.execute(sql_query_endereco)
-        cursor.execute(sql_query_bike_modelos)
-        cursor.execute(sql_query_vistoria)
+        cursor.execute(sql_query_hospital)
+        cursor.execute(sql_query_especialidade)
+        cursor.execute(sql_query_medico)
+        cursor.execute(sql_query_paciente)
+        cursor.execute(sql_query_agendamento)
+
         conn.commit()
         print("Tabelas criadas com sucesso!")
+        insert_especialidades()
     except Exception as e:
         print(f'Something went wrong - create: {e}')
     finally:
         cursor.close()
         conn.close()
+
+def insert_especialidades():
+    try:
+        conn, cursor = conexao()
+
+        especialidades = [
+            "Oncologia Clínica",
+            "Ortopedia e Traumatologia",
+            "Otorrinolaringologia",
+            "Patologia",
+            "Patologia Clínica",
+            "Patologia Clínica/Medicina Laboratorial",
+            "Pediatria",
+            "Pneumologia",
+            "Pneumologia e Tisiologia",
+            "Proctologia",
+            "Psiquiatria",
+            "Psiquiatria Infantil",
+            "Radiodiagnóstico",
+            "Radiologia",
+            "Radiologia e Diagnóstico por Imagem",
+            "Radioterapia",
+            "Reumatologia",
+            "Sexologia",
+            "Terapia Intensiva",
+            "Terapia Intensiva Pediátrica",
+            "Cuidados Intensivos Pediátricos",
+            "Tisiologia",
+            "Toco-Ginecologia",
+            "Ultrassonografia",
+            "Ultrassonografia em Ginecologia e Obstetrícia",
+            "Ultrassonografia Geral",
+            "Urologia"
+        ]
+
+        sql_query = "INSERT INTO especialidade (id_especialidade, especialidade) VALUES (:id_especialidade, :especialidade)"
+
+        for i, especialidade in enumerate(especialidades, start=1):
+            cursor.execute(sql_query, {
+                'id_especialidade': i,
+                'especialidade': especialidade
+            })
+
+        conn.commit()
+        print("Inserção de especialidades realizada com sucesso!")
+    except Exception as e:
+        print(f'Ocorreu um erro - insert_especialidades: {e}')
+    finally:
+        cursor.close()
+        conn.close()
+
+def insert_paciente(cpf, nome, senha, email, telefone):
+    try:
+        conn, cursor = conexao()
+
+        sql_query = """
+            INSERT INTO paciente (cpf, nome, senha, email, telefone)
+            VALUES (:cpf, :nome, :senha, :email, :telefone)
+        """
+        
+        cursor.execute(sql_query, {
+            'cpf': cpf,
+            'nome': nome,
+            'senha': senha,
+            'email': email,
+            'telefone': telefone
+        })
+
+        conn.commit()
+        print("Cadastro realizado com sucesso!")
+    except Exception as e:
+        print(f"Ocorreu um erro - insert_paciente: {e}")
+    finally:
+        cursor.close()
+        conn.close()
+
+def insert_medico(crm, nome, senha, email, telefone, id_especialidade):
+    try:
+        conn, cursor = conexao()
+
+        sql_query = """
+            INSERT INTO medico (crm, nome, senha, email, telefone, id_especialidade)
+            VALUES (:crm, :nome, :senha, :email, :telefone, :id_especialidade)
+        """
+        
+        cursor.execute(sql_query, {
+            'crm': crm,
+            'nome': nome,
+            'senha': senha,
+            'email': email,
+            'telefone': telefone,
+            'id_especialidade': id_especialidade
+        })
+
+        conn.commit()
+        print("Cadastro de médico realizado com sucesso!")
+    except Exception as e:
+        print(f"Ocorreu um erro - insert_medico: {e}")
+    finally:
+        cursor.close()
+        conn.close()
+
 
 def verifica_email_existente(email):
     try:
@@ -116,6 +250,25 @@ def verifica_cpf_existente(cpf):
 
     except Exception as e:
         print(f'Something went wrong - verifica_cpf_existente: {e}')
+    finally:
+        cursor.close()
+        conn.close()
+
+def update(table, dado, value, cpf):
+    try:
+        conn, cursor = conexao()
+
+        if isinstance(value, (int, float)):
+            value_str = str(value)
+        else:
+            value_str = f"'{value.replace("'", "''")}'"
+
+        sql_query = f"UPDATE {table} SET {dado} = {value_str} WHERE cpf = :cpf"
+        cursor.execute(sql_query, {'cpf': cpf})
+        conn.commit()
+        print("Atualizado com sucesso")
+    except Exception as e:
+        print(f'Something went wrong - update: {e}')
     finally:
         cursor.close()
         conn.close()
