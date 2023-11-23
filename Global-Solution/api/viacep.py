@@ -7,4 +7,4 @@ def cep(cep):
 
     dic = requisicao.json()
 
-    return dic
+    return cep, dic
