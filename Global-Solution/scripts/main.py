@@ -351,6 +351,43 @@ def validacao(dado):
                 except ValueError as e:
                     print(f"Error: {e}")
 
+        case 5:
+            while not status:
+                try:
+                    option = int(input("Digite o número da especialidade desejada: "))
+
+                    if 1 <= option <= 27:
+                        status = True
+
+                    else:
+                        clear_console()
+                        separador(30, 1)
+                        separador("Entrada inválida!", 7)
+                        print("Por favor escolha uma opção de 1 a 27!")
+                except ValueError:
+                    clear_console()
+                    separador(30, 1)
+                    separador("Entrada inválida!", 7)
+                    print("Por favor insira um número")
+        
+        case 6:
+            while not status:
+                try:
+                    option = int(input("Se todas informações estiverem corretas, digite 0.\nCaso contrário digite a opção que deseja mudar\n"))
+
+                    if 0 <= option <=3:
+                        status = True
+
+                    else:
+                        clear_console()
+                        separador(30, 1)
+                        separador("Entrada inválida!", 7)
+                        print("Por favor escolha uma opção de 0 a 3!")
+                except ValueError:
+                    clear_console()
+                    separador(30, 1)
+                    separador("Entrada inválida!", 7)
+                    print("Por favor insira um número")
     return option
 
 def add_dict_endereco(dicionario, logradouro, bairro, localidade, uf, complemento, numero):
@@ -495,7 +532,7 @@ def especialidade():
 
 def obter_especialidade():
     especialidades = especialidade()
-    escolha = int(input("Digite o número da especialidade desejada: "))
+    escolha = validacao(5)
     
     if 1 <= escolha <= len(especialidades):
         return escolha
@@ -504,6 +541,7 @@ def obter_especialidade():
         return obter_especialidade(especialidades)
 
 def cadastro_medico():
+    dados_medico = {}
     separador(30, 3)
     centralizar("Cadastro médico", 60)
     separador(30, 3)
@@ -521,6 +559,41 @@ def cadastro_medico():
     crud.insert_medico(crm, nome, senha, email, celular, especialidade)
     atualizacao_txt("Médico cadastrado", crm)
 
+    dados_medico = {
+        'crm': crm,
+        'nome': nome,
+        'email': email,
+        'celular': celular,
+        'especialidade': especialidade
+    }
+
+    update_medico(dados_medico)
+
+def update_medico(dados_medico):
+    mudanca = ""
+    while mudanca != 0:
+        # clear_console()
+        separador(30, 2)
+        centralizar("Informações de Cadastro", 60)
+        separador(30, 2)
+        especialidade = crud.select_especialidade(dados_medico["especialidade"])
+        print(f'1- Nome: {dados_medico["nome"]}\n2- Email: {dados_medico["email"]}\n3- Celular: {dados_medico["celular"]}\n')
+        mudanca = validacao(6)
+        match mudanca:
+            case 1:
+                dados_medico["nome"] = input('Nome: ').strip().title()
+                crud.update_medico("medico", "nome", dados_medico["nome"], dados_medico["crm"])
+                atualizacao_txt("Nome atualizado", dados_medico["nome"])
+
+            case 2:
+                dados_medico["email"] = validaEmail()
+                crud.update_medico("medico", "email", dados_medico["email"], dados_medico["crm"])
+                atualizacao_txt("Email atualizado", dados_medico["email"])
+
+            case 3:
+                dados_medico["celular"] = formatarCell()
+                crud.update_medico("medico", "telefone", dados_medico["celular"], dados_medico["crm"])
+                atualizacao_txt("Número de celular atualizado", dados_medico["celular"])
 
 def menu_principal():
     option = validacao(1)
