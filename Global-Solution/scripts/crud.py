@@ -273,6 +273,46 @@ def update(table, dado, value, cpf):
         cursor.close()
         conn.close()
 
+def update_medico(table, dado, value, crm):
+    try:
+        conn, cursor = conexao()
+
+        if isinstance(value, (int, float)):
+            value_str = str(value)
+        else:
+            value_str = f"'{value.replace("'", "''")}'"
+
+        sql_query = f"UPDATE {table} SET {dado} = {value_str} WHERE crm = :crm"
+        cursor.execute(sql_query, {'crm': crm})
+        conn.commit()
+        print("Atualizado com sucesso")
+    except Exception as e:
+        print(f'Something went wrong - update: {e}')
+    finally:
+        cursor.close()
+        conn.close()
+
+def select_especialidade(id_especialidade):
+    try:
+        conn, cursor = conexao()
+
+        sql_query = "SELECT especialidade FROM especialidade WHERE id_especialidade = :id_especialidade"
+        cursor.execute(sql_query, id_especialidade=id_especialidade)
+
+        resultados = cursor.fetchall()
+
+        if resultados:
+            return resultados[0][0]
+        else:
+            return None
+
+    except Exception as e:
+        print(f'Something went wrong - select_especialidade: {e}')
+        return None
+    finally:
+        cursor.close()
+        conn.close()
+
 def select(dado1, tbl, dado2):
     try:
         conn, cursor = conexao()
