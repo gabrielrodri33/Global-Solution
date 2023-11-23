@@ -23,7 +23,8 @@ def localizacoes(json_name, value):
         latitude, longitude = geolocalizacao.coordenadas_hospitais(d)
         
         if latitude is not None and longitude is not None:
-            folium.Marker([latitude, longitude], popup=d["nome"]).add_to(mapa)
+            popup_content = f"{d['nome']}<br><a href='https://www.google.com/maps/place/{latitude},{longitude}' target='_blank'>Ver no Google Maps</a>"
+            folium.Marker([latitude, longitude], popup=popup_content).add_to(mapa)
         else:
             print(f"Coordenadas inválidas para {d['nome']}")
 
@@ -48,14 +49,16 @@ def todas_localizacoes(json_name, value, outras, clinica, hospitais, imagem, pa)
         latitude, longitude = geolocalizacao.coordenadas_hospitais(d)
         
         if latitude is not None and longitude is not None:
-            folium.Marker([latitude, longitude], popup=d["nome"]).add_to(mapa)
+            popup_content = f"{d['nome']}<br><a href='https://www.google.com/maps/place/{latitude},{longitude}' target='_blank'>Ver no Google Maps</a>"
+            folium.Marker([latitude, longitude], popup=popup_content).add_to(mapa)
         else:
             print(f"Coordenadas inválidas para {d['nome']}")
 
     for o in outras["outras"]:
         latitude, longitude = geolocalizacao.coordenadas_hospitais(o)
         if latitude is not None and longitude is not None:
-            folium.Marker([latitude, longitude], popup=o["nome"], icon=folium.Icon(color='green')).add_to(mapa)
+            popup_content = f"{o['nome']}<br><a href='https://www.google.com/maps/place/{latitude},{longitude}' target='_blank'>Ver no Google Maps</a>"
+            folium.Marker([latitude, longitude], popup=popup_content, icon=folium.Icon(color='green')).add_to(mapa)
         else:
             print(f"Coordenadas inválidas para {o['nome']}")
 
@@ -63,7 +66,8 @@ def todas_localizacoes(json_name, value, outras, clinica, hospitais, imagem, pa)
         latitude, longitude = geolocalizacao.coordenadas_hospitais(c)
         
         if latitude is not None and longitude is not None:
-            folium.Marker([latitude, longitude], popup=c["nome"], icon=folium.Icon(color='purple')).add_to(mapa)
+            popup_content = f"{c['nome']}<br><a href='https://www.google.com/maps/place/{latitude},{longitude}' target='_blank'>Ver no Google Maps</a>"
+            folium.Marker([latitude, longitude], popup=popup_content, icon=folium.Icon(color='purple')).add_to(mapa)
         else:
             print(f"Coordenadas inválidas para {c['nome']}")
 
@@ -71,7 +75,8 @@ def todas_localizacoes(json_name, value, outras, clinica, hospitais, imagem, pa)
         latitude, longitude = geolocalizacao.coordenadas_hospitais(h)
         
         if latitude is not None and longitude is not None:
-            folium.Marker([latitude, longitude], popup=h["nome"], icon=folium.Icon(color='orange')).add_to(mapa)
+            popup_content = f"{h['nome']}<br><a href='https://www.google.com/maps/place/{latitude},{longitude}' target='_blank'>Ver no Google Maps</a>"
+            folium.Marker([latitude, longitude], popup=popup_content, icon=folium.Icon(color='orange')).add_to(mapa)
         else:
             print(f"Coordenadas inválidas para {h['nome']}")
 
@@ -79,7 +84,8 @@ def todas_localizacoes(json_name, value, outras, clinica, hospitais, imagem, pa)
         latitude, longitude = geolocalizacao.coordenadas_hospitais(i)
         
         if latitude is not None and longitude is not None:
-            folium.Marker([latitude, longitude], popup=i["nome"], icon=folium.Icon(color='darkred')).add_to(mapa)
+            popup_content = f"{i['nome']}<br><a href='https://www.google.com/maps/place/{latitude},{longitude}' target='_blank'>Ver no Google Maps</a>"
+            folium.Marker([latitude, longitude], popup=popup_content, icon=folium.Icon(color='darkred')).add_to(mapa)
         else:
             print(f"Coordenadas inválidas para {i['nome']}")
     
@@ -87,7 +93,8 @@ def todas_localizacoes(json_name, value, outras, clinica, hospitais, imagem, pa)
         latitude, longitude = geolocalizacao.coordenadas_hospitais(p)
         
         if latitude is not None and longitude is not None:
-            folium.Marker([latitude, longitude], popup=p["nome"], icon=folium.Icon(color='cadetblue')).add_to(mapa)
+            popup_content = f"{p['nome']}<br><a href='https://www.google.com/maps/place/{latitude},{longitude}' target='_blank'>Ver no Google Maps</a>"
+            folium.Marker([latitude, longitude], popup=popup_content, icon=folium.Icon(color='cadetblue')).add_to(mapa)
         else:
             print(f"Coordenadas inválidas para {i['nome']}")
 
