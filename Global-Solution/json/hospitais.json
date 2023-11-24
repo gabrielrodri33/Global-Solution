@@ -104,7 +104,7 @@
     },
     {
       "nome": "Hospital e Maternidade América",
-      "endereco": "Alameda Coronel Joaquim Bastos, nº 120, Quadra 216, Lote 6-E - Setor Marista",
+      "endereco": "Alameda Coronel Joaquim Bastos, nº 120 - Setor Marista",
       "cidade": "Goiânia",
       "estado": "GO"
     },
@@ -194,7 +194,7 @@
     },
     {
       "nome": "Hospital do Cabo",
-      "endereco": "Av. Pres. Vargas, 428 - Centro",
+      "endereco": "Av. Presidente Vargas, 428 - Centro",
       "cidade": "Cabo de Santo Agostinho",
       "estado": "PE"
     },

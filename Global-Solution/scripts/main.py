@@ -1,3 +1,5 @@
+import mapas
+import time
 import re
 import webbrowser
 import datetime
@@ -11,6 +13,21 @@ import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from api import cellerecpf
 from api import viacep
+from datetime import datetime, timedelta
+
+# - mapas: import para criação de mapas dos hospitais parceiros
+# - time: Biblioteca para pausar o programa e simular os lembretes
+# - crud: Módulo para interação com o banco de dados.
+# - bcrypt: Biblioteca para hash e verificação de senhas.
+# - json: Biblioteca para manipulação de dados JSON.
+# - base64: Biblioteca para codificação e decodificação base64.
+# - getpass: Biblioteca para entrada segura de senhas.
+# - datetime: Módulo para manipulação de datas e horas.
+# - os: Módulo para interação com o sistema operacional.
+# - re: Módulo para expressões regulares.
+# - webbrowser: Módulo para abrir URLs em um navegador da web.
+# - api: Módulo contendo APIs externas para consulta de CEP e validação de CPF.
+# - oracledb: Biblioteca para interação com bancos de dados Oracle.
 
 def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -44,7 +61,7 @@ def separador(n, cor):
     return print(mensagem)
 
 def atualizacao_txt(info, info2):
-    date = datetime.datetime.now()
+    date = datetime.now()
     texto = f'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n{info}: {info2}\nDia e hora: {date}\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n'
     with open('Global-Solution/archives/event.txt', 'a') as file:
         file.write(texto)
@@ -194,20 +211,6 @@ def consultaCep():
 
     return cep, dic
 
-def formata_valor():
-    while True:
-        try:
-            valor = int(input("Valor: R$"))
-            valor = round(valor, 2)
-            valor_str = '{:,}'.format(int(valor))
-            if valor == int(valor):
-                valor_str += '.00'
-            else:
-                valor_str += '.' + '{:02d}'.format(int(valor % 1 * 100))
-            return 'R$' + valor_str
-        except ValueError:
-            separador("Insira um número válido!", 7)
-
 def login_user():
     clear_console()
     status = False
@@ -244,15 +247,26 @@ def login_user():
             separador(30, 5)
             centralizar("Limite de tentativas atingido!", 60)
             separador(30, 5)
-            option = validacao(3)
-            if option == 1:
+            option = validacao(8)
+            if option == 4:
+                option = 6
+            
+            elif option == 2:
                 option = 2
 
+            elif option == 3:
+                option = 3
+
             else:
-                email = logarEmail()
-                senha, code = pwd()
-                crud.updatePwd("cliente", "senha", senha, email)
-                
+                if mp =='medicos':
+                    email = logarEmail()
+                    senha, code = pwd()
+                    crud.updatePwd("medico", "senha", senha, email)
+                else:
+                    email = logarEmail()
+                    senha, code = pwd()
+                    crud.updatePwd("paciente", "senha", senha, email)
+
                 with open(f"Global-Solution/json/{mp}.json", 'r') as arquivo:
                     dados_login = json.load(arquivo)
 
@@ -263,7 +277,9 @@ def login_user():
 
                 print(f'Valor da chave {email} alterado para {code}.')
 
-                c = 0
+                atualizacao_txt("Senha alterada:", email)
+
+                c = 0 
 
     if status == True:
         clear_console()
@@ -271,12 +287,126 @@ def login_user():
         centralizar("Logado!", 60)
         atualizacao_txt("Usuário logado", email)
         if mp == 'medicos':
-            option = validacao(5)
-        else:
-            option = validacao(6)
+            print("Sua próxima consulta")
+            crm = crud.get_crm_from_email(email)
+            data = crud.obter_data_medico(crm)
 
+            if data:
+                data_formatada = data[0].strftime('%Y-%m-%d %H:%M:%S')
+                contagem_regressiva(data_formatada)
+            else:
+                print("Nenhuma consulta agendada!")
+            
+        else:
+            option = validacao(7)
+            match option:
+                case 1:
+                    clear_console()
+                    separador(30, 1)
+                    centralizar("Opções", 60)
+                    separador(30, 1)
+                    dt_inicio = imprimir_datas()
+                    hora_agendamento = imprimir_horarios()
+                    hora = hora_agendamento[:2]
+                    hora = int(hora) + 1
+                    hora_fim = f'{hora}:00:00'
+
+                    dt_inicio = str(dt_inicio)
+
+                    dt_inicio = f"{dt_inicio[:10]} {hora_agendamento}"
+                    dt_fim = f"{dt_inicio[:10]} {hora_fim}"
+
+                    desc = input("Descreva o que está sentindo: ")
+
+                    cpf = crud.get_cpf_from_email(email)
+                    print(cpf)
+                    estado = crud.obter_estado(cpf)
+                    id_hospital = crud.obter_id(estado[0])
+
+                    crm = crud.obter_crm()
+
+                    id_tipo = crud.listar_tipos_procedimento()
+
+                    crud.insert_agendamento(dt_inicio, dt_fim, desc, crm, cpf, id_tipo, id_hospital[0])
+
+                case 2:
+                    cpf = crud.get_cpf_from_email(email)
+                    data = crud.obter_data(cpf)
+
+                    if data:
+                        data_formatada = data[0].strftime('%Y-%m-%d %H:%M:%S')
+                    else:
+                        print("Nenhuma consulta agendada!")
+                    contagem_regressiva(data_formatada)
+                    cpf = crud.get_cpf_from_email(email)
+                    print(cpf)
+                    estado = crud.obter_estado(cpf)
+                    id_hospital = crud.obter_id(estado[0])
+                    hospital = crud.obter_hospital(id_hospital[0])
+                    data = {"endereco": hospital[0], "cidade": hospital[1], "estado": hospital[2]}
+                    latitude, longitude = mapas.link_hospital(data)
+                    url = f"https://www.google.com/maps/place/{latitude},{longitude}"
+                    webbrowser.open(url)
+
+    option = validacao(9)
     senha = ""
-    return  option, login, email
+    return  option, login
+
+def imprimir_horarios():
+    c = 1
+    print("Horários disponíveis:")
+    for hora in range(6, 19):
+        hora_agendamento = f"{hora:02d}:00:00"
+        print(f"{c}- {hora_agendamento}")
+        c += 1
+
+    while True:
+        try:
+            escolha = int(input("Escolha o número correspondente ao horário desejado: "))
+            if 1 <= escolha <= 13:
+                return f"{escolha + 5:02d}:00:00"
+            else:
+                print("Escolha inválida. Por favor, escolha um número entre 1 e 13.")
+        except ValueError:
+            print("Entrada inválida. Por favor, insira um número.")
+
+def imprimir_datas():
+
+    hoje = datetime.now()
+
+    proximo_dia = hoje + timedelta(days=1)
+
+    print("Próximos 7 dias:")
+    for i in range(7):
+        data = proximo_dia + timedelta(days=i)
+        print(f"{i + 1}. {data.strftime('%Y-%m-%d')}")
+
+    escolha = int(input("Escolha um dia (1-7): "))
+
+    if 1 <= escolha <= 7:
+        data_escolhida = proximo_dia + timedelta(days=escolha - 1)
+        print(f"Você escolheu o dia {data_escolhida.strftime('%Y-%m-%d')}")
+    else:
+        print("Escolha inválida.")
+
+    return data_escolhida
+
+def contagem_regressiva(data_objetivo):
+    data_objetivo = datetime.strptime(data_objetivo, "%Y-%m-%d %H:%M:%S")
+
+    while datetime.now() < data_objetivo:
+        diferenca = data_objetivo - datetime.now()
+        dias_faltando = diferenca.days
+
+        if dias_faltando == 0:
+            print(f"A consulta é hoje às {data_objetivo.strftime('%H:%M:%S')}")
+            break
+        else:
+            print(f"Dias faltando: {dias_faltando}")
+
+        time.sleep(10)
+
+        data_objetivo -= timedelta(days=1)
 
 def validacao(dado):
     status = False
@@ -284,29 +414,32 @@ def validacao(dado):
         case 1:
             while not status:
                 try:
+                    clear_console()
                     separador(30, 1)
                     centralizar("Menu principal!", 60)
                     separador(30, 1)
-                    option = int(input("1- Fazer login\n2- Fazer cadastro como paciente\n3- Fazer cadastro com médico\n4- Localização de hospitais\n5- Termos de políticas de privacidade\n6- Suporte\n7- Sair\n"))
+                    option = int(input("1- Fazer login\n2- Fazer cadastro como paciente\n3- Fazer cadastro com médico\n4- Localização de hospitais\n5- Termos de políticas de privacidade\n6- Sair\n"))
 
-                    if 1 <= option <=7:
+                    if 1 <= option <= 6:
                         status = True
 
                     else:
                         clear_console()
                         separador(30, 1)
                         separador("Entrada inválida!", 7)
-                        print("Por favor escolha uma opção de 1 a 7!")
+                        print("Por favor escolha uma opção de 1 a 6!")
                 except ValueError:
                     clear_console()
                     separador(30, 1)
                     separador("Entrada inválida!", 7)
                     print("Por favor insira um número")
+
         case 2:
             while not status:
                 try:
+                    clear_console()
                     separador(30, 1)
-                    centralizar("Médico / Paciente", 60)
+                    centralizar("Tela de login!", 60)
                     separador(30, 1)
                     option = int(input("1- Médico\n2- Paciente\n"))
 
@@ -345,6 +478,7 @@ def validacao(dado):
         case 4:
             while not status:
                 try:
+                    clear_console()
                     option = input("Informações corretas? [S/N]").strip().upper()
                     if option in ["S", "N"]:
                         status = True
@@ -383,6 +517,92 @@ def validacao(dado):
                         separador(30, 1)
                         separador("Entrada inválida!", 7)
                         print("Por favor escolha uma opção de 0 a 3!")
+                except ValueError:
+                    clear_console()
+                    separador(30, 1)
+                    separador("Entrada inválida!", 7)
+                    print("Por favor insira um número")
+
+        case 7:
+            while not status:
+                try:
+                    option = int(input("1- Agendar consulta\n2- Visualizar consultas agendadas\n"))
+
+                    if 1 <= option <=2:
+                        status = True
+
+                    else:
+                        clear_console()
+                        separador(30, 1)
+                        separador("Entrada inválida!", 7)
+                        print("Por favor escolha uma opção de 1 a 2!")
+                except ValueError:
+                    clear_console()
+                    separador(30, 1)
+                    separador("Entrada inválida!", 7)
+                    print("Por favor insira um número")
+
+        case 8:
+            while not status:
+                try:
+                    option = int(input("1- Alterar senha\n2- Fazer cadastro como paciente\n3- Fazer cadastro com médico\n4- Sair\n"))
+
+                    if 1 <= option <= 4:
+                        status = True
+
+                    else:
+                        clear_console()
+                        separador(30, 1)
+                        separador("Entrada inválida!", 7)
+                        print("Por favor escolha uma opção de 1 a 4!")
+                except ValueError:
+                    clear_console()
+                    separador(30, 1)
+                    separador("Entrada inválida!", 7)
+                    print("Por favor insira um número")
+
+        case 9:
+            while not status:
+                try:
+                    clear_console()
+                    separador(30, 1)
+                    centralizar("Menu principal!", 60)
+                    separador(30, 1)
+                    option = int(input("1- Localização de hospitais\n2- Termos de políticas de privacidade\n3- Sair\n"))
+
+                    if 1 <= option <= 3:
+                        status = True
+                        if option == 1:
+                            option = 4
+                        elif option == 2:
+                            option = 5
+                        elif option == 3:
+                            option = 6
+
+                    else:
+                        clear_console()
+                        separador(30, 1)
+                        separador("Entrada inválida!", 7)
+                        print("Por favor escolha uma opção de 1 a 6!")
+                except ValueError:
+                    clear_console()
+                    separador(30, 1)
+                    separador("Entrada inválida!", 7)
+                    print("Por favor insira um número")
+
+        case 10:
+            while not status:
+                try:
+                    option = int(input("1- Todos hospitais\n2- Clínicas\n3- Hospitais HapVida\n4- Imagem e Laboratório\n5- Pronto Atendimento\n6- Outros"))
+
+                    if 1 <= option <= 6:
+                        status = True
+
+                    else:
+                        clear_console()
+                        separador(30, 1)
+                        separador("Entrada inválida!", 7)
+                        print("Por favor escolha uma opção de 1 a 6!")
                 except ValueError:
                     clear_console()
                     separador(30, 1)
@@ -444,7 +664,7 @@ def addDict(dicionario, nome, email, tel_celular, cpf):
 
 def cadastro_paciente():
     dados_cliente = {}
-    # clear_console()
+    clear_console()
     separador(30, 3)
     centralizar("Cadastro", 60)
     separador(30, 3)
@@ -465,7 +685,6 @@ def cadastro_paciente():
     salvarCredenciais(email, code, 'clientes')
 
     update_paciente(dados_cliente, cpf)
-
 
 def update_paciente(dados_cliente, cpf):
     mudanca = ""
@@ -603,24 +822,43 @@ def menu_principal():
     while True:
         match option:
             case 1:
-                option, login, email = login_user()
+                option, login = login_user()
 
             case 2:
                 cadastro_paciente()
-
+                option = 1
 
             case 3:
                 cadastro_medico()
 
             case 4:
                 if login == False:
+                    separador(30, 1)
                     print("É necessário estar logado!")
+                    print("Carregando tela de login")
+                    separador(30, 1)
+                    time.sleep(4)
                     option = 1
+
                 else:
-                    url = "C:\FIAP\Computational Thinking Using Python\Global-Solution\Global-Solution\html\todos.html"
+                    # option = int(input("1- Todos hospitais\n2- Clínicas\n3- Hospitais HapVida\n4- Imagem e Laboratório\n5- Pronto Atendimento\n6- Outros"))
+                    local = validacao(10)
+                    mapas.principal('02346-000', '158')
+                    if local == 1:
+                        url = "C:/FIAP/Computational Thinking Using Python/Global-Solution/Global-Solution/html/todos.html"
+                    elif local == 2:
+                        url = "C:/FIAP/Computational Thinking Using Python/Global-Solution/Global-Solution/html/clinica.html"
+                    elif local == 3:
+                        url = "C:/FIAP/Computational Thinking Using Python/Global-Solution/Global-Solution/html/hospitais.html"
+                    elif local == 4:
+                        url = "C:/FIAP/Computational Thinking Using Python/Global-Solution/Global-Solution/html/imagemlaboratorio.html"
+                    elif local == 5:
+                        url = "C:/FIAP/Computational Thinking Using Python/Global-Solution/Global-Solution/html/pa.html"
+                    elif local == 6:
+                        url = "C:/FIAP/Computational Thinking Using Python/Global-Solution/Global-Solution/html/outras.html"
                     webbrowser.open(url)
                     print("Vermelho: Sua localização\nAzul: Clínicas Notredame\nRoxo: Clínicas HapVida\nLaranja: Hospitais\nVermelho escuro: Imagem e Laboratório\nCinza: Pronto Atendimento\nVerde: Outros")
-                    
+
                     option = validacao(1)
 
             case 5:
@@ -629,9 +867,6 @@ def menu_principal():
                 url = "https://www.gndi.com.br/portal-da-privacidade/politica-privacidade"
                 webbrowser.open(url)
                 option = validacao(1)
-
-            case 6:
-                pass
 
             case 7:
                 break
