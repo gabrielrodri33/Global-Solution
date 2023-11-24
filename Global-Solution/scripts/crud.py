@@ -2,7 +2,7 @@ import oracledb
 import datetime
 
 def credenciais():
-    return "RM98626", "311003"
+    return "user", "password"
 
 def conexao():
     try:
@@ -123,8 +123,8 @@ def create():
         insertEndereco('123.456.789-11', 'Rua Chile', 'Vila Rosália', ' ', ' ', 'Guarulhos', 'SP', '07064-050')
         insert_paciente('123.456.789-11', 'Amanda Moreira', senha_amanda, 'amanda@gmail.com', '(11)98765-4321')
         insert_agendamento(
-            dt_agendamento='2023-11-23 7:00:00',
-            dt_fim='2023-11-23 08:00:00',
+            dt_agendamento='2023-11-30 7:00:00',
+            dt_fim='2023-11-30 08:00:00',
             descricao='Consulta médica',
             crm='945162',
             cpf='123.456.789-11',

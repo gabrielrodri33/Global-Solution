@@ -15,20 +15,6 @@ from api import cellerecpf
 from api import viacep
 from datetime import datetime, timedelta
 
-# - mapas: import para criação de mapas dos hospitais parceiros
-# - time: Biblioteca para pausar o programa e simular os lembretes
-# - crud: Módulo para interação com o banco de dados.
-# - bcrypt: Biblioteca para hash e verificação de senhas.
-# - json: Biblioteca para manipulação de dados JSON.
-# - base64: Biblioteca para codificação e decodificação base64.
-# - getpass: Biblioteca para entrada segura de senhas.
-# - datetime: Módulo para manipulação de datas e horas.
-# - os: Módulo para interação com o sistema operacional.
-# - re: Módulo para expressões regulares.
-# - webbrowser: Módulo para abrir URLs em um navegador da web.
-# - api: Módulo contendo APIs externas para consulta de CEP e validação de CPF.
-# - oracledb: Biblioteca para interação com bancos de dados Oracle.
-
 def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -841,7 +827,6 @@ def menu_principal():
                     option = 1
 
                 else:
-                    # option = int(input("1- Todos hospitais\n2- Clínicas\n3- Hospitais HapVida\n4- Imagem e Laboratório\n5- Pronto Atendimento\n6- Outros"))
                     local = validacao(10)
                     mapas.principal('02346-000', '158')
                     if local == 1:
@@ -856,6 +841,7 @@ def menu_principal():
                         url = "C:/FIAP/Computational Thinking Using Python/Global-Solution/Global-Solution/html/pa.html"
                     elif local == 6:
                         url = "C:/FIAP/Computational Thinking Using Python/Global-Solution/Global-Solution/html/outras.html"
+
                     webbrowser.open(url)
                     print("Vermelho: Sua localização\nAzul: Clínicas Notredame\nRoxo: Clínicas HapVida\nLaranja: Hospitais\nVermelho escuro: Imagem e Laboratório\nCinza: Pronto Atendimento\nVerde: Outros")
 
